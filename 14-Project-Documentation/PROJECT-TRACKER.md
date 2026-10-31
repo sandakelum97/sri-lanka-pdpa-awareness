@@ -23,6 +23,12 @@ Target: close all P1-related open questions and have every official document sto
 
 | Date | Decision | Rationale |
 |---|---|---|
+| 2026-10-31 | **Provisionally adopted by default, pending owner confirmation:** (a) three-value commencement status model IN / 2027 / NO rendered from one `status.json`; (b) FEATURE-SPECS-v0.1 treated as approved for planning; (c) all Sinhala content carries 'unverified' status until a bilingual legal reviewer signs off. | Owner asked to proceed; no objection raised. |
+
+### Earlier decisions
+
+| Date | Decision | Rationale |
+|---|---|---|
 | 2026-10-31 | Only documents on dpa.gov.lk, parliament.lk or documents.gov.lk count as official. | Project brief §2. |
 | 2026-10-31 | Commencement status is a mandatory field on every content item; statuses: IN / 2027 / NO. | Avoid describing unenforceable provisions as binding. |
 | 2026-10-31 | Draft instruments are stored under `draft-instruments/` and always labelled "DRAFT — not law". | Project brief §2. |
@@ -40,7 +46,17 @@ Target: close all P1-related open questions and have every official document sto
 | R-04 | Workspace cannot download from dpa.gov.lk. | Resolved 31 Oct 2026 — script run natively on Windows. | documents.gov.lk still to be allow-listed for the two duplicate copies. |
 | R-05 | Sinhala/Tamil 2022 Act PDFs are legacy-font, not Unicode (OQ-18). | Sinhala glossary and EN/SI verification cannot be done by text extraction. | Legacy→Unicode conversion or OCR, reviewer spot-check. |
 
-## Next steps (proposed, awaiting approval)
+## Phase 2 — started 31 Oct 2026
+
+| # | Task | Status | Output |
+|---|---|---|---|
+| 2.1 | Bilingual glossary from s.56 definitions | v0.1 drafted — 20 Sinhala terms read from official Unicode texts, 12 pending OQ-18; reviewer sign-off pending | 07-English-Content/glossary/GLOSSARY-bilingual-v0.1.md |
+| 2.2 | Plain-English explanations for Part I and Part III (status 2027) | Not started | 07-English-Content/ |
+| 2.3 | Small-business pathway and scenarios | Not started | 07-English-Content/pathways/, scenarios/ |
+| 2.4 | FAQ | Not started | 07-English-Content/faq/ |
+| 2.5 | Sinhala explanations | Blocked on reviewer + OQ-18 | 08-Sinhala-Content/ |
+
+## Next steps (proposed)
 
 1. Run the download script and commit the PDFs + checksums.
 2. Read the seven drafts and GAZ-01; fill in draft-instrument-summaries.md.

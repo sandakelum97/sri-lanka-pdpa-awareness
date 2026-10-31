@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 460" role="img" aria-labelledby="t"><title id="t">The six lawful reasons for using personal data, with everyday examples</title>
+<defs><style>.k{fill:#14213D}.t{font-family:Noto Sans,sans-serif}</style></defs>
+<rect width="1000" height="460" fill="#fff"/>
+<g class="t">
+<text x="500" y="40" text-anchor="middle" font-size="20" font-weight="700" class="k">You need one of these reasons before using someone's data (s.5, Schedule I)</text>
+<g transform="translate(30,70)"><rect width="300" height="110" rx="12" fill="#0F6E6B"/><text x="20" y="35" font-size="17" font-weight="700" fill="#fff">Contract</text><text x="20" y="60" font-size="14" fill="#fff">It is needed to do what the person asked.</text><text x="20" y="85" font-size="14" fill="#F2B33D">Taking a delivery address for an order.</text></g>
+<g transform="translate(350,70)"><rect width="300" height="110" rx="12" fill="#0F6E6B"/><text x="20" y="35" font-size="17" font-weight="700" fill="#fff">Legal obligation</text><text x="20" y="60" font-size="14" fill="#fff">A law says you must.</text><text x="20" y="85" font-size="14" fill="#F2B33D">Keeping EPF and tax records for staff.</text></g>
+<g transform="translate(670,70)"><rect width="300" height="110" rx="12" fill="#0F6E6B"/><text x="20" y="35" font-size="17" font-weight="700" fill="#fff">Legitimate interests</text><text x="20" y="60" font-size="14" fill="#fff">A fair business reason the person would expect.</text><text x="20" y="85" font-size="14" fill="#F2B33D">CCTV for security. Not for Facebook.</text></g>
+<g transform="translate(30,200)"><rect width="300" height="110" rx="12" fill="#14213D"/><text x="20" y="35" font-size="17" font-weight="700" fill="#fff">Emergency</text><text x="20" y="60" font-size="14" fill="#fff">Life, health or safety is at risk.</text><text x="20" y="85" font-size="14" fill="#F2B33D">Giving a hospital an unconscious patient's details.</text></g>
+<g transform="translate(350,200)"><rect width="300" height="110" rx="12" fill="#14213D"/><text x="20" y="35" font-size="17" font-weight="700" fill="#fff">Public task</text><text x="20" y="60" font-size="14" fill="#fff">A public duty under written law.</text><text x="20" y="85" font-size="14" fill="#F2B33D">A Grama Niladhari keeping household lists.</text></g>
+<g transform="translate(670,200)"><rect width="300" height="110" rx="12" fill="#F2B33D"/><text x="20" y="35" font-size="17" font-weight="700" fill="#14213D">Consent</text><text x="20" y="60" font-size="14" fill="#14213D">A clear, separate yes — which can be withdrawn.</text><text x="20" y="85" font-size="14" fill="#14213D">"Send me offers by SMS" ☐ (not pre-ticked).</text></g>
+<rect x="30" y="335" width="940" height="90" rx="12" fill="#FDECED" stroke="#A62639" stroke-width="2"/>
+<text x="50" y="365" font-size="16" font-weight="700" fill="#A62639">Sensitive data needs a stronger reason (Schedule II)</text>
+<text x="50" y="392" font-size="14" fill="#14213D">Health · religion · ethnicity · politics · sex life · criminal records · biometrics · genetics · and anything about a child under 16.</text>
+<text x="50" y="412" font-size="13" fill="#5b6b7b">In force from 1 January 2027 (Gazette 2498/16).</text>
+</g></svg>

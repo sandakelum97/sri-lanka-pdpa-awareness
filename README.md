@@ -26,8 +26,7 @@ Sri-Lanka-PDPA-Awareness-Project/
 │   └── related-laws/                 RTI Act, Online Safety Act, CBSL regulations etc. (to collect)
 ├── 07-English-Content/               glossary/ scenarios/ faq/ pathways/ health-check/
 ├── 08-Sinhala-Content/               same slugs as 07, Sinhala text
-├── 09-Videos-and-Audio/              scripts-60s/ audio/ subtitles/
-├── 10-Infographics-and-Presentations/
+├── 09-Production/                  All production assets: brand, scripts & briefs, generated drafts, approved finals, pipeline, QA (see FOLDER-GUIDE.md)
 ├── 11-Website-Development/           design/ src/ cms/ feature-specs/ (FEATURE-SPECS-v0.1.md)
 ├── 12-AI-Knowledge-Base/             chunks/ (versioned, citation-bearing) evaluation/
 ├── 13-Reviews-and-Approvals/         Legal and Sinhala review sign-offs, one file per content release

@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 300" role="img" aria-labelledby="t"><title id="t">Five stages of handling personal data and the duty at each stage</title>
+<defs><style>.t{font-family:Noto Sans,sans-serif}.k{fill:#14213D}</style></defs>
+<rect width="1000" height="300" fill="#fff"/>
+<g class="t">
+<path d="M80 150 H920" stroke="#CFE3E1" stroke-width="8"/>
+<g transform="translate(100,150)"><circle r="42" fill="#0F6E6B"/><text y="6" text-anchor="middle" font-size="15" fill="#fff" font-weight="700">Collect</text><text y="80" text-anchor="middle" font-size="13" class="k">Only what you need (s.7)</text><text y="100" text-anchor="middle" font-size="13" class="k">Say why, in writing (s.11)</text></g>
+<g transform="translate(300,150)"><circle r="42" fill="#0F6E6B"/><text y="6" text-anchor="middle" font-size="15" fill="#fff" font-weight="700">Use</text><text y="80" text-anchor="middle" font-size="13" class="k">A lawful reason (s.5)</text><text y="100" text-anchor="middle" font-size="13" class="k">Only for that purpose (s.6)</text></g>
+<g transform="translate(500,150)"><circle r="42" fill="#0F6E6B"/><text y="6" text-anchor="middle" font-size="15" fill="#fff" font-weight="700">Keep</text><text y="80" text-anchor="middle" font-size="13" class="k">Accurate (s.8), secure (s.10)</text><text y="100" text-anchor="middle" font-size="13" class="k">Not longer than needed (s.9)</text></g>
+<g transform="translate(700,150)"><circle r="42" fill="#0F6E6B"/><text y="6" text-anchor="middle" font-size="15" fill="#fff" font-weight="700">Share</text><text y="80" text-anchor="middle" font-size="13" class="k">Contracts with helpers (s.21)</text><text y="100" text-anchor="middle" font-size="13" class="k">Abroad: s.26 rules</text></g>
+<g transform="translate(900,150)"><circle r="42" fill="#14213D"/><text y="6" text-anchor="middle" font-size="15" fill="#fff" font-weight="700">Delete</text><text y="80" text-anchor="middle" font-size="13" class="k">Shred, wipe, record it</text><text y="100" text-anchor="middle" font-size="13" class="k">(s.9, s.12)</text></g>
+<text x="500" y="40" text-anchor="middle" font-size="18" font-weight="700" class="k">What the law asks at each step — Part I, from 1 January 2027</text>
+<text x="500" y="280" text-anchor="middle" font-size="12" fill="#5b6b7b">If something goes wrong at any step: contain it, record it, and notify the Authority once the rules say how (s.23).</text>
+</g></svg>

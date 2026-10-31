@@ -1,10 +1,6 @@
 node_modules/
 dist/
 .astro/
-09-Videos-and-Audio/build/v*/scenes/
-09-Videos-and-Audio/build/v*/*.tmp.mp4
-09-Videos-and-Audio/build/*/preview-*.png
-09-Videos-and-Audio/build/*/dbg-*.png
-09-Videos-and-Audio/build/test-*.png
-09-Videos-and-Audio/_review/
 *.tmp
+09-Production/04-pipeline/out/
+09-Production/04-pipeline/*.png

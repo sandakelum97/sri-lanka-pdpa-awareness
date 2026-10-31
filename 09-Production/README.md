@@ -22,8 +22,8 @@ Generate **text-free** footage only — add every word in post (see TOOLS-AND-PI
 
 ## Workflow
 1. Generate from the script/brief.
-2. A human checks the output against the script and the guardrails (tick the box in `13-Reviews-and-Approvals/`).
-3. Save finals under `09-Videos-and-Audio/audio|video/` or `10-Infographics-and-Presentations/` with the script ID in the file name.
+2. A human checks the output against the script and the guardrails (tick the box in `09-Production/05-review/`).
+3. Save finals under `09-Production/03-approved-finals/<type>/` with the script ID in the file name.
 4. Re-record, don't patch, when the legal status changes — shared WhatsApp videos cannot be recalled, so every video carries its check date.
 
 ## What to upload to NotebookLM as sources

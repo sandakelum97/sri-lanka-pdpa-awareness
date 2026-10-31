@@ -1,7 +1,7 @@
 {
  "name": "V02-is-the-law-in-force-EN",
- "cards_dir": "v02/en",
- "out": "v02",
+ "cards_dir": "cards/v02-en",
+ "out": "out/v02",
  "captions": [
   {
    "id": "c1",
@@ -48,7 +48,7 @@
   },
   {
    "type": "clip",
-   "src": "../Generated Once (In Progress)/gemini_generated_video_d8e32e8d.mp4",
+   "src": "../02-generated-drafts/video/2026-10-31_gemini_broll_d8e32e8d.mp4",
    "in": 0,
    "dur": 5,
    "cap": "c1",
@@ -63,7 +63,7 @@
   },
   {
    "type": "clip",
-   "src": "../Generated Once (In Progress)/gemini_generated_video_34ed45c3.mp4",
+   "src": "../02-generated-drafts/video/2026-10-31_gemini_broll_34ed45c3.mp4",
    "in": 0,
    "dur": 5,
    "cap": "c3",
@@ -78,7 +78,7 @@
   },
   {
    "type": "clip",
-   "src": "../Generated Once (In Progress)/gemini_generated_video_988ab2a9.mp4",
+   "src": "../02-generated-drafts/video/2026-10-31_gemini_broll_988ab2a9.mp4",
    "in": 0,
    "dur": 6,
    "cap": "c5",
@@ -93,7 +93,7 @@
   },
   {
    "type": "clip",
-   "src": "../Generated Once (In Progress)/gemini_generated_video_988ab2a9.mp4",
+   "src": "../02-generated-drafts/video/2026-10-31_gemini_broll_988ab2a9.mp4",
    "in": 4,
    "dur": 5,
    "cap": "c7",

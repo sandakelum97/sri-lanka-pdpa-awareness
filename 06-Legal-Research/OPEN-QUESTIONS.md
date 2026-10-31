@@ -1,0 +1,23 @@
+# Open Research Questions and Verification Backlog
+
+Version 1.0 · 31 Oct 2026. Each item must be closed with a source reference before the related content is published.
+
+| ID | Question | Why it matters | How to close | Owner / status |
+|---|---|---|---|---|
+| OQ-01 | Open GAZ-01 (2341/59) PDF and confirm it appoints 17 Jul 2023 for Part V. | Only stated second-hand (DPA circular, DPA website, Wikipedia). | Download and read the EN and SI PDFs. | CLOSED 31 Oct 2026 — EN text confirms: Order dated 19 Jul 2023 under s.1(5), Part V from 17 Jul 2023. SI check still pending under OQ-03. |
+| OQ-02 | Confirm the date the Amendment Act's amendments took legal effect (certification 30 Oct 2025 vs. publication 31 Oct 2025) and whether any transitional provision applies. | Needed for "What's Changed" dates and for s.51A/s.52 timing. | Legal reviewer; Article 79 of the Constitution and the Interpretation Ordinance. | Open |
+| OQ-03 | Compare the Sinhala text of both Acts with the English text for every section quoted on the site. | Sinhala text prevails (ss.57 and 16). | Bilingual legal reviewer; record discrepancies in `06-Legal-Research/text-discrepancies.md`. | Open |
+| OQ-04 | Has any s.52 rule or s.53 regulation been gazetted (even for internal DPA matters such as recruitment schemes)? | The Act requires Gazette publication; draft list on dpa.gov.lk may lag. | Search documents.gov.lk Gazette index for "Personal Data Protection" 2023–2026; check Parliament order papers for rules laid. | Open — none found in this pass |
+| OQ-05 | Is DRF-08 (Classification of Data Categories Directive, 13 Sep 2024) still live or withdrawn? | Appeared in a cached snippet, absent from the current Downloads page. | Email info@dpa.gov.lk or check Wayback Machine. | Open |
+| OQ-06 | s.52(2) (as amended) required first rules within 36 months of Part V commencement (by 17 Jul 2026). Were any made, and what is the consequence if not? | Affects accuracy of the "DPA rules" page. | As OQ-04; legal reviewer on consequence. | Open |
+| OQ-07 | Are the Oct 2024 drafts going to be re-issued after the Amendment Act? Any new consultation in 2026? | Drafts cite repealed provisions (s.26(4), s.17(6)). | Monitor dpa.gov.lk Downloads; DPA LinkedIn; Gazette. | Open |
+| OQ-08 | Current Board, Chairperson and Director-General of the DPA. | For the "Who is the DPA" page. | https://www.dpa.gov.lk/directornewl.php; Gazette appointments. Do not rely on blogs. | Open |
+| OQ-09 | Which Minister is "the Minister assigned the subject of data protection" today, and has the subject been reassigned (Technology → Digital Economy)? | Commencement Orders cite different ministries over time. | Gazette on assignment of subjects to Ministers (2024/2025). | Open |
+| OQ-10 | Sector-specific laws that overlap (CBSL Financial Consumer Protection Regulations No. 1 of 2023, Banking Act secrecy, Electronic Transactions Act, RTI Act, Online Safety Act No. 9 of 2024, Computer Crime Act, Telecommunications Act). | s.3 interaction page; small-business scenarios (banks, telcos). | Collect primary texts into `06-Legal-Research/related-laws/`. | Open |
+| OQ-11 | Retention periods required by other laws (Inland Revenue Act, Shop and Office Employees Act, EPF/ETF, Companies Act). | s.9 guidance for small businesses must not contradict them. | Legal reviewer. | Open |
+| OQ-12 | Has the DPA published anything on complaint intake (form, email, portal) ahead of Part II/Part VII commencement? | "How to raise a concern" page. | Check dpa.gov.lk/faq1.php, contact page. | Open |
+| OQ-13 | Has any DPA annual report (s.48) been tabled in Parliament? | Enforcement/activity information. | Parliament library search. | Open |
+| OQ-14 | Exact issue date of Circular 01/2026 (PDF says "August 2026"; website says 7 Aug 2026). | Citation accuracy. | Use website date; note discrepancy. | Low priority |
+| OQ-15 | Official Sinhala terminology for key defined terms (controller, processor, data subject, consent, special categories, DPO). | Glossary consistency. | Extract from the official Sinhala Act text (not machine translation). | Open |
+| OQ-16 | Confirm Bill reading dates and sponsoring Ministry for both Acts from Parliament Bill-details pages (G6242, G6384). | Timeline accuracy; currently from Wikipedia/news. | https://www.parliament.lk/en/business-of-parliament/bill-details/G6242 and /G6384. | Open |
+| OQ-17 | Does the DPA already accept breach reports / complaints informally before Part III/VII commence? (WEB-10 sections B and D describe these processes.) | "What to do now" guidance for businesses and citizens. | Read WEB-10 sections B–D in full; email info@dpa.gov.lk. | Open |

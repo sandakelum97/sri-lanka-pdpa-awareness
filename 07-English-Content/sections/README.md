@@ -26,9 +26,11 @@ Status: draft, unreviewed. Both Parts come into operation on 1 January 2027 (Gaz
 | 25 | s25-risk-mitigation.md | organisation, technical |
 | 26 | s26-cross-border-data-flows.md | all, technical |
 
-## Not yet drafted
+## Also drafted (see README-scope-and-not-in-force.md)
 - ss.2–3 (scope; relationship with other laws) — status 2027.
-- Part II (ss.13–19), Part IV (s.27), Part VII (ss.38–40) — status NO; to be drafted with prominent "not in force" framing.
+- Part II (ss.13–19), Part IV (s.27), Part VII (ss.38–40) — status NO, with "not in force" banners.
+
+## Not yet drafted
 - Part V (ss.28–35) — status IN; "Who is the Data Protection Authority" page.
 
 ## Review notes for the legal reviewer

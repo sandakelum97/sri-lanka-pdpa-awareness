@@ -53,6 +53,7 @@ Target: close all P1-related open questions and have every official document sto
 |---|---|---|---|
 | 2.1 | Bilingual glossary from s.56 definitions | v0.1 drafted — 20 Sinhala terms read from official Unicode texts, 12 pending OQ-18; reviewer sign-off pending | 07-English-Content/glossary/GLOSSARY-bilingual-v0.1.md |
 | 2.2 | Plain-English explanations for Part I and Part III (status 2027) | v0.1 drafted 31 Oct 2026 — 16 section files + index, unreviewed | 07-English-Content/sections/ |
+| 2.2b | ss.2–3 and the not-in-force Parts II, IV, VII | v0.1 drafted 31 Oct 2026 — 13 section files, unreviewed | 07-English-Content/sections/ |
 | 2.3 | Small-business pathway and scenarios | Not started | 07-English-Content/pathways/, scenarios/ |
 | 2.4 | FAQ | Not started | 07-English-Content/faq/ |
 | 2.5 | Sinhala explanations | Blocked on reviewer + OQ-18 | 08-Sinhala-Content/ |

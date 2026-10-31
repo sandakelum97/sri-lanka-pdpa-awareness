@@ -1,6 +1,6 @@
 # Infographic briefs (Gemini image generation / Canva)
 
-Six already exist as vector SVGs in `11-Website-Development/site/public/img/` and can be restyled rather than regenerated. Briefs for new ones below. All: brand palette, Noto Sans / Noto Sans Sinhala, end line "Checked <date> · Mage Datta · not legal advice", no emblem, no DPA logo. Produce EN and SI versions; Sinhala text from the glossary only.
+Six already exist as vector SVGs in `11-Website-Development/site/public/img/` and can be restyled rather than regenerated. Briefs for new ones below. All: brand palette, Noto Sans / Noto Sans Sinhala, end line "Checked <date> · Datta Saviya · not legal advice", no emblem, no DPA logo. Produce EN and SI versions; Sinhala text from the glossary only.
 
 | ID | Title | Content (exact) | Format |
 |---|---|---|---|

@@ -1,11 +1,13 @@
-/* Mage Datta — design tokens
+@font-face { font-family: 'Noto Sans'; src: url('/fonts/noto-sans-latin.woff2') format('woff2'); font-weight: 100 900; font-display: swap; unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD; }
+@font-face { font-family: 'Noto Sans Sinhala'; src: url('/fonts/noto-sans-sinhala.woff2') format('woff2'); font-weight: 100 900; font-display: swap; unicode-range: U+0D81-0DF4, U+111E1-111F4, U+200C-200D, U+25CC; }
+/* Datta Saviya — design tokens
    lagoon #0F6E6B (brand) · mango #F2B33D (attention) · ink #14213D · paper #FFFFFF · mist #EEF3F2 · ember #A62639 (not in force)
    Type: one family — Noto Sans + Noto Sans Sinhala (self-host under /fonts before launch). */
 :root {
   --lagoon: #0F6E6B; --lagoon-deep: #0B5553; --mango: #F2B33D; --ink: #14213D; --paper: #FFFFFF; --mist: #EEF3F2; --mist-2: #DCE8E6; --ember: #A62639;
   --text: #1B2433; --muted: #5A6A78;
   --in: #1C7A3E; --soon: #9A6400; --no: #A62639;
-  --measure: 66ch; --wide: 72rem;
+  --measure: 68ch; --wide: 80rem;
   --r: 14px;
 }
 * { box-sizing: border-box; }
@@ -24,11 +26,17 @@ a:focus-visible, button:focus-visible { outline: 3px solid var(--mango); outline
 
 /* header */
 .site-header { position: sticky; top: 0; z-index: 20; background: var(--paper); border-bottom: 3px solid var(--lagoon); }
-.site-header .inner { max-width: var(--wide); margin: 0 auto; padding: .6rem 1rem; display: flex; flex-wrap: wrap; align-items: center; gap: .5rem 1.25rem; }
+.site-header .inner { position: relative; max-width: var(--wide); margin: 0 auto; padding: .6rem 1rem; display: flex; flex-wrap: nowrap; align-items: center; gap: .5rem 1.25rem; }
 .brand { display: flex; align-items: baseline; gap: .5rem; text-decoration: none; color: var(--ink); }
 .brand .si { font-family: "Noto Sans Sinhala", "Iskoola Pota", sans-serif; font-size: 1.35rem; font-weight: 700; color: var(--lagoon); }
 .brand .en { font-weight: 700; font-size: 1.05rem; }
+@media (max-width: 480px) { .brand small { display: none; } .brand .en { font-size: .95rem; } }
 .brand small { display: block; font-weight: 400; font-size: .72rem; color: var(--muted); }
+details.menu { margin-left: auto; }
+details.menu > summary { list-style: none; display: none; cursor: pointer; width: 2.4rem; height: 2.4rem; border-radius: 8px; border: 1px solid var(--mist-2); padding: .55rem .5rem; flex-direction: column; justify-content: space-between; }
+details.menu > summary::-webkit-details-marker { display: none; }
+details.menu > summary span { display: block; height: 3px; background: var(--ink); border-radius: 2px; }
+@media (max-width: 900px) { .brand .en { display: inline; } details.menu > summary { display: flex; } details.menu:not([open]) nav.primary { display: none; } details.menu[open] nav.primary { flex-direction: column; gap: .2rem; position: absolute; left: 0; right: 0; top: 100%; background: var(--paper); border-bottom: 3px solid var(--lagoon); padding: .8rem 1rem 1rem; } details.menu[open] nav.primary a { padding: .55rem 0; font-size: 1.05rem; } }
 nav.primary { display: flex; flex-wrap: wrap; gap: .1rem .95rem; margin-left: auto; }
 nav.primary a { text-decoration: none; color: var(--ink); padding: .3rem 0; border-bottom: 2px solid transparent; }
 nav.primary a[aria-current="page"], nav.primary a:hover { border-color: var(--mango); }
@@ -41,13 +49,21 @@ main { max-width: var(--wide); margin: 0 auto; padding: 1rem 1rem 3rem; }
 
 /* hero */
 .hero { position: relative; border-radius: var(--r); overflow: hidden; background: var(--lagoon); color: #fff; margin: .5rem 0 1.5rem; }
-.hero .copy { padding: 2.2rem 1.6rem 1.2rem; max-width: 46rem; }
+.hero { display: grid; grid-template-columns: 1fr 1.15fr; align-items: center; gap: 1rem; }
+.hero .copy { padding: 2.4rem 1.8rem 2rem; max-width: 40rem; }
+.hero .art { padding: 1.2rem 1.2rem 1.2rem 0; }
+@media (max-width: 900px) { .hero { grid-template-columns: 1fr; } .hero .art { padding: 0 1rem 1rem; } }
 .hero h1 { color: #fff; margin: 0 0 .6rem; font-size: clamp(2rem, 5vw, 3.1rem); }
 .hero h1 .si { display: block; font-family: "Noto Sans Sinhala", "Iskoola Pota", sans-serif; color: var(--mango); font-size: .55em; margin-top: .4rem; font-weight: 600; }
 .hero p { color: #E7F2F1; font-size: 1.08rem; max-width: 42rem; }
 .hero img { display: block; width: 100%; height: auto; }
+.hero .lede { font-size: 1.12rem; }
 .hero .cta { display: inline-block; background: var(--mango); color: var(--ink); font-weight: 700; padding: .7rem 1.2rem; border-radius: 999px; text-decoration: none; margin: .4rem .5rem .8rem 0; }
 .hero .cta.alt { background: transparent; color: #fff; border: 2px solid #fff; }
+
+/* trust bar */
+.trust { display: flex; flex-wrap: wrap; gap: .6rem 1.6rem; font-size: .9rem; color: var(--muted); margin: .4rem 0 1.4rem; }
+.trust span::before { content: '✓ '; color: var(--in); font-weight: 700; }
 
 /* status strip */
 .status-strip { display: grid; gap: .75rem; grid-template-columns: repeat(auto-fit, minmax(14rem, 1fr)); margin: 1.2rem 0 1.5rem; }
@@ -73,18 +89,30 @@ main { max-width: var(--wide); margin: 0 auto; padding: 1rem 1rem 3rem; }
 .tile span { color: var(--muted); font-size: .95rem; }
 .tile .si { display: block; font-family: "Noto Sans Sinhala", "Iskoola Pota", sans-serif; color: var(--lagoon); font-size: .95rem; margin-top: .3rem; }
 
+.scenarios { counter-reset: sc; }
 /* scenario list */
 .scenarios { display: grid; gap: .6rem; grid-template-columns: repeat(auto-fit, minmax(17rem, 1fr)); }
 .scenarios a { display: flex; gap: .7rem; align-items: center; text-decoration: none; color: var(--ink); padding: .7rem .9rem; border: 1px solid var(--mist-2); border-radius: 10px; }
 .scenarios a:hover { border-color: var(--lagoon); }
 .scenarios .n { font-weight: 700; color: var(--lagoon); min-width: 1.6rem; }
 
+/* downloads */
+.dl table { width: 100%; border-collapse: collapse; font-size: .95rem; }
+.dl th, .dl td { border-bottom: 1px solid var(--mist-2); padding: .6rem .5rem; text-align: left; vertical-align: top; }
+.dl th { color: var(--muted); font-weight: 600; font-size: .85rem; }
+.dl .langs a { display: inline-block; margin-right: .5rem; padding: .15rem .6rem; border: 1px solid var(--lagoon); border-radius: 6px; text-decoration: none; font-weight: 600; font-size: .85rem; }
+.dl .warn { color: var(--ember); font-weight: 600; }
+
+.dl details.hash summary { cursor: pointer; color: var(--lagoon); font-weight: 600; font-size: .85rem; }
+.dl details.hash code { font-size: .7rem; word-break: break-all; display: block; margin-top: .3rem; }
+
 /* figures */
 figure { margin: 1.5rem 0; } figure img { width: 100%; height: auto; border: 1px solid var(--mist-2); border-radius: var(--r); background: #fff; }
+figure a.zoom { display: block; } @media (max-width: 640px) { figure a.zoom::after { content: 'Tap to open full size'; display: block; font-size: .8rem; color: var(--lagoon); margin-top: .3rem; } }
 figcaption { font-size: .85rem; color: var(--muted); margin-top: .4rem; }
 
 /* prose */
-.prose table { border-collapse: collapse; width: 100%; font-size: .95rem; margin: 1rem 0; display: block; overflow-x: auto; }
+.prose table, .dl table, table.prose { border-collapse: collapse; width: 100%; font-size: .95rem; margin: 1rem 0; display: block; overflow-x: auto; max-width: 100%; -webkit-overflow-scrolling: touch; }
 .prose th, .prose td { border: 1px solid var(--mist-2); padding: .5rem .6rem; vertical-align: top; text-align: left; }
 .prose th { background: var(--mist); }
 .prose blockquote { border-left: 5px solid var(--lagoon); margin: 1rem 0; padding: .4rem 1rem; background: var(--mist); color: var(--ink); border-radius: 0 8px 8px 0; }

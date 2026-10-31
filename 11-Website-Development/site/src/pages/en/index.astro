@@ -2,18 +2,19 @@
 import Base from '../../layouts/Base.astro';
 import { getCollection } from 'astro:content';
 import { asOf } from '../../lib/status';
-const scenarios = (await getCollection('scenarios')).sort((a, b) => a.id.localeCompare(b.id));
+const scenarios = (await getCollection('scenarios')).sort((a, b) => parseInt(a.id) - parseInt(b.id));
 ---
 <Base title="Understanding Sri Lanka's data protection law" lang="en" welcome={true} description="What Sri Lanka's Personal Data Protection Act asks of shops, schools, hospitals, employers and websites — and what it gives you. Plain language, checked against the official texts.">
   <section class="hero">
     <div class="copy">
       <h1>Your personal data. Your rights. Your responsibility.<span class="si">ඔබේ පෞද්ගලික දත්ත. ඔබේ අයිතිවාසිකම්. ඔබේ වගකීම.</span></h1>
-      <p>A pharmacy writes down your NIC number. A tuition class keeps your child's grades on a phone. A shop sends you offers you never asked for. Sri Lanka now has a law about all of this. Here is what it says, in words you can use — and, just as important, which parts are actually in force.</p>
+      <p class="lede">A pharmacy writes down your NIC number. A tuition class keeps your child's grades on a phone. A shop sends offers you never asked for. Sri Lanka now has a law about all of this. Here is what it says, in words you can use — and which parts are actually in force.</p>
       <a class="cta" href="/en/pathways/">Start here: who are you?</a>
       <a class="cta alt" href="/en/status/">What is in force today</a>
     </div>
-    <img src="/img/hero-street.svg" alt="A pharmacy counter, a tuition class, a person on a phone, a CCTV camera and a delivery rider" width="1200" height="300" />
+    <div class="art"><img src="/img/hero-street.svg" alt="Five everyday places where personal data changes hands: a pharmacy, a tuition class, your phone, a shop camera, a home delivery" width="1200" height="420" /></div>
   </section>
+  <div class="trust"><span>Every statement cites the section of the Act</span><span>Checked against the Gazettes on {asOf}</span><span>No cookies, no trackers</span><span>Open source — <a href="/en/downloads/">official documents</a> one click away</span></div>
 
   <div class="status-strip" aria-label="Where the law stands">
     <div><b>The regulator exists</b><span>The Data Protection Authority has been in place since 2023 and can already investigate complaints.</span></div>
@@ -36,14 +37,14 @@ const scenarios = (await getCollection('scenarios')).sort((a, b) => a.id.localeC
   </div>
 
   <h2>The whole law on one line</h2>
-  <figure><img src="/img/status-timeline.svg" alt="Timeline: Act certified March 2022; regulator created July 2023; staff and fund December 2023; the March 2025 start date cancelled; duties on businesses begin 1 January 2027; rights, marketing rules and fines have no date" width="1000" height="360" /><figcaption>Checked against Gazettes 2341/59, 2366/08, 2427/34 and 2498/16 on {asOf}.</figcaption></figure>
+  <figure><a class="zoom" href="/img/status-timeline.svg" target="_blank" rel="noopener"><img src="/img/status-timeline.svg" alt="Timeline: Act certified March 2022; regulator created July 2023; staff and fund December 2023; the March 2025 start date cancelled; duties on businesses begin 1 January 2027; rights, marketing rules and fines have no date" width="1000" height="360" /></a><figcaption>Checked against Gazettes 2341/59, 2366/08, 2427/34 and 2498/16 on {asOf}.</figcaption></figure>
 
   <h2>Three words you need</h2>
-  <figure><img src="/img/who-is-who.svg" alt="Data subject: the person. Controller: the business that decides. Processor: the helper acting on instructions." width="1000" height="420" /><figcaption>From section 56 of the Act. <a href="/en/glossary/">The full glossary, in English and Sinhala.</a></figcaption></figure>
+  <figure><a class="zoom" href="/img/who-is-who.svg" target="_blank" rel="noopener"><img src="/img/who-is-who.svg" alt="Data subject: the person. Controller: the business that decides. Processor: the helper acting on instructions." width="1000" height="420" /></a><figcaption>From section 56 of the Act. <a href="/en/glossary/">The full glossary, in English and Sinhala.</a></figcaption></figure>
 
   <h2>Questions people ask</h2>
   <p><a href="/en/faq/#can-a-business-ask-for-my-nic-number">Can a business ask for my NIC number?</a> · <a href="/en/faq/#can-my-employer-share-my-personal-information">Can my employer share my information?</a> · <a href="/en/faq/#what-should-i-do-if-my-personal-data-is-leaked">My data was leaked. What now?</a> · <a href="/en/faq/#i-own-a-small-shop-does-this-law-affect-me">I own a small shop — does this affect me?</a> · <a href="/en/faq/">All questions</a></p>
 
   <h2>Check our work</h2>
-  <p>Everything here traces back to the official texts: the <a href="https://www.dpa.gov.lk/acts/Data%20Protection%20Act%20SL%20-%20English%20%282%29.pdf" rel="noopener">Act No. 9 of 2022</a>, the <a href="https://www.parliament.lk/uploads/acts/gbills/english/6384.pdf" rel="noopener">Amendment Act No. 22 of 2025</a>, and the <a href="https://www.dpa.gov.lk/guidelines.php" rel="noopener">Gazettes and DPA publications</a>. If we got something wrong, the source is one click away.</p>
+  <p>Everything here traces back to the official texts. <a href="/en/downloads/">Download the Act, the amendment, every Gazette and the DPA's circular</a> in Sinhala, Tamil and English — straight from the official sites. If we got something wrong, the source is one click away, and so is <a href="https://github.com/sandakelum97/sri-lanka-pdpa-awareness/issues" rel="noopener">telling us</a>.</p>
 </Base>

@@ -2,7 +2,7 @@
 Source: s.1; Gazettes 2341/59, 2366/08, 2427/34, 2498/16 · Status: mixed
 
 **VO (EN)**
-Sri Lanka passed a data protection law in 2022. So is it in force? Partly — and the "partly" matters. The regulator, the Data Protection Authority, has existed since 2023. The duties on businesses — have a lawful reason, tell people what you collect, keep it safe, report leaks — start on the first of January 2027. And your rights to see your file, correct it, or have it deleted? Written into the Act. But no start date. Same for the rules on marketing messages, and the fines. You may have read it all started on 18 March 2025. That date was cancelled four days before it arrived. We track every section at magedatta.
+Sri Lanka passed a data protection law in 2022. So is it in force? Partly — and the "partly" matters. The regulator, the Data Protection Authority, has existed since 2023. The duties on businesses — have a lawful reason, tell people what you collect, keep it safe, report leaks — start on the first of January 2027. And your rights to see your file, correct it, or have it deleted? Written into the Act. But no start date. Same for the rules on marketing messages, and the fines. You may have read it all started on 18 March 2025. That date was cancelled four days before it arrived. We track every section at dattasaviya.
 
 **OST**: timeline animation — 2022 passed · 2023 regulator · 1 Jan 2027 duties · "Rights, marketing, fines: no date" · "18 March 2025 — cancelled"
 

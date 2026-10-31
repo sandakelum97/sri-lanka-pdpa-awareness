@@ -2,7 +2,7 @@
 Source: ss.2, 5–12 · Status: 2027
 
 **VO (EN)**
-You've got a kade. Customers' numbers in your phone. A book of regulars. Maybe a camera. Does a data protection law really apply to you? Yes — there's no exemption for small businesses. But breathe: what you have to do is sized to what you are. From January 2027 it comes down to this. Have a reason for what you collect, and collect only that. Tell people why — a card at the counter is enough. Keep it safe — a lock on the phone, the book not left on the counter. Don't keep it forever. And if you lose it, write down what happened. One page of notes is your compliance programme. The checklist is at magedatta.
+You've got a kade. Customers' numbers in your phone. A book of regulars. Maybe a camera. Does a data protection law really apply to you? Yes — there's no exemption for small businesses. But breathe: what you have to do is sized to what you are. From January 2027 it comes down to this. Have a reason for what you collect, and collect only that. Tell people why — a card at the counter is enough. Keep it safe — a lock on the phone, the book not left on the counter. Don't keep it forever. And if you lose it, write down what happened. One page of notes is your compliance programme. The checklist is at dattasaviya.
 
 **OST**: "No small-business exemption" · "Sized to your business (s.12)" · checklist ticks: reason · notice · safe · not forever · record leaks
 

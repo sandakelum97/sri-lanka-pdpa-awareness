@@ -5,14 +5,15 @@ const { lang, path } = Astro.props;
 const other = lang === 'en' ? 'si' : 'en';
 const otherPath = path.replace(/^\/(en|si)/, `/${other}`);
 const t = lang === 'en'
-  ? { sections: 'The Act', scenarios: 'Real situations', pathways: 'Start here', faq: 'Questions', glossary: 'Glossary', status: 'What is in force', search: 'Search', switch: 'සිංහල' }
-  : { sections: 'පනත', scenarios: 'සැබෑ අවස්ථා', pathways: 'මෙතැනින් පටන් ගන්න', faq: 'ප්‍රශ්න', glossary: 'වචන මාලාව', status: 'ක්‍රියාත්මක මොනවාද', search: 'සොයන්න', switch: 'English' };
+  ? { sections: 'The Act', scenarios: 'Real situations', pathways: 'Start here', faq: 'Questions', glossary: 'Glossary', status: 'What is in force', downloads: 'Official documents', search: 'Search', switch: 'සිංහල' }
+  : { sections: 'පනත', scenarios: 'සැබෑ අවස්ථා', pathways: 'මෙතැනින් පටන් ගන්න', faq: 'ප්‍රශ්න', glossary: 'වචන මාලාව', status: 'ක්‍රියාත්මක මොනවාද', downloads: 'නිල ලේඛන', search: 'සොයන්න', switch: 'English' };
 const cur = (p: string) => (path.startsWith(`/${lang}/${p}`) ? 'page' : undefined);
 ---
 <header class="site-header"><div class="inner">
   <a class="brand" href={`/${lang}/`}>
     <span class="si">{site.name.si}</span><span class="en">{site.name.en}<small>{site.kind[lang]}</small></span>
   </a>
+  <details class="menu"><summary aria-label={lang === 'en' ? 'Menu' : 'මෙනුව'}><span></span><span></span><span></span></summary>
   <nav class="primary" aria-label={lang === 'en' ? 'Main' : 'ප්‍රධාන'}>
     <a href={`/${lang}/pathways/`} aria-current={cur('pathways')}>{t.pathways}</a>
     <a href={`/${lang}/scenarios/`} aria-current={cur('scenarios')}>{t.scenarios}</a>
@@ -20,7 +21,9 @@ const cur = (p: string) => (path.startsWith(`/${lang}/${p}`) ? 'page' : undefine
     <a href={`/${lang}/status/`} aria-current={cur('status')}>{t.status}</a>
     <a href={`/${lang}/faq/`} aria-current={cur('faq')}>{t.faq}</a>
     <a href={`/${lang}/glossary/`} aria-current={cur('glossary')}>{t.glossary}</a>
+    <a href={`/${lang}/downloads/`} aria-current={cur('downloads')}>{t.downloads}</a>
     <a href={`/${lang}/search/`} aria-current={cur('search')}>{t.search}</a>
     <a class="lang" href={otherPath} lang={other} hreflang={other}>{t.switch}</a>
   </nav>
+  </details>
 </div></header>

@@ -76,7 +76,11 @@ Glossary v0.1 · 30 section explainers · 12 scenarios · 4 audience pathways + 
 | 3.5 | Design pass v2: identity (Mage Datta), palette, hero illustration, welcome dialog, six SVG infographics | Done 31 Oct 2026 | site/public/img, src/styles |
 | 3.6 | Copy rewrite in plainer voice (home, start-here, FAQ, citizen pathway) | Done for those pages; sections/scenarios still v0.1 voice | |
 | 3.7 | Sinhala drafts on site (home, FAQ, citizen + small-business pathways) | Done — labelled unverified | 08-Sinhala-Content |
-| 3.8 | Self-hosted fonts, sitemap, accessibility audit | Pending | |
+| 3.8 | Self-hosted Noto fonts (OFL), sitemap, robots, security.txt, CSP + security headers, favicon | Done 31 Oct 2026 | site/public |
+| 3.9 | Responsive verification at 390/820/1366 px — no horizontal overflow on any page; mobile menu; tappable infographics | Done 31 Oct 2026 (Playwright) | |
+| 3.10 | Official documents page with publisher links + SHA-256 fingerprints; About page | Done 31 Oct 2026 | /en/downloads, /en/about |
+| 3.11 | Name changed to Datta Saviya | Done 31 Oct 2026 | NAME-OPTIONS.md |
+| 3.12 | Accessibility audit (axe), Tamil UI shell, hero illustration by a designer, OG images | Pending | |
 
 ## Phase 4 — started 31 Oct 2026
 

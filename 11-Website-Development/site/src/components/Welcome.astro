@@ -18,7 +18,7 @@ const { lang } = Astro.props;
 <script is:inline>
 (() => {
   const dlg = document.getElementById('welcome'); if (!dlg || typeof dlg.showModal !== 'function') return;
-  const KEY = 'magedatta.welcome';
+  const KEY = 'dattasaviya.welcome';
   let saved = null; try { saved = JSON.parse(localStorage.getItem(KEY) || 'null'); } catch (e) {}
   const page = location.pathname.startsWith('/si') ? 'si' : 'en';
   const who = {
@@ -33,6 +33,9 @@ const { lang } = Astro.props;
   };
   dlg.querySelectorAll('[data-lang]').forEach(b => b.addEventListener('click', () => { lang = b.dataset.lang; render(); }));
   document.getElementById('skipw').addEventListener('click', () => { try { localStorage.setItem(KEY, JSON.stringify({ lang, who: null, t: Date.now() })); } catch (e) {} dlg.close(); if (lang !== page) location.href = `/${lang}/`; });
-  if (!saved && (location.pathname === '/en/' || location.pathname === '/si/')) { render(); dlg.showModal(); }
+  const stale = saved && saved.t && (Date.now() - saved.t) > 90*24*3600*1000;
+  const onHome = location.pathname === '/en/' || location.pathname === '/si/';
+  if ((!saved || stale) && onHome) { render(); dlg.showModal(); }
+  document.querySelectorAll('[data-open-welcome]').forEach(b => b.addEventListener('click', (e) => { e.preventDefault(); render(); dlg.showModal(); }));
 })();
 </script>

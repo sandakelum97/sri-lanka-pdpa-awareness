@@ -3,10 +3,10 @@
 For use with Gemini (image and video generation), NotebookLM (audio overviews / podcast-style explainers) and similar tools. Everything here was written from the research repository; nothing in it may be changed by a generator without a human re-checking it against `06-Legal-Research/COMMENCEMENT-STATUS.md`.
 
 ## Brand to use in every asset
-- Name: **මගේ දත්ත · Mage Datta** — "an independent public-education initiative".
+- Name: **දත්ත සවිය · Datta Saviya** — "an independent public-education initiative".
 - Colours: lagoon green #0F6E6B, mango yellow #F2B33D, ink #14213D, white. Never Sri Lankan flag colours or any government emblem.
 - Type: Noto Sans / Noto Sans Sinhala.
-- Every video and infographic ends with: "Checked against the official Gazettes on <date> · magedatta.lk (placeholder) · Not legal advice · Not the Data Protection Authority".
+- Every video and infographic ends with: "Checked against the official Gazettes on <date> · dattasaviya.lk (placeholder) · Not legal advice · Not the Data Protection Authority".
 
 ## Legal guardrails (paste these into every generation prompt)
 1. The Act is only partly in force. Duties on businesses start 1 January 2027. Individuals' rights (Part II), marketing-message rules (Part IV) and penalties (Part VII) have no start date. Never say or imply the Act is fully in force.

@@ -1,0 +1,37 @@
+---
+import { docs, officialSites } from '../lib/downloads';
+import StatusBadge from './StatusBadge.astro';
+interface Props { lang: 'en' | 'si' }
+const { lang } = Astro.props;
+const groups: { key: typeof docs[number]['group']; en: string; si: string }[] = [
+  { key: 'act', en: 'The Act and its amendment', si: 'පනත සහ සංශෝධනය' },
+  { key: 'gazette', en: 'Commencement Gazettes', si: 'ක්‍රියාත්මක කිරීමේ ගැසට්' },
+  { key: 'circular', en: 'Authority circulars', si: 'අධිකාරියේ චක්‍රලේඛ' },
+  { key: 'draft', en: 'Consultation drafts (not law)', si: 'උපදේශන කෙටුම්පත් (නීති නොවේ)' },
+];
+const t = lang === 'en'
+  ? { doc: 'Document', date: 'Date', get: 'Download (official site)', verify: 'Verify (SHA-256)', sites: 'Official websites', intro: 'Every file below is linked from the publisher’s own server — we do not host copies. Beside each link is the SHA-256 fingerprint of the file as we retrieved it on 31 October 2026, so you can confirm your download is the same document. If a link breaks, the publisher moved it; tell us.', how: 'To verify on Windows: open PowerShell and run Get-FileHash <file> -Algorithm SHA256. On macOS or Linux: shasum -a 256 <file>.' }
+  : { doc: 'ලේඛනය', date: 'දිනය', get: 'බාගන්න (නිල අඩවියෙන්)', verify: 'තහවුරු කරන්න (SHA-256)', sites: 'නිල වෙබ් අඩවි', intro: 'පහත සෑම ගොනුවක්ම ප්‍රකාශකයාගේම සේවාදායකයෙන් සබැඳී ඇත — අපි පිටපත් සත්කාරකත්වය නොකරමු. ඔබ බාගත් ගොනුව එකම ලේඛනය දැයි තහවුරු කර ගැනීමට, 2026 ඔක්තෝබර් 31 දින අප ලබාගත් ගොනුවේ SHA-256 ඇඟිලි සලකුණ ද දක්වා ඇත.', how: 'Windows: PowerShell හි Get-FileHash <ගොනුව> -Algorithm SHA256. macOS/Linux: shasum -a 256 <ගොනුව>.' };
+---
+<p>{t.intro}</p>
+{groups.map((g) => (
+  <section class="dl">
+    <h2>{g[lang]}</h2>
+    <table>
+      <thead><tr><th>{t.doc}</th><th>{t.date}</th><th>{t.get}</th><th>{t.verify}</th></tr></thead>
+      <tbody>
+        {docs.filter((d) => d.group === g.key).map((d) => (
+          <tr>
+            <td><strong>{d.title[lang]}</strong> {d.status && d.status !== 'REPEALED' && d.status !== 'DRAFT' && <StatusBadge status={d.status} lang={lang} small />}{d.status === 'REPEALED' && <span class="badge badge-no badge-sm">{lang === 'en' ? 'Repealing order' : 'අවලංගු කිරීමේ නියමය'}</span>}{d.status === 'DRAFT' && <span class="badge badge-mixed badge-sm">{lang === 'en' ? 'Draft' : 'කෙටුම්පත'}</span>}<br /><span class="meta">{d.note[lang]} · {d.id}</span></td>
+            <td>{d.date}</td>
+            <td class="langs">{d.links.map((l) => <a href={l.url} rel="noopener" download>{l.lang}</a>)}</td>
+            <td><details class="hash"><summary>{lang === 'en' ? 'Show' : 'පෙන්වන්න'}</summary>{d.links.map((l) => l.sha256 ? <div><code>{l.lang}: {l.sha256}</code></div> : null)}</details></td>
+          </tr>
+        ))}
+      </tbody>
+    </table>
+  </section>
+))}
+<p class="meta">{t.how}</p>
+<h2>{t.sites}</h2>
+<ul>{officialSites.map((s) => <li><a href={s.url} rel="noopener">{s.name}</a> — {s.note[lang]}</li>)}</ul>

@@ -1,0 +1,31 @@
+---
+import Base from '../../layouts/Base.astro';
+import { site } from '../../lib/site';
+import { asOf } from '../../lib/status';
+---
+<Base title="About this project" lang="en" description="Who runs Datta Saviya, how the content is checked, and what we will never do with your data.">
+  <h1>About {site.name.en}</h1>
+  <p><strong>{site.name.si} · {site.name.en}</strong> means "data strength". It is an independent, volunteer-run public-education initiative that explains Sri Lanka's Personal Data Protection Act in plain Sinhala and English. It is not the Data Protection Authority, not a government service, and not a law firm.</p>
+
+  <h2>How we check what we publish</h2>
+  <ol>
+    <li>Every legal statement cites a section of the Act and names the Gazette or document it rests on. The sources are listed on the <a href="/en/downloads/">official documents</a> page with file fingerprints.</li>
+    <li>Every page shows whether the provision is in force, in force from 1 January 2027, or not in force. Those badges render from one data file that is re-checked against the Gazettes; the date of the last check appears in the footer ({asOf}).</li>
+    <li>Draft rules are always labelled as drafts. We never present a proposal as a requirement.</li>
+    <li>Content is written by people, with AI assistance for drafting and checking. Nothing is published without a human reading it against the Act. Pages marked "draft" or "unverified" have not yet had legal review — we show the label rather than hide it.</li>
+    <li>Everything is version-controlled in public. Mistakes, when found, are corrected in the open: <a href={site.repo} rel="noopener">source on GitHub</a>.</li>
+  </ol>
+
+  <h2>What we do with your data</h2>
+  <p>Nothing. This site sets no cookies, loads no third-party scripts, runs no analytics and has no accounts. Search runs inside your browser. The only thing stored is your language and audience choice, on your own device, if you make one — and you can clear it any time. A site about data protection should be able to say that.</p>
+
+  <h2>What we will not do</h2>
+  <ul>
+    <li>Give legal advice. For a decision that matters, speak to a lawyer; for a complaint, speak to the Data Protection Authority.</li>
+    <li>Use the Authority's name, emblem or branding, or imply any endorsement.</li>
+    <li>Publish anything about the law that we cannot trace to an official text.</li>
+  </ul>
+
+  <h2>Found an error?</h2>
+  <p>Open an issue on <a href={`${site.repo}/issues`} rel="noopener">GitHub</a> or write to the address in the repository. Corrections are logged on the <a href="/en/status/">status page</a> and in the public change history.</p>
+</Base>

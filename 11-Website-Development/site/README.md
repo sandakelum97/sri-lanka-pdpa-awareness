@@ -32,5 +32,13 @@ npm run build      # outputs dist/ and runs Pagefind
 ## Fonts
 Self-host Noto Sans and Noto Sans Sinhala under `public/fonts/` before launch (do not load from Google Fonts — avoids a third-party request on every page view).
 
+## Security and trust posture
+- No server, database, accounts, cookies, analytics or third-party scripts; search is client-side (Pagefind).
+- CSP (meta + `_headers` for Cloudflare/Netlify), `X-Frame-Options: DENY`, `Referrer-Policy: no-referrer`, HSTS, Permissions-Policy.
+- `/.well-known/security.txt`, `robots.txt`, sitemap.
+- Fonts self-hosted (Noto Sans, Noto Sans Sinhala — OFL) so no request leaves the origin.
+- Official documents page links only to publisher servers and shows SHA-256 fingerprints of the files as retrieved.
+- Dependabot recommended; `npm audit` before each release.
+
 ## Not yet built
 Sinhala content pages (blocked on review), sitemap/robots, self-hosted fonts, the small-business health-check tool, video embeds, the AI assistant (Phase 5).

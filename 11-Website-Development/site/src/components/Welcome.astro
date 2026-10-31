@@ -18,7 +18,7 @@ const { lang } = Astro.props;
 <script is:inline>
 (() => {
   const dlg = document.getElementById('welcome'); if (!dlg || typeof dlg.showModal !== 'function') return;
-  const KEY = 'dattasaviya.welcome';
+  const KEY = 'datasavi.welcome';
   let saved = null; try { saved = JSON.parse(localStorage.getItem(KEY) || 'null'); } catch (e) {}
   const page = location.pathname.startsWith('/si') ? 'si' : 'en';
   const who = {

@@ -27,7 +27,8 @@ a:focus-visible, button:focus-visible { outline: 3px solid var(--mango); outline
 /* header */
 .site-header { position: sticky; top: 0; z-index: 20; background: var(--paper); border-bottom: 3px solid var(--lagoon); }
 .site-header .inner { position: relative; max-width: var(--wide); margin: 0 auto; padding: .6rem 1rem; display: flex; flex-wrap: nowrap; align-items: center; gap: .5rem 1.25rem; }
-.brand { display: flex; align-items: baseline; gap: .5rem; text-decoration: none; color: var(--ink); }
+.brand { display: flex; align-items: center; gap: .55rem; text-decoration: none; color: var(--ink); }
+.brand img { width: 34px; height: 36px; }
 .brand .si { font-family: "Noto Sans Sinhala", "Iskoola Pota", sans-serif; font-size: 1.35rem; font-weight: 700; color: var(--lagoon); }
 .brand .en { font-weight: 700; font-size: 1.05rem; }
 @media (max-width: 480px) { .brand small { display: none; } .brand .en { font-size: .95rem; } }

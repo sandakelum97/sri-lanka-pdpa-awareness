@@ -5,3 +5,9 @@ Source: s.27 · Status: NO
 Offers from a shop you visited once. A WhatsApp broadcast you never joined. Sri Lanka's data protection Act has an answer: marketing messages only with your clear consent; the sender's name in every message; a free way to stop them. Here's the catch. That part of the Act — Part Four — has no start date. Not one. So today the rule is in the law but not in force. Businesses would be wise to build opt-in lists now. And if you run one: collecting numbers for deliveries and reusing them for offers will be a problem from 2027 anyway.
 
 **OST**: "Consent only · sender's name · free opt-out (s.27)" · big badge: "NOT YET IN FORCE — no date"
+
+## Cover (SI)
+**මාතෘකාව:** ප්‍රවර්ධන SMS
+**ආකර්ෂණ පේළිය:** කැමැත්තෙන් පමණයි — ඒත් තවම ක්‍රියාත්මක නැත.
+**තිරයේ පෙළ:** කැමැත්ත පමණයි · සෑම පණිවිඩයකම නම · නොමිලේ ඉවත් වීම
+**අවසන් කාඩ්පත:** IV වන කොටස: දිනයක් නැත · දත්ත සවිය · DataSavi · නීති උපදෙස් නොවේ

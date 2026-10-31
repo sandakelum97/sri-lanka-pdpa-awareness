@@ -11,7 +11,8 @@ const cur = (p: string) => (path.startsWith(`/${lang}/${p}`) ? 'page' : undefine
 ---
 <header class="site-header"><div class="inner">
   <a class="brand" href={`/${lang}/`}>
-    <span class="si">{site.name.si}</span><span class="en">{site.name.en}<small>{site.kind[lang]}</small></span>
+    <img src="/brand/mark.svg" alt="" width="34" height="36" />
+    <span class="si">{site.name.si}</span><span class="en">{site.name.en}<small>{site.tagline[lang]}</small></span>
   </a>
   <details class="menu"><summary aria-label={lang === 'en' ? 'Menu' : 'මෙනුව'}><span></span><span></span><span></span></summary>
   <nav class="primary" aria-label={lang === 'en' ? 'Main' : 'ප්‍රධාන'}>

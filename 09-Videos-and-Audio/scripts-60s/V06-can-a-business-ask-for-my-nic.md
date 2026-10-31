@@ -7,3 +7,9 @@ Source: ss.5, 7, 11 · Status: 2027
 **OST**: "Lawful reason (s.5)" · "Only what's needed (s.7)" · "Tell you why (s.11)" · "Ask: what do you need it for?"
 
 **Shots**: an NIC card sliding across a counter (generic, no real numbers), a photocopier, a raised hand.
+
+## Cover (SI)
+**මාතෘකාව:** හැඳුනුම්පත ඉල්ලන්න පුළුවන් ද?
+**ආකර්ෂණ පේළිය:** 2027 සිට: හේතුවක්, අවශ්‍ය දේ පමණක්, ඇයි කියා කීම.
+**තිරයේ පෙළ:** නීත්‍යානුකූල හේතුව (5) · අවශ්‍ය දේ පමණක් (7) · ඇයි කියා කියන්න (11)
+**අවසන් කාඩ්පත:** අහන්න: මේක මොකට ද? · දත්ත සවිය · DataSavi · නීති උපදෙස් නොවේ

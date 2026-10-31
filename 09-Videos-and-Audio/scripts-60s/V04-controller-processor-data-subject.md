@@ -7,3 +7,9 @@ Three words, one pharmacy. Kamala buys medicine. She's the data subject — the 
 **OST**: three cards — DATA SUBJECT (Kamala) · CONTROLLER (pharmacy) · PROCESSOR (cloud app, courier) · "Controller = the one who decides"
 
 **Shots**: storyboard from `public/img/who-is-who.svg`.
+
+## Cover (SI)
+**මාතෘකාව:** වචන තුනක්
+**ආකර්ෂණ පේළිය:** පාලකවරයා · දත්ත සකසන්නා · දත්ත ආයකයා
+**තිරයේ පෙළ:** කමලා — දත්ත ආයකයා · ෆාමසිය — පාලකවරයා · Cloud යෙදුම — දත්ත සකසන්නා
+**අවසන් කාඩ්පත:** තීරණය කරන්නා = පාලකවරයා · දත්ත සවිය · DataSavi · නීති උපදෙස් නොවේ

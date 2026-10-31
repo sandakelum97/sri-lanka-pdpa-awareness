@@ -87,7 +87,11 @@ Glossary v0.1 · 30 section explainers · 12 scenarios · 4 audience pathways + 
 | # | Task | Status | Output |
 |---|---|---|---|
 | 4.1 | Production pack for Gemini/NotebookLM: 12 video scripts (EN; SI drafts for 4), 5 podcast briefs, 8 infographic briefs, guardrails | Done | 09-Videos-and-Audio/ |
-| 4.2 | Generate and review assets | Owner, with tools | |
+| 4.2 | Generate and review assets | In progress — first batch reviewed 31 Oct; infographics usable, Gemini clips unusable (garbled text) | 09-Videos-and-Audio/TOOLS-AND-PIPELINE.md |
+| 4.3 | Video pipeline: Sinhala-correct cards/captions (Pillow+Raqm) + ffmpeg assembly + WebVTT sidecar | Done 31 Oct 2026 | 09-Videos-and-Audio/build/ |
+| 4.4 | First finished video V02 (EN, 56 s) + VTT | Done; awaiting human QA | 09-Videos-and-Audio/video/ |
+| 4.5 | Brand final: DataSavi, tagline, logo set | Done 31 Oct 2026 | site/public/brand |
+| 4.6 | Video player with side-panel transcript on the site | Pending | |
 
 ## Next steps (proposed)
 

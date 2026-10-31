@@ -7,3 +7,9 @@ If a company misuses your information in Sri Lanka, who do you go to? The Data P
 **OST**: "Data Protection Authority of Sri Lanka · est. 2023 · BMICH, Colombo 7" · "Can: investigate · inspect · order stop/fix/compensate" · "Cannot yet: fine" · info@dpa.gov.lk
 
 **Shots**: a simple building icon, a magnifying glass over a ledger, a stop sign — not the DPA's logo, not the national emblem.
+
+## Cover (SI)
+**මාතෘකාව:** දත්ත ආරක්ෂණ අධිකාරිය කවුද?
+**ආකර්ෂණ පේළිය:** පැමිණිලි විමර්ශනය කර නියෝග දිය හැකියි.
+**තිරයේ පෙළ:** 2023 සිට · BMICH, කොළඹ 7 · කළ හැකි: විමර්ශනය · පරීක්ෂාව · නියෝග · තවම කළ නොහැකි: දඩ
+**අවසන් කාඩ්පත:** info@dpa.gov.lk · දත්ත සවිය · DataSavi · නීති උපදෙස් නොවේ

@@ -1,6 +1,8 @@
 # Project name
 
-**Chosen (31 Oct 2026): දත්ත සවිය · Datta Saviya** — "data strength / data support".
+**Final (owner decision, 31 Oct 2026): දත්ත සවිය · DataSavi** — one-word English name, Sinhala identity kept. Tagline: **ඔබේ දත්ත. ඔබේ අයිතිය. · Your Data. Your Rights.** Logo: `11-Website-Development/site/public/brand/` (mark, light, dark) — a shield formed by two open hands holding a golden data dot.
+
+Earlier working name: Datta Saviya (two words).
 
 Why this one, judged as a brand for a public-interest initiative:
 - *Saviya* is a familiar civic word in Sri Lanka (community-support programmes use it), so it reads as empowerment, not enforcement or compliance.

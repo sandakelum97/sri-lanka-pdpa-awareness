@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 560 160" role="img" aria-labelledby="t"><title id="t">DataSavi — දත්ත සවිය</title>
+<defs><style>.si{font-family:'Noto Sans Sinhala','Iskoola Pota',sans-serif;font-weight:700}.en{font-family:'Noto Sans',system-ui,sans-serif;font-weight:700}.tag{font-family:'Noto Sans',system-ui,sans-serif;font-weight:400}</style></defs>
+<!-- mark: a shield drawn as two open hands meeting, with a data dot held safely inside -->
+<g transform="translate(12,16)">
+  <path d="M64 6 C88 14 108 18 122 18 V66 C122 96 98 118 64 130 C30 118 6 96 6 66 V18 C20 18 40 14 64 6 Z" fill="#0F6E6B"/>
+  <path d="M64 24 C80 30 94 33 104 33 V66 C104 86 88 102 64 112 C40 102 24 86 24 66 V33 C34 33 48 30 64 24 Z" fill="#FFFFFF"/>
+  <!-- two hands: simple curved strokes -->
+  <path d="M34 78 C40 62 52 56 64 60" fill="none" stroke="#14213D" stroke-width="6" stroke-linecap="round"/>
+  <path d="M94 78 C88 62 76 56 64 60" fill="none" stroke="#14213D" stroke-width="6" stroke-linecap="round"/>
+  <path d="M38 84 C50 96 78 96 90 84" fill="none" stroke="#14213D" stroke-width="6" stroke-linecap="round"/>
+  <!-- the data dot -->
+  <circle cx="64" cy="58" r="12" fill="#F2B33D"/>
+</g>
+<text x="160" y="72" class="si" font-size="46" fill="#0F6E6B">දත්ත සවිය</text>
+<text x="160" y="118" class="en" font-size="40" fill="#14213D">DataSavi</text>
+<text x="162" y="146" class="tag" font-size="15" fill="#5A6A78">ඔබේ දත්ත. ඔබේ අයිතිය. · Your Data. Your Rights.</text>
+</svg>

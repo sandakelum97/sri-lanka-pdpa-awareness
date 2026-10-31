@@ -11,6 +11,7 @@ dl() {  # dl <target path> <url>
 }
 
 # A. Acts
+# NOTE 31 Oct 2026: documents.gov.lk URLs below return 404 after the site's re-platforming (OQ-19). Kept for reference.
 dl 01-Original-Legislation/PDPA-2022-Act-09_EN.pdf "https://www.dpa.gov.lk/acts/Data%20Protection%20Act%20SL%20-%20English%20%282%29.pdf"
 dl 01-Original-Legislation/PDPA-2022-Act-09_SI.pdf "https://www.dpa.gov.lk/acts/Data%20Protection%20Act%20SL%20-%20Sinhala%20%281%29.pdf"
 dl 01-Original-Legislation/PDPA-2022-Act-09_TA.pdf "https://www.dpa.gov.lk/acts/act%20tamil.pdf"

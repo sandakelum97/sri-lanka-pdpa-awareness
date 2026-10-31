@@ -1,0 +1,932 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <meta name="author" content="Lahiru" />
+    <meta name="description" content="">
+    <link rel="icon" type="image/png" href="img/DPA_logo.png">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Data Protection Authority</title>
+    
+    <!-- Stylesheets & Fonts -->
+    <link href="css/plugins.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+
+    <style>
+        /* Table සහ Buttons ලස්සන කරන්න අවශ්‍ය CSS */
+        .page-title-heading {
+            margin-top: 30px;
+            margin-bottom: 20px;
+            font-size: 22px;
+            font-weight: 700;
+            color: #333;
+            border-left: 5px solid #007bff;
+            padding-left: 15px;
+        }
+
+        .table thead th {
+            background-color: #f8f9fa;
+            color: #333;
+            font-weight: 600;
+            text-transform: uppercase;
+            font-size: 13px;
+        }
+
+        /* බට්න් එකම ප්‍රමාණයට තබා ගැනීම */
+        .btn-download {
+            padding: 8px 0;
+            background-color: #007bff;
+            color: #fff !important;
+            text-decoration: none;
+            text-align: center;
+            border-radius: 4px;
+            font-size: 13px;
+            display: inline-block;
+            width: 100px; /* බට්න් එකම පළලකින් තබා ගැනීමට */
+            transition: all 0.3s ease;
+            border: none;
+            margin: 2px;
+        }
+
+        .btn-download:hover {
+            background-color: #0056b3;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+            transform: translateY(-1px);
+        }
+
+        /* බට්න් තියෙන තීරුව දකුණට කරන්න */
+        .action-cell {
+            text-align: right;
+            vertical-align: middle !important;
+            white-space: nowrap; /* බට්න් යටට යෑම වැලැක්වීමට */
+        }
+
+        .description-cell {
+            vertical-align: middle !important;
+            font-weight: 500;
+            color: #444;
+        }
+
+        .container {
+            padding-bottom: 50px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="body-inner">
+        <!--  <div id="topbar"  data-transparent="true" style="    background-image: radial-gradient(#1f9dcf, #0000000a);">
+
+    <div class="container">
+
+        <div class="row">
+
+            <div class="col-md-6">
+
+                <ul class="top-menu">
+
+                    <li><a href="#">Phone: +94 (0)112 697 241</a></li>
+
+                    <li><a href="#">Email: info@dpa.gov.lk</a></li>
+                    <li><a href="#">Opening : Mon - Fri 08.00 - 17.00</a></li>
+
+                </ul>
+
+            </div>
+
+
+        </div>
+
+    </div>
+
+</div> -->
+  <header id="header"  class="header-modern"   >
+
+
+
+            <div class="header-inner">
+
+
+
+                <div class="container">
+
+
+
+                    <!--Logo-->
+
+
+
+                 <a href="index.php">
+
+            <div id="logo">
+
+              
+              <img class="logo_main"  src="./img/logodpa.png" style="
+    height: 70px !important">
+             
+
+            </div>
+              </a>
+
+
+
+
+                    <!--End: Logo-->
+
+
+
+                    <!-- Search -->
+
+
+
+                    <div id="search"><a id="btn-search-close" class="btn-search-close" aria-label="Close search form"><i class="icon-x"></i></a>
+
+
+
+                        <form class="search-form" action="" method="get">
+
+
+
+                            <input class="form-control" name="q" type="text" placeholder="Type & Search..." />
+
+
+
+                            <span class="text-muted">Start typing & press "Enter" or "ESC" to close</span>
+
+
+
+                        </form>
+
+
+
+                    </div>
+
+
+
+                    <!-- end: search -->
+
+
+
+                    <!--Header Extras-->
+
+
+
+                    <div class="header-extras">
+
+
+
+                        <ul>
+
+
+
+                            <li>
+
+
+
+                                <a id="btn-search" href="#"> <i class="icon-search"></i></a>
+
+
+
+                            </li>
+
+
+
+                            <li>
+
+
+
+                         <!--        <div class="p-dropdown">
+
+
+
+                                    <a href="#"><i class="icon-globe"></i><span>EN</span></a>
+
+
+
+                                    <ul class="p-dropdown-content">
+
+
+
+                                        <li><a href="#">French</a></li>
+
+
+
+                                        <li><a href="#">Spanish</a></li>
+
+
+
+                                        <li><a href="#">English</a></li>
+
+
+
+                                    </ul>
+
+
+
+                                </div> -->
+
+
+
+                            </li>
+
+
+
+                        </ul>
+
+
+
+                    </div>
+
+
+
+                    <!--end: Header Extras-->
+
+
+
+                    <!--Navigation Resposnive Trigger-->
+
+
+
+                    <div id="mainMenu-trigger">
+
+
+
+                        <a class="lines-button x"><span class="lines"></span></a>
+
+
+
+                    </div>
+
+
+
+                    <!--end: Navigation Resposnive Trigger-->
+
+
+
+                    <!--Navigation-->
+
+
+
+                    <div id="mainMenu">
+
+
+
+                        <div class="container">
+
+
+
+                            <nav>
+
+
+
+                                <ul>
+
+
+
+                                    <li><a href="index.php">Home</a></li>
+
+
+
+                                    <li class="dropdown"><a href="#">About Us</a>
+
+
+
+                                        <ul class="dropdown-menu">
+
+                                               <li><a href="DPA.php">Introduction to the DPA</a></li>
+                                                  <li><a href="directornewl.php">Board of Director</a></li>
+                                            <li><a href="director.php">Founding Leadership Team</a></li>
+                                            <li><a href="mandate.php">Mandate of the DPA</a></li>
+                                            <li><a href="values.php">Values, Mission and Priorities</a></li>
+                                            <li><a href="Background.php">Background of the Data Protection Law</a></li>
+                                            <!-- <li><a href="disclaimer.php">Disclaimer</a></li> -->
+
+                                        </ul>
+
+
+
+                                    </li>
+
+
+
+                                    <li class="dropdown"><a href="guidelines.php">Downloads</a>
+
+
+
+        
+                                             
+
+
+                                            </li>
+
+
+
+                                      
+
+
+
+                                 
+
+
+
+                                    <li class="dropdown"><a href="index.php">Opportunities</a>
+
+                                <ul class="dropdown-menu">
+
+
+
+                                            <li><a href="Procurement.php"> Procurement Notices</a></li>
+                                            <li><a href="careers.php">Careers</a></li>
+
+
+  </ul>
+
+    
+
+                                    </li>
+
+
+                                    <li ><a href="faq1.php">FAQ</a>
+
+
+
+        
+                                             
+
+
+                                            </li>
+
+
+                                            
+                                    <li class="dropdown"><a href="rti.php">RTI</a>
+
+
+
+        
+                                             
+
+
+                                            </li>
+
+
+
+                                    <li class="dropdown"><a href="contact1.php">Contact Us</a>
+
+
+
+        
+                                             
+
+
+                                            </li>
+
+
+
+
+                             
+
+
+
+                                </ul>
+
+
+
+                            </nav>
+
+
+
+                        </div>
+
+
+
+                    </div>
+
+
+
+                    <!--end: Navigation-->
+
+
+
+                </div>
+
+
+
+            </div>
+
+
+
+        </header>
+
+
+   <!--   
+     <section class="halfscreen" data-bg-parallax="./img/objectives.jpg">
+
+   
+
+            <div class="bg-overlay" style="    background-image: linear-gradient(70deg, #00ADEEBA 0%, #00ADEE6B 100%);"></div>
+
+            <div class="container container-fullscreen text-light">
+
+                <div class="text-middle text-center titlecover">
+
+                     <h3 class="text-uppercase text-medium title_cls">  Downloads </h3>
+                     <h2> Guidelines & Important Information </h2>
+
+
+
+                 
+
+                </div>
+
+            </div>
+
+        </section>
+ -->
+
+
+
+        <div id="slider" class="inspiro-slider" data-height-xs="360" style="background-image: linear-gradient(70deg, #00ADEEBA 0%, #00ADEE6B 100%);">
+
+     
+
+            <div class="slide" style="background-image:url('./img/objectives.jpg'); ">
+
+                <div class="container">
+
+                    <div class="slide-captions text-dark">
+
+                  
+
+                       <h3 class="text-uppercase text-medium title_cls">  Downloads </h3>
+                     <h2> Guidelines & Important Information </h2>
+
+
+                   
+                    </div>
+
+                </div>
+
+            </div>
+
+           
+
+            <div class="slide" style="background-image:url('./img/home-1-1.jpg'); ">
+
+                <div class="container" >
+
+                    <div class="slide-captions text-end text-dark" >
+
+                   
+
+                        <h3 class="text-uppercase text-medium title_cls">  Downloads </h3>
+                     <h2> Guidelines & Important Information </h2>
+
+
+
+                    </div>
+
+                </div>
+
+            </div>
+
+          
+
+        </div>
+
+        <section id="page-content">
+            <div class="container">
+
+                <!-- Section 1 -->
+                <h2 class="page-title-heading">Download the Personal Data Protection Act, No. 9 of 2022</h2>
+                <table class="table table-striped border">
+                    <tbody>
+                        <tr>
+                            <td class="description-cell">Data Protection Act SL</td>
+                            <td class="action-cell">
+                                <a href="./acts/Data Protection Act SL - Sinhala (1).pdf" download class="btn-download">Sinhala</a>
+                                <a href="./acts/act tamil.pdf" download class="btn-download">Tamil</a>
+                                <a href="./acts/Data Protection Act SL - English (2).pdf" download class="btn-download">English</a>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+                
+                
+               
+                
+                
+                
+                      <h2 class="page-title-heading">Personal Data Protection (Amendment) Act, No. 22 of 2025</h2>
+                <table class="table table-striped border">
+                    <tbody>
+                        <tr>
+                            <td class="description-cell">Data Protection Act SL</td>
+                            <td class="action-cell">
+                                <a href="./acts/22-2025_S_251104_201513 (1).pdf" download class="btn-download">Sinhala</a>
+                                <a href="./acts/6384_T.pdf" download class="btn-download">Tamil</a>
+                                <a href="./acts/22-2025_E_251104_201549 (1).pdf" download class="btn-download">English</a>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <!-- Section 2 -->
+                <h2 class="page-title-heading">Gazettes related to Personal Data Protection</h2>
+                <table class="table table-striped border">
+                    <thead>
+                        <tr>
+                            <th>Description</th>
+                            <th class="text-right" style="text-align: right;">Actions</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        
+                                <tr>
+                            <td class="description-cell">22/07/2026 – Extraordinary Gazette No. 2498/16</td>
+                            <td class="action-cell">
+                                <a href="./Gazet/2498-16_S.pdf" download class="btn-download">Sinhala</a>
+                                <a href="./Gazet/2498-16_T.pdf" download class="btn-download">Tamil</a>
+                                <a href="./Gazet/2498-16_E.pdf" download class="btn-download">English</a>
+                            </td>
+                        </tr>
+                             <tr>
+                            <td class="description-cell">14/03/2025 – Extraordinary Gazette No. 2427/34</td>
+                            <td class="action-cell">
+                                <a href="./Gazet/G 43988 (S).pdf" download class="btn-download">Sinhala</a>
+                                <a href="./Gazet/G 43988 (T).pdf" download class="btn-download">Tamil</a>
+                                <a href="./Gazet/G 43988 (E).pdf" download class="btn-download">English</a>
+                            </td>
+                        </tr>
+                    
+                        <tr>
+                            <td class="description-cell">08/01/2024 - Gazettes related to Personal Data Protection</td>
+                            <td class="action-cell">
+                                <a href="./Gazet/2024-01-08/2366-08_S.pdf" download class="btn-download">Sinhala</a>
+                                <a href="./Gazet/2366-08_T" download class="btn-download">Tamil</a>
+                                <a href="./Gazet/2024-01-08/2366-08_E.pdf" download class="btn-download">English</a>
+                            </td>
+                        </tr>
+                        
+                            <tr>
+                            <td class="description-cell">07/21/2024 - Gazettes related to Personal Data Protection</td>
+                            <td class="action-cell">
+                                <a href="./Gazet/2023-07-21/2341-59_S.pdf" download class="btn-download">Sinhala</a>
+                                <a href="./Gazet/2341-59_T.pdf" download class="btn-download">Tamil</a>
+                                <a href="./Gazet/2023-07-21/2341-59_E.pdf" download class="btn-download">English</a>
+                            </td>
+                        </tr>
+                   
+                    </tbody>
+                </table>
+
+                <!-- Section 3 -->
+                <!--<h2 class="page-title-heading">Media Release</h2>-->
+                <!--<table class="table table-striped border">-->
+                <!--    <tbody>-->
+                <!--        <tr>-->
+                <!--            <td class="description-cell">Data Protection Authority Extends Deadline for Public Feedback - 29th Oct 2024</td>-->
+                <!--            <td class="action-cell">-->
+                <!--                <a href="./media/DPA - Media Release 29 Oct 2024 - Extend feedback time (English).pdf" download class="btn-download">English</a>-->
+                <!--            </td>-->
+                <!--        </tr>-->
+                <!--        <tr>-->
+                <!--            <td class="description-cell">Cabinet Endorses PDPA Amendments - 24 February 2025</td>-->
+                <!--            <td class="action-cell">-->
+                <!--                <a href="./media/MEDIA Release - PDPA enforcement extended - Sinhala V 3.0 in Letterhead.pdf" download class="btn-download">Sinhala</a>-->
+                <!--                <a href="./media/MEDIA Release - PDPA enforcement extended - English V 3.0 in Letterhead.pdf" download class="btn-download">English</a>-->
+                <!--            </td>-->
+                <!--        </tr>-->
+                <!--    </tbody>-->
+                <!--</table>-->
+
+                <!-- Section 4 -->
+                <h2 class="page-title-heading">Circulars </h2>
+                <table class="table table-striped border">
+                    <tbody>
+                        
+                           <tr>
+                            <td class="description-cell">Circular No. 01/2026 - Application of the PDPA in Public Sector - 07th August 2026</td>
+                            <td class="action-cell">
+                                <a href="./media/DPA_Circular_012026_S (1).pdf" download class="btn-download">Sinhala</a>
+                                <a href="./media/012026-DPA_Circular_T.pdf" download class="btn-download">Tamil</a>
+                                <a href="./media/DPA_Circular_012026_E.pdf" download class="btn-download">English</a>
+                            </td>
+                        </tr>
+                        
+                        
+                        
+                        <!--<tr>-->
+                        <!--    <td class="description-cell">Circular No. 01/2024 - Application of the PDPA in public sector - 13th Sept 2024</td>-->
+                        <!--    <td class="action-cell">-->
+                        <!--        <a href="./media/DPA Circular 01-2024 Sinhala - 13 Sep2024 (1).pdf" download class="btn-download">Sinhala</a>-->
+                        <!--        <a href="./media/DPA Circular 01-2024 Tamil - 13 Sep2024 Edited.docx.pdf" download class="btn-download">Tamil</a>-->
+                        <!--        <a href="./media/DPA Circular 01-2024 English - 13 Sep2024.pdf" download class="btn-download">English</a>-->
+                        <!--    </td>-->
+                        <!--</tr>-->
+                    </tbody>
+                </table>
+
+                <!--   <h2 class="page-title-heading">Guidelines on Personal Data Protection Management Program</h2>-->
+                <!--<table class="table table-striped border">-->
+                <!--    <tbody>-->
+                <!--        <tr>-->
+                <!--            <td class="description-cell">Guideline version 1 for public consultation</td>-->
+                <!--            <td class="action-cell">-->
+                             
+                <!--                <a href="./guid/Working Draft 1.0_Data Protection Management Programme guidelines - FINAL14Sep1.pdf" download class="btn-download">English</a>-->
+                <!--            </td>-->
+                <!--        </tr>-->
+                <!--                <tr>-->
+                <!--            <td class="description-cell">Feedback Form</td>-->
+                <!--            <td class="action-cell">-->
+                               
+                <!--                <a href="./guid/DPA - DPMP Feedback Template1.docx" download class="btn-download">English</a>-->
+                <!--            </td>-->
+                <!--        </tr>-->
+                <!--    </tbody>-->
+                <!--</table>-->
+
+
+
+
+                  
+
+                <!--       <h2 class="page-title-heading">Draft Directive on Classification of Categories of Personal Data for Public Authorities under Section 26(1) of the PDPA</h2>-->
+                <!--<table class="table table-striped border">-->
+                <!--    <tbody>-->
+                <!--        <tr>-->
+                <!--            <td class="description-cell">DPA - Classification of Data Categories Directive - 13-09-2024- for Public Consultations</td>-->
+                <!--            <td class="action-cell">-->
+                             
+                <!--                <a href="./guid/DPA - Classification of Data Categories Directive - 13-09-2024- for Public Consultations.pdf" download class="btn-download">English</a>-->
+                <!--            </td>-->
+                <!--        </tr>-->
+                <!--                <tr>-->
+                <!--            <td class="description-cell">Feedback Form</td>-->
+                <!--            <td class="action-cell">-->
+                               
+                <!--                <a href="./guid/DPA - Feedback Template on Data Categories & Hosting in Third Country.docx" download class="btn-download">English</a>-->
+                <!--            </td>-->
+                <!--        </tr>-->
+                <!--    </tbody>-->
+                <!--</table>-->
+
+                   <h2 class="page-title-heading">Draft Regulations on Personal Data Protection Impact Assessments under the Personal Data Protection Act No. 9 of 2022</h2>
+                <table class="table table-striped border">
+                    <tbody>
+                        <tr>
+                            <td class="description-cell">DPA - Personal Data Protection Impact Assessments for Public Consultation: 01-10-2024</td>
+                            <td class="action-cell">
+                             
+                                <a href="./guid/DPA Final Draft_PDPIA Regulations-for Public ConsultationV 1.0.pdf" download class="btn-download">English</a>
+                            </td>
+                        </tr>
+                        <!--        <tr>-->
+                        <!--    <td class="description-cell">Feedback Form</td>-->
+                        <!--    <td class="action-cell">-->
+                               
+                        <!--        <a href="./guid/DPA - Feedback Template on PDPIA.docx" download class="btn-download">English</a>-->
+                        <!--    </td>-->
+                        <!--</tr>-->
+                    </tbody>
+                </table>
+
+                  <h2 class="page-title-heading">Draft Rules on Personal Data Breach Notifications under the Personal Data Protection Act No. 9 of 2022</h2>
+                <table class="table table-striped border">
+                    <tbody>
+                        <tr>
+                            <td class="description-cell">DPA - Draft Rules on Personal Data Breach Notifications for Public Consultation: 01-10-2024</td>
+                            <td class="action-cell">
+                             
+                                <a href="./guid/DPA -  PC Draft_Data Breach Notification Rules - V 1.0.pdf" download class="btn-download">English</a>
+                            </td>
+                        </tr>
+                        <!--        <tr>-->
+                        <!--    <td class="description-cell">Feedback Form</td>-->
+                        <!--    <td class="action-cell">-->
+                               
+                        <!--        <a href="./guid/DPA - Feedback Template on PD Breach.docx" download class="btn-download">English</a>-->
+                        <!--    </td>-->
+                        <!--</tr>-->
+                    </tbody>
+                </table>
+
+                   <h2 class="page-title-heading">Draft Directive on Specification of Instruments for Processing of Personal Data Outside Sri Lanka under Section 26(4) of the Personal Data Protection Act No. 9 of 2022</h2>
+                <table class="table table-striped border">
+                    <tbody>
+                        <tr>
+                            <td class="description-cell">DPA - Specification of Instruments for Processing of Personal Data Outside Sri Lanka for public consultation: 02-10-2024</td>
+                            <td class="action-cell">
+                             
+                                <a href="./guid/DPA - Instruments for Processing Data Outside SL- Draft Directive V 1.0.pdf" download class="btn-download">English</a>
+                            </td>
+                        </tr>
+                        <!--        <tr>-->
+                        <!--    <td class="description-cell">Feedback Form</td>-->
+                        <!--    <td class="action-cell">-->
+                               
+                        <!--        <a href="./guid/DPA - Feedback Template on PD Breach.docx" download class="btn-download">English</a>-->
+                        <!--    </td>-->
+                        <!--</tr>-->
+                    </tbody>
+                </table>
+
+                    <h2 class="page-title-heading">Draft Regulations on the Appointment of the Data Protection Officer under Section 20 of the Personal Data Protection Act No. 9 of 2022</h2>
+                <table class="table table-striped border">
+                    <tbody>
+                        <tr>
+                            <td class="description-cell">DPA - Draft Regulations on the Appointment of the Data Protection Officer under Section 20 of the Personal Data Protection Act No. 9 of 2022 (03-10-2024)</td>
+                            <td class="action-cell">
+                             
+                                <a href="./guid/DPA PC_Regulations on DPO V 1.0.pdf" download class="btn-download">English</a>
+                            </td>
+                        </tr>
+                        <!--        <tr>-->
+                        <!--    <td class="description-cell">Feedback Form</td>-->
+                        <!--    <td class="action-cell">-->
+                               
+                        <!--        <a href="./guid/DPA - Feedback Template on DPO.docx" download class="btn-download">English</a>-->
+                        <!--    </td>-->
+                        <!--</tr>-->
+                    </tbody>
+                </table>
+
+                 <h2 class="page-title-heading">Draft Regulations on the Exercise of Data Subjects’ Rights and Appeals under the Personal Data Protection Act No. 9 of 2022</h2>
+                <table class="table table-striped border">
+                    <tbody>
+                        <tr>
+                            <td class="description-cell">DPA - Draft Regulations on the Exercise of Data Subjects’ Rights and Appeals under the Personal Data Protection Act No. 9 of 2022: 05-10-2024</td>
+                            <td class="action-cell">
+                             
+                                <a href="./guid/DPA -  Draft_Appeals Regulation.pdf" download class="btn-download">English</a>
+                            </td>
+                        </tr>
+                        <!--        <tr>-->
+                        <!--    <td class="description-cell">Feedback Form</td>-->
+                        <!--    <td class="action-cell">-->
+                               
+                        <!--        <a href="./guid/DPA - Feedback Template on Appeals Regulation.docx" download class="btn-download">English</a>-->
+                        <!--    </td>-->
+                        <!--</tr>-->
+                    </tbody>
+                </table>
+
+                  <h2 class="page-title-heading">Draft Regulations on Inquiry Procedure under Section 35 of the Personal Data Protection Act No.9 of 2022
+</h2>
+                <table class="table table-striped border">
+                    <tbody>
+                        <tr>
+                            <td class="description-cell">DPA - Draft Regulations on Inquiry Procedure under Section 35 of the Personal Data Protection Act No.9 of 2022 : 05-10-2024</td>
+                            <td class="action-cell">
+                             
+                                <a href="./guid/DPA - Draft Regulations on Inquiry Procedure - for Public Consultation (05 Oct 2024).pdf" download class="btn-download">English</a>
+                            </td>
+                        </tr>
+                        <!--        <tr>-->
+                        <!--    <td class="description-cell">Feedback Form</td>-->
+                        <!--    <td class="action-cell">-->
+                               
+                        <!--        <a href="./guid/8 DPA - Feedback Template - Regulations on Inquiry Procedure.docx" download class="btn-download">English</a>-->
+                        <!--    </td>-->
+                        <!--</tr>-->
+                    </tbody>
+                </table>
+
+                           <h2 class="page-title-heading">Draft Regulation on Fees Applicable for Exercising Rights of Data Subjects</h2>
+                <table class="table table-striped border">
+                    <tbody>
+                        <tr>
+                            <td class="description-cell">DPA - Draft Regulation on Fees Applicable for Exercising Rights of Data Subjects: 12-10-2024</td>
+                            <td class="action-cell">
+                             
+                                <a href="./guid/9 DPA - Draft Regulation on Personal Data (Fees) - V 1.0 - 12 Oct 2024.pdf" download class="btn-download">English</a>
+                            </td>
+                        </tr>
+                        <!--        <tr>-->
+                        <!--    <td class="description-cell">Feedback Form</td>-->
+                        <!--    <td class="action-cell">-->
+                               
+                        <!--        <a href="./guid/9 DPA - Feedback Template - Draft Regulation on Fees Applicable for Exercising Rights of Data Subjects (1).docx" download class="btn-download">English</a>-->
+                        <!--    </td>-->
+                        <!--</tr>-->
+                    </tbody>
+                </table>
+
+
+
+
+
+
+            </div>
+        </section>
+
+        
+<footer class="dpa-footer">
+    <div class="footer-container">
+        <div class="footer-section footer-address">
+            <h3 class="footer-title">Address</h3>
+            <address>
+                Data Protection Authority<br>
+                First Floor; Block 5,<br> 
+                Bandaranaike Memorial International Conference Hall (BMICH),<br>
+                Bauddhaloka Mawatha,<br> 
+                Colombo 07, Sri Lanka.
+            </address>
+          
+  <!-- <p style="color: white;"><i class="fa fa-clock-o" aria-hidden="true"></i> Mon - Fri: 8.00 am - 5.00 pm</p> -->
+        </div>
+        <div class="footer-section footer-contact">
+            <h3 class="footer-title">Get in Touch</h3>
+            <ul class="contact-list">
+                <li>Email: <a href="mailto:info@dpa.gov.lk">info@dpa.gov.lk</a></li>
+                <!-- <li>Email: <a href="mailto:dg@dpa.gov.lk">dg@dpa.gov.lk</a></li> -->
+                <li>Phone: <a href="tel:+940112697241">+94 (0)112697241</a></li>
+                <li>Website: <a href="https://www.dpa.gov.lk">www.dpa.gov.lk</a></li>
+                <!-- <li><a href="notice.php" class="footer-link">Data Protection Statement</a></li> -->
+            </ul>
+        </div>
+        <div class="footer-section footer-links">
+            <h3 class="footer-title">Related Links</h3>
+            <ul class="links-list">
+                <li><i class="fa fa-external-link" aria-hidden="true"></i><a href="https://www.presidentsoffice.gov.lk/" target="_blank">Presidential Secretariat of Sri Lanka</a></li>
+
+
+
+                 <li><i class="fa fa-external-link" aria-hidden="true"></i><a href="https://pmoffice.gov.lk/" target="_blank">Prime Minister's Office, Sri Lanka</a></li>
+                <li><a href="https://mode.gov.lk/" target="_blank">Ministry of Digital Economy </a></li>
+               
+               
+                <!-- <li><i class="fa fa-external-link" aria-hidden="true"></i><a href="rti.php"> RTI</a></li>  -->
+                <!-- <li><i class="fa fa-external-link" aria-hidden="true"></i><a href="#"> E-Citizen</a></li> -->
+            </ul>
+        </div>
+
+            <div class="footer-bottom">
+                 <div class="row">
+                    <div class="col-8">
+                         <p style="color: white;">Copyright © Data Protection Authority 2026. All Rights Reserved.</p>
+                    </div>
+
+                      <div class="col-4">
+                        <a href="notice.php" class="footer-link">Data Protection Statement</a>
+                    </div> 
+
+               
+                
+                </div>
+            </div>
+    </div>
+
+</footer>
+
+
+
+        <!-- end: Footer -->
+
+
+
+    </div>
+
+
+
+    <!-- end: Body Inner -->
+
+
+
+    <!-- Scroll top -->
+
+
+
+    <a id="scrollTop"><i class="icon-chevron-up"></i><i class="icon-chevron-up"></i></a>
+
+
+
+    <!--Plugins-->
+
+
+
+    <script src="js/jquery.js"></script>
+
+
+
+    <script src="js/plugins.js"></script>
+
+
+
+    <!--Template functions-->
+
+
+
+    <script src="js/functions.js"></script>
+    </div>
+
+    <a id="scrollTop"><i class="icon-chevron-up"></i></a>
+
+    <!--Plugins-->
+    <script src="js/jquery.js"></script>
+    <script src="js/plugins.js"></script>
+    <script src="js/functions.js"></script>
+</body>
+</html>

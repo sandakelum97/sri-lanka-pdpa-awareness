@@ -60,6 +60,10 @@ Target: close all P1-related open questions and have every official document sto
 | 2.4 | FAQ | v0.1 drafted 31 Oct 2026 (28 Q&As), unreviewed | 07-English-Content/faq/faq.md |
 | 2.6 | status.json — single source of commencement status for all badges | v1.0 created 31 Oct 2026 | 06-Legal-Research/data/status.json |
 | 2.5 | Sinhala explanations | Blocked on reviewer + OQ-18 | 08-Sinhala-Content/ |
+| 2.7 | Citizen, organisation and technical pathways | v0.1 drafted 31 Oct 2026, unreviewed | 07-English-Content/pathways/ |
+
+## Phase 2 English content — status summary (31 Oct 2026)
+Glossary v0.1 · 30 section explainers · 12 scenarios · 4 audience pathways + checklist · FAQ (28) · status.json. All draft/unreviewed. Remaining for Phase 2: Sinhala side (blocked); legal review; Parts VI/VIII–X reference pages (low priority).
 
 ## Next steps (proposed)
 

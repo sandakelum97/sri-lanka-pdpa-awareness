@@ -15,10 +15,6 @@ reviewed_by: none
 review_status: draft
 ---
 
-# Section 9 — Retention limitation
-
-Part I: Processing of Personal Data (ss.4–12) · Status: **In force from 1 January 2027** (Gazette 2498/16)
-
 ## 1. What the law says (referenced extract)
 
 > Personal data shall be kept in a form permitting identification only for as long as necessary for the purposes of processing; longer storage is allowed for public-interest archiving, scientific/historical research or statistics, subject to s.10. — s.9

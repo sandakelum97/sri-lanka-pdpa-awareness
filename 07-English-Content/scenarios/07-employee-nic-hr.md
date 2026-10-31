@@ -2,6 +2,7 @@
 title: "A company collecting employee NIC details and HR records"
 slug: scenario-employee-nic-hr
 language: en
+order: 7
 type: scenario
 pathways: [employer, organisation]
 sections_cited: "s.5 + Sch I(b)/(c); s.5 + Sch II(b); s.7 — Minimisation; s.9 — Retention; s.10 — Security; s.11 — Notice; s.24 — DPIA; s.26 — Cross-border; s.18 — Automated decisions; ss.13–16"
@@ -12,8 +13,6 @@ last_reviewed: 2026-10-31
 reviewed_by: none
 review_status: draft
 ---
-
-# A company collecting employee NIC details and HR records
 
 ## The situation
 

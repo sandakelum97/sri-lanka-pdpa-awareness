@@ -12,8 +12,6 @@ reviewed_by: none
 review_status: draft
 ---
 
-# Questions people ask
-
 Short answers, each with the section of the Act and whether that section is in force. **IN** means in force now. **2027** means from 1 January 2027. **NO** means written into the Act but with no start date. Checked against the official texts on 31 October 2026.
 
 ## About the law itself

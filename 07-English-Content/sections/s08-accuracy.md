@@ -15,10 +15,6 @@ reviewed_by: none
 review_status: draft
 ---
 
-# Section 8 — Accuracy
-
-Part I: Processing of Personal Data (ss.4–12) · Status: **In force from 1 January 2027** (Gazette 2498/16)
-
 ## 1. What the law says (referenced extract)
 
 > Personal data shall be "accurate" and "kept up to date", with every reasonable step taken to erase or rectify inaccurate or outdated data without undue delay. — s.8

@@ -15,10 +15,6 @@ reviewed_by: none
 review_status: draft
 ---
 
-# Section 10 — Integrity and confidentiality (security)
-
-Part I: Processing of Personal Data (ss.4–12) · Status: **In force from 1 January 2027** (Gazette 2498/16)
-
 ## 1. What the law says (referenced extract)
 
 > Every controller shall ensure integrity and confidentiality of personal data by "appropriate technical and organizational measures including encryption, pseudonymisation, anonymisation or access controls or such other measures as may be prescribed", so as to prevent unauthorised or unlawful processing, and loss, destruction or damage. — s.10

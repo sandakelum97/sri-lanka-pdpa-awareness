@@ -15,10 +15,6 @@ reviewed_by: none
 review_status: draft
 ---
 
-# Section 38 — Administrative penalties
-
-Part VII: Penalties (ss.38–40) · Status: **NOT IN FORCE — no date set**
-
 > ⚠️ **This provision is not yet in force.** No start date has been set. Read section 9 below before relying on anything here.
 
 ## 1. What the law says (referenced extract)

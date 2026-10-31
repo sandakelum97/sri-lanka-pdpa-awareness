@@ -13,8 +13,6 @@ reviewed_by: none
 review_status: draft
 ---
 
-# Organisational Compliance Guide
-
 *For private companies, banks and financial institutions, hospitals, schools and universities, IT and BPO companies, telecoms, and government institutions. Each topic states the legal requirement (with section and status) and, separately, recommended practice.*
 
 | Topic | Legal requirement | Status | Recommended practice (not statute) | Read |

@@ -2,6 +2,7 @@
 title: "A shop owner collecting customer telephone numbers"
 slug: scenario-shop-phone-numbers
 language: en
+order: 1
 type: scenario
 pathways: [shop, restaurant, salon, online-seller]
 sections_cited: "s.2 — Application; s.5 + Sch I — Lawful basis; s.6, s.7 — Purpose and minimisation; s.9 — Retention; s.10 — Security; s.11 + Sch V — Transparency; s.27 — Marketing messages; ss.13–16 — Customer rights"
@@ -12,8 +13,6 @@ last_reviewed: 2026-10-31
 reviewed_by: none
 review_status: draft
 ---
-
-# A shop owner collecting customer telephone numbers
 
 ## The situation
 

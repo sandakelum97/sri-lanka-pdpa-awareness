@@ -2,6 +2,7 @@
 title: "A restaurant maintaining customer reservations"
 slug: scenario-restaurant-reservations
 language: en
+order: 3
 type: scenario
 pathways: [restaurant]
 sections_cited: "s.5 + Sch I(b); s.5 + Sch II; s.9 — Retention; s.10 — Security; s.21 — Processors; s.26 — Cross-border; s.27 — Marketing"
@@ -12,8 +13,6 @@ last_reviewed: 2026-10-31
 reviewed_by: none
 review_status: draft
 ---
-
-# A restaurant maintaining customer reservations
 
 ## The situation
 

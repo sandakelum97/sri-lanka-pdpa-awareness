@@ -13,8 +13,6 @@ reviewed_by: none
 review_status: draft
 ---
 
-# For ordinary people
-
 *Students, employees, parents, people who buy things online. Twenty minutes.*
 
 Let's start with the part nobody likes to say. The section of this law that gives **you** rights — to see your file, to get mistakes fixed, to make a company delete what it holds — is not in force, and nobody has set a date. What *is* coming, on 1 January 2027, is a set of duties on the businesses, schools, hospitals and government offices that hold your information. So this pathway is mostly about what they will have to do, with a short list of things you can do today.
@@ -52,11 +50,11 @@ Once the Minister sets a date for Part II: to see what an organisation holds abo
 
 ## 6. If you are a parent
 
-Your child's data is special-category data. A school or tuition class that relies on consent needs *your* consent, not your child's, and must take more care with the records. When Part II starts you can exercise your child's rights for them (section 17(5)). See the [tuition class](/en/scenarios/04-tuition-records/) and [school](/en/scenarios/05-school-student-data/) situations.
+Your child's data is special-category data. A school or tuition class that relies on consent needs *your* consent, not your child's, and must take more care with the records. When Part II starts you can exercise your child's rights for them (section 17(5)). See the [tuition class](/en/scenarios/scenario-tuition-records/) and [school](/en/scenarios/scenario-school-student-data/) situations.
 
 ## 7. If you are an employee
 
-Your employer needs a lawful reason for everything it does with your file, has to tell you what it does, and should not hide behind "you consented" in your contract — consent you cannot refuse is not consent under this Act. If a computer screens your job application or scores your performance with no human involved, section 18 will give you a right to a human review. See [employee records](/en/scenarios/07-employee-nic-hr/).
+Your employer needs a lawful reason for everything it does with your file, has to tell you what it does, and should not hide behind "you consented" in your contract — consent you cannot refuse is not consent under this Act. If a computer screens your job application or scores your performance with no human involved, section 18 will give you a right to a human review. See [employee records](/en/scenarios/scenario-employee-nic-hr/).
 
 ## Keep going
 

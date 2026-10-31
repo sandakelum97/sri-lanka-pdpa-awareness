@@ -15,10 +15,6 @@ reviewed_by: none
 review_status: draft
 ---
 
-# Section 25 — Measures to mitigate risks of harm
-
-Part III: Controllers and Processors (ss.20–26) · Status: **In force from 1 January 2027** (Gazette 2498/16)
-
 ## 1. What the law says (referenced extract)
 
 > Where a DPIA indicates that processing is likely to result in a risk of harm to data subjects' rights "under this Act", the controller shall take measures to mitigate the risk before processing. — s.25(1) (as amended). The prior-consultation mechanism (old s.25(2)–(6)) has been repealed. Surviving s.25(7): where s.24(1) processing is carried out in relation to national security, public order and public health, the controller shall consult the Authority.

@@ -15,10 +15,6 @@ reviewed_by: none
 review_status: draft
 ---
 
-# Section 2 — Application of the Act (scope)
-
-Part —: Preliminary (ss.1–3) · Status: **In force from 1 January 2027**
-
 ## 1. What the law says (referenced extract)
 
 > The Act applies to processing of personal data (a) wholly or partly within Sri Lanka; or (b) by a controller or processor who (i) is domiciled or ordinarily resident in Sri Lanka, (ii) is incorporated or established under Sri Lankan law, (iii) offers goods or services to data subjects in Sri Lanka, including with specific targeting, or (iv) specifically monitors the behaviour of data subjects in Sri Lanka, including profiling to make decisions about that behaviour. — s.2(1). The Authority may make rules on what counts as specific targeting or monitoring (s.2(2) — none made). The Act does **not** apply to data processed "purely for personal, domestic or household purposes by an individual", or to data that is not personal data (s.2(3)).

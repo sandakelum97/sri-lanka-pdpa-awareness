@@ -80,7 +80,9 @@ Glossary v0.1 · 30 section explainers · 12 scenarios · 4 audience pathways + 
 | 3.9 | Responsive verification at 390/820/1366 px — no horizontal overflow on any page; mobile menu; tappable infographics | Done 31 Oct 2026 (Playwright) | |
 | 3.10 | Official documents page with publisher links + SHA-256 fingerprints; About page | Done 31 Oct 2026 | /en/downloads, /en/about |
 | 3.11 | Name changed to Datta Saviya | Done 31 Oct 2026 | NAME-OPTIONS.md |
-| 3.12 | Accessibility audit (axe), Tamil UI shell, hero illustration by a designer, OG images | Pending | |
+| 3.12 | Reading layout for all content pages: breadcrumbs, on-page contents, previous/next, related links, draft pill, centred measure + sidebar | Done 31 Oct 2026 | site/src/components/Article.astro |
+| 3.13 | Navigation fixes: desktop nav always visible, mobile menu button, current-page marker; language switch falls back to section index when no Sinhala twin; link crawl 69 pages / 0 broken | Done 31 Oct 2026 | |
+| 3.14 | Accessibility audit (axe), Tamil UI shell, OG images | Pending | |
 
 ## Phase 4 — started 31 Oct 2026
 

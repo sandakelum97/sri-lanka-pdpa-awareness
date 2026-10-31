@@ -1,15 +1,20 @@
 ---
 import Base from '../../../layouts/Base.astro';
+import Article from '../../../components/Article.astro';
 import { getCollection, render } from 'astro:content';
 export async function getStaticPaths() {
-  const entries = await getCollection('scenarios');
-  return entries.map((e) => ({ params: { id: e.id }, props: { e } }));
+  const entries = (await getCollection('scenarios')).sort((a, b) => (a.data.order ?? 99) - (b.data.order ?? 99));
+  return entries.map((e, i) => ({ params: { id: e.id }, props: { e, prev: entries[i - 1], next: entries[i + 1] } }));
 }
-const { e } = Astro.props;
-const { Content } = await render(e);
+const { e, prev, next } = Astro.props;
+const { Content, headings } = await render(e);
+const pathwayMap: Record<string, { href: string; label: string }> = { shop: { href: '/en/pathways/small-business-guide/', label: 'Small business guide' }, restaurant: { href: '/en/pathways/small-business-guide/', label: 'Small business guide' }, salon: { href: '/en/pathways/small-business-guide/', label: 'Small business guide' }, 'online-seller': { href: '/en/pathways/small-business-guide/', label: 'Small business guide' }, tuition: { href: '/en/pathways/small-business-guide/', label: 'Small business guide' }, organisation: { href: '/en/pathways/organisation-pathway/', label: 'Organisational compliance guide' }, technical: { href: '/en/pathways/technical-pathway/', label: 'For IT and security professionals' }, citizen: { href: '/en/pathways/citizen-pathway/', label: 'For ordinary people' } };
+const related = Array.from(new Map((e.data.pathways ?? []).map((p) => pathwayMap[p]).filter(Boolean).map((r) => [r.href, r])).values());
+related.push({ href: '/en/pathways/small-business-checklist/', label: 'Small business checklist' });
 ---
-<Base title={e.data.title} lang="en">
-  <div class="meta"><span>Version {e.data.content_version} · reviewed {String(e.data.last_reviewed)} · {e.data.review_status}</span></div>
-  <article class="prose"><Content /></article>
-  <p><a href="/en/scenarios/">← All scenarios</a></p>
+<Base title={e.data.title} lang="en" description={`${e.data.title} — which sections of Sri Lanka's PDPA apply, from when, and what to do now.`}>
+  <Article lang="en" crumbs={[{ href: '/en/', label: 'Home' }, { href: '/en/scenarios/', label: 'Real situations' }]} title={e.data.title} status="mixed" version={e.data.content_version} reviewed={e.data.last_reviewed} reviewStatus={e.data.review_status}
+    prev={prev && { href: `/en/scenarios/${prev.id}/`, label: prev.data.title }} next={next && { href: `/en/scenarios/${next.id}/`, label: next.data.title }} related={related} headings={headings}>
+    <Content />
+  </Article>
 </Base>

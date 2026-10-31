@@ -15,10 +15,6 @@ reviewed_by: none
 review_status: draft
 ---
 
-# Section 5 — Lawful processing — the legal bases
-
-Part I: Processing of Personal Data (ss.4–12) · Status: **In force from 1 January 2027** (Gazette 2498/16)
-
 ## 1. What the law says (referenced extract)
 
 > Processing is lawful only if the controller complies with (a) a condition in Schedule I (general lawful bases); (b) a Schedule II condition for *special categories* of personal data; (c) *all* the Schedule III conditions where processing relies on consent; or (d) *all* the Schedule IV conditions for criminal-investigation processing. — s.5

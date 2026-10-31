@@ -2,6 +2,7 @@
 title: "A tuition teacher maintaining student and parent records"
 slug: scenario-tuition-records
 language: en
+order: 4
 type: scenario
 pathways: [tuition, school]
 sections_cited: "s.56 — Special categories; s.5 + Sch II(a); s.7, s.9; s.10 — Security; s.11 + Sch V; s.26 — Cross-border; s.20 — DPO; ss.13–17 — Rights"
@@ -12,8 +13,6 @@ last_reviewed: 2026-10-31
 reviewed_by: none
 review_status: draft
 ---
-
-# A tuition teacher maintaining student and parent records
 
 ## The situation
 

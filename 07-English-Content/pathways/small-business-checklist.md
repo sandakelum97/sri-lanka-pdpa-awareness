@@ -13,8 +13,6 @@ reviewed_by: none
 review_status: draft
 ---
 
-# Small Business PDPA Checklist
-
 Educational checklist. It does not certify compliance and is not legal advice. Items marked **[Act]** are legal duties from 1 January 2027 unless noted; items marked *[Practice]* are recommendations.
 
 ## A. Know what you hold

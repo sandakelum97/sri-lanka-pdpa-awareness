@@ -1,7 +1,12 @@
 ---
 import Base from '../../layouts/Base.astro';
+import Article from '../../components/Article.astro';
 import { getCollection, render } from 'astro:content';
 const [g] = await getCollection('glossary');
-const { Content } = await render(g);
+const { Content, headings } = await render(g);
 ---
-<Base title="Bilingual legal glossary" lang="en" description="English and Sinhala terms used in Sri Lanka's PDPA."><article class="prose"><Content /></article></Base>
+<Base title="Glossary — English and Sinhala" lang="en" description="The terms used in Sri Lanka's PDPA, in English and Sinhala, with the official Sinhala wording where verified.">
+  <Article lang="en" crumbs={[{ href: '/en/', label: 'Home' }]} title="Glossary" reviewStatus="draft" headings={headings} related={[{ href: '/en/sections/', label: 'The Act, section by section' }, { href: '/en/faq/', label: 'Questions people ask' }]}>
+    <Content />
+  </Article>
+</Base>

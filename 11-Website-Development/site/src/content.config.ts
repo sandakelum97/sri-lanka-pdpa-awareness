@@ -20,6 +20,7 @@ const meta = z.object({
   part: z.union([z.string(), z.number()]).optional(),
   section: z.union([z.string(), z.number()]).optional(),
   type: z.string().optional(),
+  order: z.number().optional(),
 }).passthrough();
 
 export const collections = {

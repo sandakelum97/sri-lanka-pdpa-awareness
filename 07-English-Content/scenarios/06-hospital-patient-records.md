@@ -2,6 +2,7 @@
 title: "A hospital maintaining patient records"
 slug: scenario-hospital-patient-records
 language: en
+order: 6
 type: scenario
 pathways: [hospital, clinic, organisation]
 sections_cited: "s.56 — Special categories; s.5 + Sch II(g); s.8, s.9, s.10; s.12 — DPMP; s.20 — DPO; s.21, s.22; s.23 — Breach notification; s.24, s.25(7); s.26 — Cross-border; ss.13–16"
@@ -12,8 +13,6 @@ last_reviewed: 2026-10-31
 reviewed_by: none
 review_status: draft
 ---
-
-# A hospital maintaining patient records
 
 ## The situation
 

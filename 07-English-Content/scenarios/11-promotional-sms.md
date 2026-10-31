@@ -2,6 +2,7 @@
 title: "A business sending promotional SMS and WhatsApp messages"
 slug: scenario-promotional-sms
 language: en
+order: 11
 type: scenario
 pathways: [shop, restaurant, salon, online-seller, organisation]
 sections_cited: "s.27 — Solicited messages; s.14(1); s.5 + Sch I; s.6; s.26"
@@ -12,8 +13,6 @@ last_reviewed: 2026-10-31
 reviewed_by: none
 review_status: draft
 ---
-
-# A business sending promotional SMS and WhatsApp messages
 
 ## The situation
 

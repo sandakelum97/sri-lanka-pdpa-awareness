@@ -1,7 +1,13 @@
 ---
 import Base from '../../layouts/Base.astro';
+import Article from '../../components/Article.astro';
 import { getCollection, render } from 'astro:content';
 const [faq] = await getCollection('faq');
-const { Content } = await render(faq);
+const { Content, headings } = await render(faq);
 ---
-<Base title="Questions people ask" lang="en" description="Short answers about Sri Lanka's data protection law, each with its section and whether it is in force."><article class="prose"><Content /></article><p><a href="/en/pathways/">← Start here</a></p></Base>
+<Base title="Questions people ask" lang="en" description="Short answers about Sri Lanka's data protection law, each with its section and whether it is in force.">
+  <Article lang="en" crumbs={[{ href: '/en/', label: 'Home' }]} title="Questions people ask" version={faq.data.content_version} reviewed={faq.data.last_reviewed} reviewStatus={faq.data.review_status} headings={headings}
+    related={[{ href: '/en/pathways/', label: 'Start here' }, { href: '/en/status/', label: 'What is in force today' }, { href: '/en/downloads/', label: 'Official documents' }]}>
+    <Content />
+  </Article>
+</Base>

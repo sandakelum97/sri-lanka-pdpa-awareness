@@ -15,10 +15,6 @@ reviewed_by: none
 review_status: draft
 ---
 
-# Section 26 — Cross-border data flows
-
-Part III: Controllers and Processors (ss.20–26) · Status: **In force from 1 January 2027** (Gazette 2498/16)
-
 ## 1. What the law says (referenced extract)
 
 > (1) A controller or processor may engage in cross-border data flows only where it ensures compliance with Part I, Part II and ss.20–25. (2) To ensure that compliance it shall adopt "such instruments as may be specified by a directive issued by the Authority under paragraph (c) of section 33" to secure binding and enforceable commitments from the recipient in the third country. (3) Notwithstanding (1), transfers are permitted where: (a) the data subject has explicitly consented after being informed of the possible risks; (b) necessary for a contract with the data subject or pre-contract steps at their request; (c) necessary for legal claims; (d) necessary for public interest as defined in Sch I(g); (e) necessary for an emergency where the person cannot consent; (f) the transfer is only a transit through Sri Lanka; or (g) other prescribed conditions. (4)–(5) A public authority shall not transfer categories of personal data the Minister prescribes. — s.26 as replaced by Act No. 22 of 2025. 'Third country' now means any territory or country other than Sri Lanka (s.56 as amended).

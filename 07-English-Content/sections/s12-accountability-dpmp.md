@@ -15,10 +15,6 @@ reviewed_by: none
 review_status: draft
 ---
 
-# Section 12 — Accountability — the Data Protection Management Programme
-
-Part I: Processing of Personal Data (ss.4–12) · Status: **In force from 1 January 2027** (Gazette 2498/16)
-
 ## 1. What the law says (referenced extract)
 
 > Every controller must implement internal controls and procedures — the "Data Protection Management Programme" — that: (a) establish and maintain catalogued records demonstrating how ss.5–11 are complied with; (b) are designed on the basis of the "structure, scale, volume and sensitivity" of the controller's processing; (c) provide safeguards based on DPIAs under s.24; (d) are integrated into the controller's governance; (e) establish internal oversight; (f) include a mechanism to receive complaints, conduct inquiries and identify breaches; (g) are updated on periodic monitoring; (h) facilitate the exercise of data-subject rights under ss.13–16 and 18. — s.12(1)

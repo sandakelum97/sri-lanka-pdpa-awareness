@@ -1,0 +1,45 @@
+---
+// Shared reading layout for section, scenario, pathway, FAQ and glossary pages:
+// breadcrumb, centred measure, metadata, in-page contents, previous/next, related links.
+import StatusBadge from './StatusBadge.astro';
+interface Crumb { href: string; label: string }
+interface Nav { href: string; label: string }
+interface Props {
+  lang: 'en' | 'si'; crumbs: Crumb[]; title: string; status?: string; cites?: string;
+  version?: string | number; reviewed?: string | Date; reviewStatus?: string;
+  prev?: Nav; next?: Nav; related?: Nav[]; headings?: { depth: number; slug: string; text: string }[];
+}
+const { lang, crumbs, title, status, cites, version, reviewed, reviewStatus, prev, next, related = [], headings = [] } = Astro.props;
+const fmt = (d?: string | Date) => d ? new Date(d).toLocaleDateString(lang === 'en' ? 'en-GB' : 'si-LK', { day: 'numeric', month: 'long', year: 'numeric' }) : '';
+const toc = headings.filter((h) => h.depth === 2).slice(0, 14);
+const t = lang === 'en'
+  ? { contents: 'On this page', prev: 'Previous', next: 'Next', related: 'Related', draft: 'Draft — not yet legally reviewed', reviewed: 'Checked', version: 'Version', notInForce: 'This provision is not in force. No start date has been set. It creates no present rights or duties.' }
+  : { contents: 'මෙම පිටුවේ', prev: 'පෙර', next: 'ඊළඟ', related: 'සම්බන්ධ', draft: 'කෙටුම්පත — තවම නීති විමර්ශනය කර නැත', reviewed: 'පරීක්ෂා කළේ', version: 'අනුවාදය', notInForce: 'මෙම විධිවිධානය ක්‍රියාත්මක නැත. දිනයක් නියම කර නැත.' };
+---
+<nav class="crumbs" aria-label={lang === 'en' ? 'Breadcrumb' : 'මාර්ගය'}>
+  <ol>{crumbs.map((c) => <li><a href={c.href}>{c.label}</a></li>)}<li aria-current="page">{title}</li></ol>
+</nav>
+<div class="article-grid">
+  <article class="prose reading">
+    <header class="article-head">
+      <h1>{title}</h1>
+      <p class="meta">
+        {status && <StatusBadge status={status} lang={lang} />}
+        {cites && <span>{lang === 'en' ? 'Cites' : 'උපුටා දක්වයි'}: {cites}</span>}
+        {reviewed && <span>{t.reviewed} {fmt(reviewed)}</span>}
+        {version && <span>{t.version} {version}</span>}
+        {reviewStatus && reviewStatus !== 'published' && <span class="draft-pill">{t.draft}</span>}
+      </p>
+      {status === 'NO' && <div class="notice no"><p><strong>{lang === 'en' ? 'Not in force.' : 'ක්‍රියාත්මක නැත.'}</strong> {t.notInForce}</p></div>}
+    </header>
+    <slot />
+    <nav class="pager" aria-label={lang === 'en' ? 'Previous and next' : 'පෙර සහ ඊළඟ'}>
+      {prev ? <a class="prev" href={prev.href}><small>← {t.prev}</small><span>{prev.label}</span></a> : <span />}
+      {next ? <a class="next" href={next.href}><small>{t.next} →</small><span>{next.label}</span></a> : <span />}
+    </nav>
+  </article>
+  <aside class="side">
+    {toc.length > 1 && <div class="toc"><h2>{t.contents}</h2><ol>{toc.map((h) => <li><a href={`#${h.slug}`}>{h.text}</a></li>)}</ol></div>}
+    {related.length > 0 && <div class="related"><h2>{t.related}</h2><ul>{related.map((r) => <li><a href={r.href}>{r.label}</a></li>)}</ul></div>}
+  </aside>
+</div>

@@ -2,7 +2,7 @@
 import Base from '../../layouts/Base.astro';
 import { getCollection } from 'astro:content';
 import { asOf } from '../../lib/status';
-const scenarios = (await getCollection('scenarios')).sort((a, b) => parseInt(a.id) - parseInt(b.id));
+const scenarios = (await getCollection('scenarios')).sort((a, b) => (a.data.order ?? 99) - (b.data.order ?? 99));
 ---
 <Base title="Understanding Sri Lanka's data protection law" lang="en" welcome={true} description="What Sri Lanka's Personal Data Protection Act asks of shops, schools, hospitals, employers and websites — and what it gives you. Plain language, checked against the official texts.">
   <section class="hero">

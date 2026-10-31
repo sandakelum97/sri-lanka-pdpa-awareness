@@ -15,10 +15,6 @@ reviewed_by: none
 review_status: draft
 ---
 
-# Section 22 — Duties of processors and sub-processors
-
-Part III: Controllers and Processors (ss.20–26) · Status: **In force from 1 January 2027** (Gazette 2498/16)
-
 ## 1. What the law says (referenced extract)
 
 > A processor shall: (a) process only on the controller's written instructions; (b) bind its personnel to confidentiality; (c) facilitate compliance audits and inspections on the controller's written request; (d) on written instruction, erase or return all personal data at the end of the service. A processor that ignores instructions or decides purposes and means itself is deemed a controller for that processing (s.22(2)). The same duties apply to sub-processors (s.22(3)); the processor is liable to the controller for its sub-processors (s.22(4)). 'Personnel' includes employees, consultants, agents, affiliates and contractors (s.22(5)). — s.22

@@ -1,21 +1,26 @@
 ---
 import Base from '../../../layouts/Base.astro';
-import StatusBadge from '../../../components/StatusBadge.astro';
+import Article from '../../../components/Article.astro';
 import { getCollection, render } from 'astro:content';
+import { parts } from '../../../lib/status';
 export async function getStaticPaths() {
-  const entries = await getCollection('sections');
-  return entries.map((e) => ({ params: { id: e.id }, props: { e } }));
+  const entries = (await getCollection('sections')).sort((a, b) => a.id.localeCompare(b.id, undefined, { numeric: true }));
+  return entries.map((e, i) => ({ params: { id: e.id }, props: { e, prev: entries[i - 1], next: entries[i + 1], all: entries } }));
 }
-const { e } = Astro.props;
-const { Content } = await render(e);
+const { e, prev, next, all } = Astro.props;
+const { Content, headings } = await render(e);
+const clean = (t: string) => t.replace(/^Section \S+ — /, '');
+const part = parts.find((p) => String(p.part) === String(e.data.part));
+const scenarios = (await getCollection('scenarios')).filter((s) => (s.data.sections_cited ?? '').includes(`s.${e.data.section} `) || (s.data.sections_cited ?? '').includes(`s.${e.data.section};`) || (s.data.sections_cited ?? '').endsWith(`s.${e.data.section}`)).slice(0, 5);
+const related = [
+  ...(part ? all.filter((x) => String(x.data.part) === String(e.data.part) && x.id !== e.id).slice(0, 6).map((x) => ({ href: `/en/sections/${x.id}/`, label: `s.${x.data.section} — ${clean(x.data.title)}` })) : []),
+  ...scenarios.map((s) => ({ href: `/en/scenarios/${s.id}/`, label: s.data.title })),
+];
 ---
 <Base title={e.data.title} lang="en" description={`${e.data.title} — plain-language explanation with legal status.`}>
-  <div class="meta">
-    <StatusBadge status={e.data.commencement_status} />
-    {e.data.sections_cited && <span>Cites: {e.data.sections_cited}</span>}
-    <span>Version {e.data.content_version} · reviewed {String(e.data.last_reviewed)} · {e.data.review_status}</span>
-  </div>
-  {e.data.commencement_status === 'NO' && <div class="notice no"><strong>Not in force.</strong> This provision has no commencement date. It creates no present rights or duties.</div>}
-  <article class="prose"><Content /></article>
-  <p><a href="/en/sections/">← All sections</a></p>
+  <Article lang="en" crumbs={[{ href: '/en/', label: 'Home' }, { href: '/en/sections/', label: 'The Act' }, ...(part ? [{ href: `/en/sections/#part-${part.part}`, label: part.part === '-' ? 'Preliminary' : `Part ${part.part}` }] : [])]}
+    title={e.data.title} status={e.data.commencement_status} cites={e.data.sections_cited} version={e.data.content_version} reviewed={e.data.last_reviewed} reviewStatus={e.data.review_status}
+    prev={prev && { href: `/en/sections/${prev.id}/`, label: clean(prev.data.title) }} next={next && { href: `/en/sections/${next.id}/`, label: clean(next.data.title) }} related={related} headings={headings}>
+    <Content />
+  </Article>
 </Base>

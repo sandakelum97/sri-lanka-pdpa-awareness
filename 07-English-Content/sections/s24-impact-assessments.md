@@ -15,10 +15,6 @@ reviewed_by: none
 review_status: draft
 ---
 
-# Section 24 — Personal data protection impact assessments (DPIA)
-
-Part III: Controllers and Processors (ss.20–26) · Status: **In force from 1 January 2027** (Gazette 2498/16)
-
 ## 1. What the law says (referenced extract)
 
 > Before processing that involves (a) "a systematic and extensive evaluation of personal data or special categories of personal data including profiling"; (b) "a systematic monitoring of publicly accessible areas or telecommunication networks"; or (c) activities determined by rules, a controller shall carry out a personal data protection impact assessment "in a form and manner as may be prescribed" to assess the impact on Part I obligations and Part II rights. — s.24(1). It must record mitigating measures (24(2)); the controller shall seek the assistance of the DPO (24(3), as amended); a fresh DPIA is needed when methodology, technology or process changes (24(4)); the DPIA must be submitted to the Authority **upon its written request** (24(5), as replaced).

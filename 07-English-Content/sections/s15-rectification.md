@@ -15,10 +15,6 @@ reviewed_by: none
 review_status: draft
 ---
 
-# Section 15 — Right to rectification or completion
-
-Part II: Rights of Data Subjects (ss.13–19) · Status: **NOT IN FORCE — no date set**
-
 > ⚠️ **This provision is not yet in force.** No start date has been set. Read section 9 below before relying on anything here.
 
 ## 1. What the law says (referenced extract)

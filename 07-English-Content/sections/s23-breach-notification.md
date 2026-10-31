@@ -15,10 +15,6 @@ reviewed_by: none
 review_status: draft
 ---
 
-# Section 23 — Personal data breach notification
-
-Part III: Controllers and Processors (ss.20–26) · Status: **In force from 1 January 2027** (Gazette 2498/16)
-
 ## 1. What the law says (referenced extract)
 
 > In the event of a personal data breach, a controller shall notify the Authority "in such form, manner and within such period of time as may be determined by rules made under this Act". The Authority shall provide by rules for the circumstances in which the Authority and affected data subjects must be notified and the form and content of notifications. — s.23. A 'personal data breach' is any act or omission resulting in accidental or unlawful destruction, loss, alteration, unauthorised disclosure of, or access to, personal data (s.56).

@@ -2,6 +2,7 @@
 title: "A website collecting visitor information"
 slug: scenario-website-visitors
 language: en
+order: 8
 type: scenario
 pathways: [website, online-seller, technical]
 sections_cited: "s.2(1)(b)(iii)–(iv); s.56 — Personal data; s.5; s.11 + Sch V; s.21, s.26; s.27; s.14 — Objection"
@@ -12,8 +13,6 @@ last_reviewed: 2026-10-31
 reviewed_by: none
 review_status: draft
 ---
-
-# A website collecting visitor information
 
 ## The situation
 

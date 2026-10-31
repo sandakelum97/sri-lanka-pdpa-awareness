@@ -1,15 +1,19 @@
 ---
 import Base from '../../../layouts/Base.astro';
+import Article from '../../../components/Article.astro';
 import { getCollection, render } from 'astro:content';
 export async function getStaticPaths() {
-  const entries = await getCollection('pathways');
-  return entries.map((e) => ({ params: { id: e.id }, props: { e } }));
+  const order = ['citizen-pathway', 'small-business-guide', 'small-business-checklist', 'organisation-pathway', 'technical-pathway'];
+  const entries = (await getCollection('pathways')).sort((a, b) => order.indexOf(a.id) - order.indexOf(b.id));
+  return entries.map((e, i) => ({ params: { id: e.id }, props: { e, prev: entries[i - 1], next: entries[i + 1] } }));
 }
-const { e } = Astro.props;
-const { Content } = await render(e);
+const { e, prev, next } = Astro.props;
+const { Content, headings } = await render(e);
+const related = [{ href: '/en/scenarios/', label: 'Real situations' }, { href: '/en/faq/', label: 'Questions people ask' }, { href: '/en/status/', label: 'What is in force today' }, { href: '/en/glossary/', label: 'Glossary' }];
 ---
-<Base title={e.data.title} lang="en">
-  <div class="meta"><span>Version {e.data.content_version} · reviewed {String(e.data.last_reviewed)} · {e.data.review_status}</span></div>
-  <article class="prose"><Content /></article>
-  <p><a href="/en/pathways/">← All pathways</a></p>
+<Base title={e.data.title} lang="en" description={e.data.title}>
+  <Article lang="en" crumbs={[{ href: '/en/', label: 'Home' }, { href: '/en/pathways/', label: 'Start here' }]} title={e.data.title} version={e.data.content_version} reviewed={e.data.last_reviewed} reviewStatus={e.data.review_status}
+    prev={prev && { href: `/en/pathways/${prev.id}/`, label: prev.data.title }} next={next && { href: `/en/pathways/${next.id}/`, label: next.data.title }} related={related} headings={headings}>
+    <Content />
+  </Article>
 </Base>

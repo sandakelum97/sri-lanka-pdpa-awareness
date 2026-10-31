@@ -15,10 +15,6 @@ reviewed_by: none
 review_status: draft
 ---
 
-# Section 11 — Transparency — information to be given to people
-
-Part I: Processing of Personal Data (ss.4–12) · Status: **In force from 1 January 2027** (Gazette 2498/16)
-
 ## 1. What the law says (referenced extract)
 
 > A controller shall provide data subjects with the information in Schedule V, and information about decisions on Part II requests, "in writing or by electronic means and in a concise, transparent, intelligible and easily accessible form". — s.11

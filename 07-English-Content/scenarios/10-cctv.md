@@ -2,6 +2,7 @@
 title: "A CCTV system recording customers"
 slug: scenario-cctv
 language: en
+order: 10
 type: scenario
 pathways: [shop, restaurant, school, organisation]
 sections_cited: "s.56 — Personal data; s.5; s.11 — Notice; s.9 — Retention; s.10 — Security; s.24(1)(b) — DPIA; s.40 / Sch IV; s.13 — Access"
@@ -12,8 +13,6 @@ last_reviewed: 2026-10-31
 reviewed_by: none
 review_status: draft
 ---
-
-# A CCTV system recording customers
 
 ## The situation
 

@@ -2,6 +2,7 @@
 title: "A supermarket collecting loyalty-card information"
 slug: scenario-loyalty-cards
 language: en
+order: 2
 type: scenario
 pathways: [shop, organisation]
 sections_cited: "s.5 + Sch I; s.6 — Purpose; s.7 — Minimisation; s.11 + Sch V — Transparency; s.12 — DPMP; s.20 — DPO; s.24 — DPIA; s.18 — Automated decisions"
@@ -12,8 +13,6 @@ last_reviewed: 2026-10-31
 reviewed_by: none
 review_status: draft
 ---
-
-# A supermarket collecting loyalty-card information
 
 ## The situation
 

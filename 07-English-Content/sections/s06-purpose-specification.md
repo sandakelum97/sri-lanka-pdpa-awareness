@@ -15,10 +15,6 @@ reviewed_by: none
 review_status: draft
 ---
 
-# Section 6 — Purpose specification
-
-Part I: Processing of Personal Data (ss.4–12) · Status: **In force from 1 January 2027** (Gazette 2498/16)
-
 ## 1. What the law says (referenced extract)
 
 > Every controller shall ensure personal data is processed for "specified", "explicit" and "legitimate" purposes and is not further processed in a way incompatible with those purposes. Further processing for public-interest archiving, scientific or historical research or statistics is not incompatible, subject to s.10. — s.6

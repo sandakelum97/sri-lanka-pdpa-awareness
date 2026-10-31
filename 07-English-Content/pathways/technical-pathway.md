@@ -13,8 +13,6 @@ reviewed_by: none
 review_status: draft
 ---
 
-# PDPA for IT, security and engineering professionals
-
 *What the Act actually requires of systems, and what it leaves to you. Legal requirements are cited; everything else is engineering judgement.*
 
 ## 1. Definitions that drive design

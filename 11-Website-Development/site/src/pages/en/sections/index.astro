@@ -11,7 +11,7 @@ const dpa = entries.find((e) => e.id.startsWith('s28-35'));
   <h1>The Act, section by section</h1>
   <p>Each page gives the statutory extract, a plain-English explanation, who is affected, an everyday example, actions, consequences and the current legal status.</p>
   {parts.map((p) => (
-    <section>
+    <section id={`part-${p.part}`}>
       <h2>{p.part === '-' ? 'Preliminary' : `Part ${p.part}`} — {p.title} {p.part !== '-' && <StatusBadge status={statusForPart(p.part)} small />}</h2>
       {p.part === 'V' && dpa && <p><a href={`/en/sections/${dpa.id}/`}>{dpa.data.title}</a></p>}
       <ul>

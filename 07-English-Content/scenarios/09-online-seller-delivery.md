@@ -2,6 +2,7 @@
 title: "An online seller collecting delivery addresses"
 slug: scenario-online-seller-delivery
 language: en
+order: 9
 type: scenario
 pathways: [online-seller, shop]
 sections_cited: "s.5 + Sch I(b); s.7, s.9; s.21 — Processors; s.26 — Cross-border; s.10 — Security; s.27"
@@ -12,8 +13,6 @@ last_reviewed: 2026-10-31
 reviewed_by: none
 review_status: draft
 ---
-
-# An online seller collecting delivery addresses
 
 ## The situation
 

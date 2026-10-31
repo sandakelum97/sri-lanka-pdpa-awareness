@@ -1,7 +1,7 @@
 ---
 import Base from '../../../layouts/Base.astro';
 import { getCollection } from 'astro:content';
-const entries = (await getCollection('scenarios')).sort((a, b) => parseInt(a.id) - parseInt(b.id));
+const entries = (await getCollection('scenarios')).sort((a, b) => (a.data.order ?? 99) - (b.data.order ?? 99));
 ---
 <Base title="Real situations" lang="en" description="Twelve everyday moments where personal data changes hands in Sri Lanka, and what the law says about each.">
   <h1>Real situations</h1>

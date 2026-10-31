@@ -13,8 +13,6 @@ reviewed_by: none
 review_status: draft
 ---
 
-# PDPA for Small Businesses – What Do I Need to Know?
-
 *For grocery shops, retail stores, restaurants and cafés, salons, tuition classes, small clinics and pharmacies, online sellers, freelancers and the self-employed.*
 
 You keep customers' numbers in your phone. You have a book of regulars. Maybe a camera over the till. None of that is illegal, and none of it will be. But from **1 January 2027** the law expects you to do a few plain things with that information, and this page lists them. Two warnings first: nothing here is legal advice, and we are not the Data Protection Authority. Everything links to the Act so you can check.

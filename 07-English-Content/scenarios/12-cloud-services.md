@@ -2,6 +2,7 @@
 title: "An organisation storing information in cloud services"
 slug: scenario-cloud-services
 language: en
+order: 12
 type: scenario
 pathways: [organisation, technical, shop, online-seller]
 sections_cited: "s.56 — Cross-border data flow / third country; s.26 (as replaced) — Cross-border; s.21 — Processors; s.10 — Security; s.11 + Sch V item 1(h); s.26(4)–(5) — Public authorities"
@@ -12,8 +13,6 @@ last_reviewed: 2026-10-31
 reviewed_by: none
 review_status: draft
 ---
-
-# An organisation storing information in cloud services
 
 ## The situation
 

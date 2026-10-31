@@ -1,7 +1,12 @@
 ---
 import Base from '../../layouts/Base.astro';
+import Article from '../../components/Article.astro';
 import { getCollection, render } from 'astro:content';
 const [g] = await getCollection('glossary');
-const { Content } = await render(g);
+const { Content, headings } = await render(g);
 ---
-<Base title="ද්විභාෂා නීති පාරිභාෂික ශබ්දකෝෂය" lang="si"><div class="notice">කෙටුම්පත — විමර්ශකයාගේ අනුමැතිය අපේක්ෂිතයි.</div><article class="prose"><Content /></article></Base>
+<Base title="වචන මාලාව" lang="si">
+  <Article lang="si" crumbs={[{ href: '/si/', label: 'මුල් පිටුව' }]} title="ද්විභාෂා නීති වචන මාලාව" reviewStatus="draft" headings={headings} related={[{ href: '/si/faq/', label: 'මිනිසුන් අසන ප්‍රශ්න' }]}>
+    <Content />
+  </Article>
+</Base>

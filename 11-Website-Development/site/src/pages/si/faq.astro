@@ -1,7 +1,13 @@
 ---
 import Base from '../../layouts/Base.astro';
+import Article from '../../components/Article.astro';
 import { getCollection, render } from 'astro:content';
 const [faq] = await getCollection('faqSi');
-const { Content } = await render(faq);
+const { Content, headings } = await render(faq);
 ---
-<Base title="මිනිසුන් අසන ප්‍රශ්න" lang="si"><article class="prose"><Content /></article></Base>
+<Base title="මිනිසුන් අසන ප්‍රශ්න" lang="si">
+  <Article lang="si" crumbs={[{ href: '/si/', label: 'මුල් පිටුව' }]} title="මිනිසුන් අසන ප්‍රශ්න" version={faq.data.content_version} reviewed={faq.data.last_reviewed} reviewStatus="draft" headings={headings}
+    related={[{ href: '/si/pathways/', label: 'මෙතැනින් පටන් ගන්න' }, { href: '/si/status/', label: 'ක්‍රියාත්මක මොනවාද' }, { href: '/si/downloads/', label: 'නිල ලේඛන' }]}>
+    <Content />
+  </Article>
+</Base>

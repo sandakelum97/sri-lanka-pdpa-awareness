@@ -15,8 +15,6 @@ reviewed_by: none
 review_status: draft
 ---
 
-# Who is the Data Protection Authority of Sri Lanka?
-
 Part V (ss.28–35) · Status: **In force since 17 July 2023** (Gazette 2341/59); Director-General and staff (Part VI), Fund (Part VIII) and the rule- and regulation-making powers (Part IX) since 1 December 2023 (Gazette 2366/08).
 
 ## What it is

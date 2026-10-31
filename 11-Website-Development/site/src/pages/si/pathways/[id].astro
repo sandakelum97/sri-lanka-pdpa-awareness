@@ -1,11 +1,18 @@
 ---
 import Base from '../../../layouts/Base.astro';
+import Article from '../../../components/Article.astro';
 import { getCollection, render } from 'astro:content';
 export async function getStaticPaths() {
   const entries = await getCollection('pathwaysSi');
-  return entries.map((e) => ({ params: { id: e.id }, props: { e } }));
+  return entries.map((e, i) => ({ params: { id: e.id }, props: { e, prev: entries[i - 1], next: entries[i + 1] } }));
 }
-const { e } = Astro.props;
-const { Content } = await render(e);
+const { e, prev, next } = Astro.props;
+const { Content, headings } = await render(e);
 ---
-<Base title={e.data.title} lang="si"><div class="meta"><span>කෙටුම්පත · {String(e.data.last_reviewed)} · විමර්ශනය කර නැත</span></div><article class="prose"><Content /></article><p><a href="/si/pathways/">← ආපසු</a></p></Base>
+<Base title={e.data.title} lang="si">
+  <Article lang="si" crumbs={[{ href: '/si/', label: 'මුල් පිටුව' }, { href: '/si/pathways/', label: 'මෙතැනින් පටන් ගන්න' }]} title={e.data.title} version={e.data.content_version} reviewed={e.data.last_reviewed} reviewStatus="draft"
+    prev={prev && { href: `/si/pathways/${prev.id}/`, label: prev.data.title }} next={next && { href: `/si/pathways/${next.id}/`, label: next.data.title }} headings={headings}
+    related={[{ href: '/si/faq/', label: 'මිනිසුන් අසන ප්‍රශ්න' }, { href: '/si/status/', label: 'ක්‍රියාත්මක මොනවාද' }, { href: '/si/glossary/', label: 'වචන මාලාව' }]}>
+    <Content />
+  </Article>
+</Base>

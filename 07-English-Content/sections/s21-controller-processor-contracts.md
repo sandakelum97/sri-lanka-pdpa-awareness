@@ -15,10 +15,6 @@ reviewed_by: none
 review_status: draft
 ---
 
-# Section 21 — Using processors; joint controllers
-
-Part III: Controllers and Processors (ss.20–26) · Status: **In force from 1 January 2027** (Gazette 2498/16)
-
 ## 1. What the law says (referenced extract)
 
 > Where a processor processes on a controller's behalf, the controller shall (a) use only processors who ensure appropriate technical and organisational measures and protect data-subject rights; and (b) ensure the processor is bound by a contract or written law setting out the subject-matter and duration, nature and purpose, type of personal data and categories of data subjects, and the obligations of the controller. — s.21(1). Two or more controllers jointly determining purposes and means are "joint controllers", jointly responsible. — s.21(2)

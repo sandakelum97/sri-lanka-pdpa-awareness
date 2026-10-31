@@ -15,10 +15,6 @@ reviewed_by: none
 review_status: draft
 ---
 
-# Section 3 — The Act prevails over other written law
-
-Part —: Preliminary (ss.1–3) · Status: **In force from 1 January 2027**
-
 ## 1. What the law says (referenced extract)
 
 > The Act has effect notwithstanding anything to the contrary in any other written law relating to the protection of personal data. Proviso: a public authority governed by another written law may process in accordance with that law in so far as the protection of personal data is consistent with this Act. In the event of inconsistency, this Act prevails. — s.3

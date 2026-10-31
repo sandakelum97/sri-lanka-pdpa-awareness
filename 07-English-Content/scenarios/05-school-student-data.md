@@ -2,6 +2,7 @@
 title: "A school collecting student information"
 slug: scenario-school-student-data
 language: en
+order: 5
 type: scenario
 pathways: [school, organisation]
 sections_cited: "s.56 / Sch II; s.3 — Other laws; s.12 — DPMP; s.20 — DPO; s.24 — DPIA; s.21 — Processors; s.26 — Cross-border"
@@ -12,8 +13,6 @@ last_reviewed: 2026-10-31
 reviewed_by: none
 review_status: draft
 ---
-
-# A school collecting student information
 
 ## The situation
 

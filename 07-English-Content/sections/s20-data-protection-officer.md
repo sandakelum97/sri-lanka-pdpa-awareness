@@ -15,10 +15,6 @@ reviewed_by: none
 review_status: draft
 ---
 
-# Section 20 — Data Protection Officer
-
-Part III: Controllers and Processors (ss.20–26) · Status: **In force from 1 January 2027** (Gazette 2498/16)
-
 ## 1. What the law says (referenced extract)
 
 > Every controller and processor shall designate or appoint a DPO where: (a) the processing is carried out by "a Ministry or government department" (except the judiciary acting judicially) [as amended — public corporations removed]; or (b) its core activities consist of (i) operations requiring regular and systematic monitoring of data subjects "on a scale and magnitude as may be prescribed"; (ii) processing of special categories "on a scale and magnitude as may be prescribed"; or (iii) categories of processing resulting in a risk of harm to data subjects' rights "as may be determined by the Authority by way of guidelines" [as amended]. — s.20(1)

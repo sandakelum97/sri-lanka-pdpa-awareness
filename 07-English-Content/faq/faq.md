@@ -1,97 +1,121 @@
 ---
-title: "Frequently Asked Questions — Sri Lanka's Personal Data Protection Act"
+title: "Questions people ask"
 slug: faq
 language: en
 type: faq
 audience: [all]
 commencement_status: "mixed"
 sources: [ACT-01, ACT-02, GAZ-01, GAZ-02, GAZ-03, GAZ-04, CIR-02, WEB-10]
-content_version: 0.1
+content_version: 0.2
 last_reviewed: 2026-10-31
 reviewed_by: none
 review_status: draft
 ---
 
-# Frequently Asked Questions
+# Questions people ask
 
-Checked against official sources on 31 October 2026. Each answer gives the section and its commencement status: **IN** (in force), **2027** (from 1 January 2027), **NO** (not in force, no date).
+Short answers, each with the section of the Act and whether that section is in force. **IN** means in force now. **2027** means from 1 January 2027. **NO** means written into the Act but with no start date. Checked against the official texts on 31 October 2026.
 
-## About the law
+## About the law itself
 
-**Is the Personal Data Protection Act in force?**
-Partly. The Act was certified on 19 March 2022. The parts creating the regulator (Parts V, VI, VIII, IX, X) have been in force since 2023. The core duties on anyone handling personal data (sections 2–3, Part I, Part III) come into force on **1 January 2027** under Gazette 2498/16. The rights of individuals (Part II), the marketing-message rules (Part IV) and the penalties (Part VII) have **no start date**. [s.1; GAZ-01, GAZ-02, GAZ-03, GAZ-04]
+### Is the Personal Data Protection Act in force?
 
-**I read that it came into force on 18 March 2025. Is that right?**
-No. That date was set by Gazette 2366/08 but repealed by Gazette 2427/34 on 14 March 2025, four days before it would have taken effect. Some pages — including older pages on the DPA's own website — still show it. [GAZ-03]
+Partly, and the partly matters. The Act was certified on 19 March 2022. The pieces that create the regulator have been in force since 2023. The pieces that put duties on businesses, schools, hospitals and government offices start on **1 January 2027**. The pieces that give you rights, control marketing messages, and set fines have **no start date at all**. [s.1 — IN; Gazettes 2341/59, 2366/08, 2427/34, 2498/16]
 
-**Has the Act been amended?**
-Yes, once: the Personal Data Protection (Amendment) Act, No. 22 of 2025, certified 30 October 2025. It let the Minister commence provisions in phases, set a one-month response time for requests, allowed outsourced DPOs, rewrote the cross-border transfer rules, and removed the mandatory DPO for public corporations, among other changes. [ACT-02]
+### I read that it came into force on 18 March 2025. Did it?
 
-**Who is the regulator?**
-The Data Protection Authority of Sri Lanka, established under section 28, based at BMICH, Colombo 07 (info@dpa.gov.lk). [s.28 — IN]
+No. That date was announced in January 2024 and cancelled on 14 March 2025 — four days before it would have arrived. Plenty of articles, and some older pages on the regulator's own website, still carry it. [Gazette 2427/34]
 
-**Is this website the Data Protection Authority?**
-No. This is an independent public-education project. We link to the official documents so you can check everything yourself.
+### Has the law been changed since 2022?
 
-## For individuals
+Once, in October 2025. The amendment let the government switch the Act on in stages, gave organisations one month to answer requests instead of 21 working days, allowed the Data Protection Officer role to be outsourced, rewrote the rules on sending data abroad, and took public corporations off the list of bodies that must have a DPO. [Act No. 22 of 2025]
 
-**Can a business ask for my NIC number?**
-The Act does not ban it. From 2027 a business must have a lawful reason (s.5), collect only what is necessary for its purpose (s.7), and tell you why (s.11). Many businesses that photocopy NICs today will struggle to justify keeping a copy. [ss.5, 7, 11 — 2027]
+### Who enforces it?
 
-**Can I ask a company what information it holds about me?**
-The right of access (s.13) and the one-month response rule (s.17) are in Part II, which is **not in force**. You can still ask, and the DPA's own privacy notice says it will handle such requests voluntarily; a company may do the same. [ss.13, 17 — NO]
+The Data Protection Authority of Sri Lanka, at BMICH in Colombo 7. It has a board, a Director-General and staff, and it can already investigate complaints and order a business to stop or fix something. What it cannot yet do is fine anyone. [ss.28–35 — IN; s.38 — NO]
 
-**Can I make a business delete my data?**
-When Part II is in force, only in three situations: the processing broke the rules, you withdrew consent that was the only basis, or a law or court requires deletion (s.16). There is no general right to be forgotten. [s.16 — NO]
+### Are you the Data Protection Authority?
 
-**Can my employer share my personal information?**
-From 2027 an employer may process staff data only for specified purposes with a lawful basis (ss.5–6) and must tell staff what it does (s.11). Sharing with EPF, tax or a payroll provider is normal; sharing with unrelated third parties needs a basis. [ss.5, 6, 11, 21 — 2027]
+No. This is an independent education project with no government connection. We link to the official documents on every page so you can check us.
 
-**What should I do if my personal data is leaked?**
-Today: complain to the organisation and, if you wish, to the Data Protection Authority, which can investigate and issue directives (s.35 — IN). From 2027 the organisation must notify the Authority of breaches, in a manner the rules will set (s.23 — 2027; rules not made). Compensation can be ordered by the Authority under s.35(2)(c) (IN).
+## If you are an ordinary person
 
-**Can I complain to the Authority now?**
-The Authority's complaint-inquiry power (s.35) is in force, but the Authority has said it will investigate complaints only once the provisions that were allegedly breached are in operation — i.e. from 1 January 2027 for Part I/III matters. [s.35 — IN; CIR-02 para 2.2]
+### Can a business ask for my NIC number?
 
-**Do I have to receive marketing SMS?**
-Part IV (s.27) will require your consent for promotional messages and a free opt-out, but it is **not in force**. Telecom-regulator rules on bulk SMS are separate. [s.27 — NO]
+The Act does not forbid it. From 2027 a business needs a lawful reason to collect it, may collect only what it needs for that reason, and must tell you what the reason is. A bank opening an account has a reason. A shop photocopying your NIC to sell you a phone charger will struggle to explain why it keeps the copy. [ss.5, 7, 11 — 2027]
 
-## For small businesses
+### Can I ask a company what it knows about me?
 
-**I own a small shop. Does this law affect me?**
-Yes — there is no small-business exemption, only a private/household one (s.2(3)). What you must do scales with your size (s.12(1)(b)). See the Small Business Guide. [s.2, s.12 — 2027]
+You can ask; they do not yet have to answer. The right of access, and the one-month deadline to reply, sit in Part II, which has no start date. Some organisations will answer anyway — the regulator's own privacy notice says it will. Keep a copy of what you sent and when. [ss.13, 17 — NO]
 
-**Do I need a Data Protection Officer?**
-Mandatory only for Ministries and government departments. Private businesses need one only above thresholds that have not yet been prescribed, or in risk categories the Authority has not yet defined. For a small shop: almost certainly no. [s.20 — 2027; thresholds pending]
+### Can I make a business delete my data?
 
-**Can I keep customer telephone numbers?**
-Yes, for a stated purpose with a lawful basis — a delivery or order is "necessary for the contract". Using them for promotions needs consent. [ss.5–6 — 2027; s.27 — NO]
+When Part II starts, in three situations only: the business broke the rules, you withdrew the consent that was its only reason, or a law or court requires deletion. There is no general "forget me" right in this Act. [s.16 — NO]
 
-**Can I store customer data in Google/Microsoft cloud or use WhatsApp?**
-Yes. Overseas storage is a cross-border data flow (s.26), which is regulated, not banned: keep complying with the Act for that data, keep the provider's data-protection terms, and adopt the safeguard instruments the Authority will specify by directive (not yet issued). [s.26 — 2027]
+### Can my employer share my personal information?
 
-**How quickly must I report a data breach?**
-No deadline exists yet. Section 23 leaves the timing to rules that have not been made. The DPA's 2024 draft proposed 72 hours; it is a draft. [s.23 — 2027; rules pending]
+From 2027 your employer needs a lawful reason for everything it does with your file and must tell you what it does. Sending details to EPF, the tax office or a payroll company is ordinary. Passing your medical certificate to a third party, or your salary to someone with no business knowing it, needs a reason the Act recognises. [ss.5, 6, 11, 21 — 2027]
 
-**What is the fine?**
-Up to Rs 10 million per non-compliance **with an Authority directive**, doubling for repeats, with personal liability for directors — in Part VII, which is **not in force**. [s.38 — NO]
+### My data was leaked. What should I do?
 
-**Does the Act apply to my CCTV?**
-Identifiable footage is personal data. From 2027: signage, a retention period, restricted access, and — for systematic monitoring of public areas — an impact assessment first. [ss.9–11, 24 — 2027]
+Right now: complain to the organisation, and if you want, to the Data Protection Authority, which can investigate and order them to put things right or pay compensation. From 2027 the organisation also has to report the leak to the Authority, in a form and within a time the rules will set — the rules are not written yet. [s.35 — IN; s.23 — 2027]
 
-**Is children's data treated differently?**
-Yes. Data about a child under 16 is a "special category", needing a Schedule II ground; consent must come from a parent or guardian. Every tuition class and school handles special-category data. [s.56, s.5(b), Sch II — 2027]
+### Can I complain to the Authority today?
 
-## For organisations
+Yes, its complaint power is in force. The Authority has said, though, that it will investigate a complaint only once the section that was supposedly broken is itself in force — so for most everyday complaints, that means from 1 January 2027. [s.35 — IN; Circular 01/2026]
 
-**What is a Data Protection Management Programme?**
-The internal controls and records that let you demonstrate compliance with ss.5–11, scaled to your processing (s.12). The Authority may issue guidelines on it (s.51A) — none yet. [s.12 — 2027]
+### Do I have to put up with marketing SMS?
 
-**When do I need a DPIA?**
-Before systematic and extensive evaluation/profiling, systematic monitoring of public areas or telecom networks, or activities set by rules (s.24(1)). The form is to be prescribed — not yet. [s.24 — 2027]
+The Act's answer — consent only, your name on every message, a free way to opt out — is in Part IV, which has no start date. Separate telecom-regulator rules on bulk SMS exist outside this Act. [s.27 — NO]
 
-**Do the 2024 draft rules apply?**
-No. The seven drafts published for consultation in September–October 2024 are not law, and several rest on provisions the 2025 amendment repealed. [DRF-01–07]
+### Is my child's data treated differently?
 
-**Where do I find the official documents?**
-https://www.dpa.gov.lk/guidelines.php — Acts, Gazettes, circulars and drafts in Sinhala, Tamil and English.
+Yes. Anything about a child under 16 is "special category" data, in the same group as health and religion. A school or tuition class relying on consent needs the parent's consent, and must handle the records with more care. [s.56, Schedule II — 2027]
+
+## If you run a small business
+
+### I own a small shop. Does this law affect me?
+
+Yes. There is no exemption for small businesses; the only exemption is for private, household use of information. What changes with size is how much you have to do — the Act itself says your compliance effort should match your scale and the sensitivity of what you hold. For most shops that is a one-page list, a short notice, and some common sense about phones and paper. [ss.2, 12 — 2027]
+
+### Do I need a Data Protection Officer?
+
+Almost certainly not. Ministries and government departments must have one. Private businesses need one only above thresholds that nobody has set yet, or in risk categories the regulator has not yet defined. [s.20 — 2027]
+
+### Can I keep customer phone numbers?
+
+Yes, for the reason you took them — to deliver the order, to say the repair is ready. Using them to send offers is a different matter; that needs consent, and the Act's marketing section is not even in force yet. [ss.5, 6 — 2027; s.27 — NO]
+
+### Can I use Google, Microsoft, Dropbox or WhatsApp for customer data?
+
+Yes. Storing data on servers outside Sri Lanka is regulated, not banned. From 2027 you keep following the Act for that data, you keep the provider's data-protection terms on file, and you adopt whatever safeguard instruments the regulator eventually specifies — it has not yet. [s.26 — 2027]
+
+### How quickly must I report a data leak?
+
+There is no deadline yet. The Act says "within such period as the rules determine", and the rules do not exist. A 2024 draft suggested 72 hours; it is a draft. [s.23 — 2027]
+
+### What is the fine?
+
+Up to ten million rupees — but read the fine print. It is a penalty for ignoring an order from the Authority, not for the leak itself; it doubles for repeat offences; directors can be made to pay personally; and the whole penalty section has no start date. [s.38 — NO]
+
+### Does the Act cover my CCTV?
+
+If a person can be recognised, the footage is personal data. From 2027: a sign saying cameras are running and who runs them, a set period before recordings are overwritten, and limited access. Big systems that systematically watch public areas need a written risk assessment first. [ss.9–11, 24 — 2027]
+
+## If you work in a larger organisation
+
+### What is a Data Protection Management Programme?
+
+The records and procedures that let you *show* you comply, sized to your organisation: what you hold and why, your notices, your retention schedule, your security measures, a way to receive complaints and spot breaches. The regulator can issue guidelines on it; none exist yet. [s.12, s.51A — 2027]
+
+### When do I need an impact assessment?
+
+Before large-scale profiling, before systematic monitoring of public areas or telecom networks, and before anything future rules name. The form is to be prescribed; it has not been. [s.24 — 2027]
+
+### Do the 2024 draft rules apply?
+
+No. Seven drafts went out for comment in September and October 2024. None was finalised, and several cite wording the 2025 amendment has since removed. Treat them as a preview of the regulator's thinking, nothing more.
+
+### Where are the official documents?
+
+https://www.dpa.gov.lk/guidelines.php — both Acts, the Gazettes, the circulars and the drafts, in Sinhala, Tamil and English.

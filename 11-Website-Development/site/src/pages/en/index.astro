@@ -1,39 +1,49 @@
 ---
 import Base from '../../layouts/Base.astro';
-import StatusBadge from '../../components/StatusBadge.astro';
 import { getCollection } from 'astro:content';
 import { asOf } from '../../lib/status';
 const scenarios = (await getCollection('scenarios')).sort((a, b) => a.id.localeCompare(b.id));
-const pathways = await getCollection('pathways');
-const pick = (slug: string) => pathways.find((p) => p.id === slug);
 ---
-<Base title="Your Personal Data. Your Rights. Your Responsibility." lang="en" description="Plain-language guide to Sri Lanka's Personal Data Protection Act for citizens, small businesses, organisations and professionals.">
+<Base title="Understanding Sri Lanka's data protection law" lang="en" welcome={true} description="What Sri Lanka's Personal Data Protection Act asks of shops, schools, hospitals, employers and websites — and what it gives you. Plain language, checked against the official texts.">
   <section class="hero">
-    <h1>Your Personal Data. Your Rights. Your Responsibility.</h1>
-    <p>Sri Lanka's Personal Data Protection Act, No. 9 of 2022, explained in plain language — with the current legal status of every provision, checked against the official texts on {asOf}.</p>
-    <p><a href="/en/pathways/">Start with "What does this mean for me?" →</a></p>
+    <div class="copy">
+      <h1>Your personal data. Your rights. Your responsibility.<span class="si">ඔබේ පෞද්ගලික දත්ත. ඔබේ අයිතිවාසිකම්. ඔබේ වගකීම.</span></h1>
+      <p>A pharmacy writes down your NIC number. A tuition class keeps your child's grades on a phone. A shop sends you offers you never asked for. Sri Lanka now has a law about all of this. Here is what it says, in words you can use — and, just as important, which parts are actually in force.</p>
+      <a class="cta" href="/en/pathways/">Start here: who are you?</a>
+      <a class="cta alt" href="/en/status/">What is in force today</a>
+    </div>
+    <img src="/img/hero-street.svg" alt="A pharmacy counter, a tuition class, a person on a phone, a CCTV camera and a delivery rider" width="1200" height="300" />
   </section>
 
-  <div class="notice">
-    <strong>Where the law stands.</strong> The regulator exists <StatusBadge status="IN" small />. The core duties on anyone handling personal data start on 1 January 2027 <StatusBadge status="2027" small />. Individuals' rights, the marketing-message rules and the fines have no start date yet <StatusBadge status="NO" small />. <a href="/en/status/">See the provision-by-provision tracker.</a>
+  <div class="status-strip" aria-label="Where the law stands">
+    <div><b>The regulator exists</b><span>The Data Protection Authority has been in place since 2023 and can already investigate complaints.</span></div>
+    <div class="soon"><b>Duties on businesses start 1 January 2027</b><span>Lawful reasons, honest notices, keeping data safe, contracts with helpers, reporting leaks.</span></div>
+    <div class="no"><b>Your rights, marketing rules and fines: no date yet</b><span>They are written into the Act but cannot be used until the Minister sets a date.</span></div>
   </div>
 
-  <h2>What does this mean for me?</h2>
-  <div class="grid">
-    <div class="card"><h3><a href="/en/pathways/citizen-pathway/">I'm an ordinary citizen</a></h3><p>Students, employees, parents, online shoppers. What will apply, what applies now, what you can do today.</p></div>
-    <div class="card"><h3><a href="/en/pathways/small-business-guide/">I run a small business</a></h3><p>Shops, restaurants, salons, tuition classes, clinics, online sellers. The guide and the checklist.</p></div>
-    <div class="card"><h3><a href="/en/pathways/organisation-pathway/">I work in an organisation</a></h3><p>Banks, hospitals, schools, IT, telecoms, government. Requirement by requirement, law separated from good practice.</p></div>
-    <div class="card"><h3><a href="/en/pathways/technical-pathway/">I'm an IT or security professional</a></h3><p>What the Act requires of systems, and what it leaves to engineering judgement.</p></div>
+  <h2>Who are you?</h2>
+  <div class="tiles">
+    <a class="tile" href="/en/pathways/citizen-pathway/"><strong>An ordinary person</strong><span>Student, employee, parent, someone who shops online. What will change, and what you can do today.</span><span class="si">සාමාන්‍ය පුරවැසියෙක්</span></a>
+    <a class="tile" href="/en/pathways/small-business-guide/"><strong>A small business owner</strong><span>Grocery, salon, restaurant, tuition class, clinic, online seller. A guide and a one-page checklist.</span><span class="si">කුඩා ව්‍යාපාරිකයෙක්</span></a>
+    <a class="tile" href="/en/pathways/organisation-pathway/"><strong>Someone in a larger organisation</strong><span>Bank, hospital, school, BPO, telecom, government office. Requirement by requirement.</span><span class="si">ආයතනයක සේවකයෙක්</span></a>
+    <a class="tile" href="/en/pathways/technical-pathway/"><strong>An IT or security professional</strong><span>What the Act demands of systems, and what it leaves to you.</span><span class="si">තාක්ෂණ වෘත්තිකයෙක්</span></a>
   </div>
 
-  <h2>Everyday scenarios</h2>
-  <div class="chips">
-    {scenarios.map((s) => <a href={`/en/scenarios/${s.id}/`}>{s.data.title.replace(/^A[n]? /, '')}</a>)}
+  <h2>Real situations</h2>
+  <p>Twelve everyday moments where personal data changes hands. Each one shows which sections apply, from when, and what to do now.</p>
+  <div class="scenarios">
+    {scenarios.map((s, i) => <a href={`/en/scenarios/${s.id}/`}><span class="n">{i + 1}</span><span>{s.data.title}</span></a>)}
   </div>
 
-  <h2>Ask a question</h2>
-  <p>Try: <a href="/en/search/?q=NIC">Can a business collect my NIC number?</a> · <a href="/en/search/?q=employer">Can my employer share my personal information?</a> · <a href="/en/search/?q=leaked">What should I do if my personal data is leaked?</a> · <a href="/en/search/?q=small+shop">I own a small shop — what should I know?</a></p>
+  <h2>The whole law on one line</h2>
+  <figure><img src="/img/status-timeline.svg" alt="Timeline: Act certified March 2022; regulator created July 2023; staff and fund December 2023; the March 2025 start date cancelled; duties on businesses begin 1 January 2027; rights, marketing rules and fines have no date" width="1000" height="360" /><figcaption>Checked against Gazettes 2341/59, 2366/08, 2427/34 and 2498/16 on {asOf}.</figcaption></figure>
 
-  <h2>Official resources</h2>
-  <p>Everything on this site links back to the official texts: the <a href="https://www.dpa.gov.lk/acts/Data%20Protection%20Act%20SL%20-%20English%20%282%29.pdf" rel="noopener">Act No. 9 of 2022</a>, the <a href="https://www.parliament.lk/uploads/acts/gbills/english/6384.pdf" rel="noopener">Amendment Act No. 22 of 2025</a>, the commencement <a href="https://www.dpa.gov.lk/guidelines.php" rel="noopener">Gazettes and DPA publications</a>.</p>
+  <h2>Three words you need</h2>
+  <figure><img src="/img/who-is-who.svg" alt="Data subject: the person. Controller: the business that decides. Processor: the helper acting on instructions." width="1000" height="420" /><figcaption>From section 56 of the Act. <a href="/en/glossary/">The full glossary, in English and Sinhala.</a></figcaption></figure>
+
+  <h2>Questions people ask</h2>
+  <p><a href="/en/faq/#can-a-business-ask-for-my-nic-number">Can a business ask for my NIC number?</a> · <a href="/en/faq/#can-my-employer-share-my-personal-information">Can my employer share my information?</a> · <a href="/en/faq/#what-should-i-do-if-my-personal-data-is-leaked">My data was leaked. What now?</a> · <a href="/en/faq/#i-own-a-small-shop-does-this-law-affect-me">I own a small shop — does this affect me?</a> · <a href="/en/faq/">All questions</a></p>
+
+  <h2>Check our work</h2>
+  <p>Everything here traces back to the official texts: the <a href="https://www.dpa.gov.lk/acts/Data%20Protection%20Act%20SL%20-%20English%20%282%29.pdf" rel="noopener">Act No. 9 of 2022</a>, the <a href="https://www.parliament.lk/uploads/acts/gbills/english/6384.pdf" rel="noopener">Amendment Act No. 22 of 2025</a>, and the <a href="https://www.dpa.gov.lk/guidelines.php" rel="noopener">Gazettes and DPA publications</a>. If we got something wrong, the source is one click away.</p>
 </Base>

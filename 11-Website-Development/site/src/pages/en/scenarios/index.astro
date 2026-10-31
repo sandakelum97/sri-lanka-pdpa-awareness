@@ -3,7 +3,9 @@ import Base from '../../../layouts/Base.astro';
 import { getCollection } from 'astro:content';
 const entries = (await getCollection('scenarios')).sort((a, b) => a.id.localeCompare(b.id));
 ---
-<Base title="Everyday scenarios" lang="en" description="How the PDPA applies to shops, schools, hospitals, employers, CCTV, SMS marketing and cloud services.">
-  <h1>How does this affect ordinary people?</h1>
-  <div class="grid">{entries.map((s) => <div class="card"><h3><a href={`/en/scenarios/${s.id}/`}>{s.data.title}</a></h3><p>Pathways: {(s.data.pathways ?? []).join(', ')}</p></div>)}</div>
+<Base title="Real situations" lang="en" description="Twelve everyday moments where personal data changes hands in Sri Lanka, and what the law says about each.">
+  <h1>Real situations</h1>
+  <p>The Act is 57 sections long. Most people meet it in a handful of ordinary moments. Each page below shows which sections apply, from when, what to do now, and the things people commonly get wrong.</p>
+  <div class="scenarios">{entries.map((s, i) => <a href={`/en/scenarios/${s.id}/`}><span class="n">{i + 1}</span><span>{s.data.title}</span></a>)}</div>
+  <figure><img src="/img/data-lifecycle.svg" alt="Five stages: collect, use, keep, share, delete, with the duty at each stage" width="1000" height="300" /><figcaption>Whatever the situation, the same five steps apply from 1 January 2027.</figcaption></figure>
 </Base>

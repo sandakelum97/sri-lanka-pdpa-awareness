@@ -7,7 +7,7 @@ audience: [small-business]
 sections_cited: "s.2; ss.4–12; s.20; s.21; s.23; s.24; s.26; s.27; ss.13–17; s.35; s.38"
 commencement_status: "mixed"
 sources: [ACT-01, ACT-02, GAZ-03, GAZ-04, CIR-02, WEB-10]
-content_version: 0.1
+content_version: 0.2
 last_reviewed: 2026-10-31
 reviewed_by: none
 review_status: draft
@@ -17,7 +17,9 @@ review_status: draft
 
 *For grocery shops, retail stores, restaurants and cafés, salons, tuition classes, small clinics and pharmacies, online sellers, freelancers and the self-employed.*
 
-> **Where things stand (checked 31 October 2026).** The Personal Data Protection Act exists, but most of it is not yet in force. The core duties for anyone handling customer, student, patient or staff information start on **1 January 2027**. Individuals' rights to demand access or deletion, the rules on marketing messages, and the fines have **no start date yet**. Nothing on this page is legal advice; this is an independent educational project, not the Data Protection Authority.
+You keep customers' numbers in your phone. You have a book of regulars. Maybe a camera over the till. None of that is illegal, and none of it will be. But from **1 January 2027** the law expects you to do a few plain things with that information, and this page lists them. Two warnings first: nothing here is legal advice, and we are not the Data Protection Authority. Everything links to the Act so you can check.
+
+![What the law asks at each step](/img/data-lifecycle.svg)
 
 ## 1. Does this law apply to me?
 
@@ -90,6 +92,8 @@ Google Workspace, Microsoft 365, Dropbox, Shopify, Zoho, foreign POS and account
 Shred paper; securely delete files; wipe or destroy old phones and hard drives. Keep a note of what was disposed of and when (it is part of showing compliance under s.12).
 
 ## 14. If you suspect a data breach
+
+![What to do when data is lost](/img/breach-steps.svg)
 
 A lost phone, a stolen laptop, a hacked email account, a customer list sent to the wrong person — these are "personal data breaches" (s.56). From 1 January 2027 you must notify the Data Protection Authority "in such form, manner and within such period of time as may be determined by rules" (s.23) — **the rules do not exist yet, so there is no legal deadline today.** The DPA's 2024 draft proposed 72 hours; it is a proposal. Do now: contain it (change passwords, remote-wipe), record what happened, tell affected customers if they could be harmed, and watch dpa.gov.lk for the rules.
 

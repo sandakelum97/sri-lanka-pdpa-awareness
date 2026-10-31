@@ -1,48 +1,108 @@
-/* Fonts: self-host Noto Sans Sinhala + Noto Sans in production (do not load from Google Fonts — avoids third-party requests). */
+/* Mage Datta — design tokens
+   lagoon #0F6E6B (brand) · mango #F2B33D (attention) · ink #14213D · paper #FFFFFF · mist #EEF3F2 · ember #A62639 (not in force)
+   Type: one family — Noto Sans + Noto Sans Sinhala (self-host under /fonts before launch). */
 :root {
-  --ink: #1d2733; --muted: #5b6b7b; --bg: #fbfaf7; --panel: #ffffff; --line: #e3e0d8;
-  --accent: #0d6b5f; --accent-ink: #ffffff;
-  --in: #1d7a3e; --soon: #b86e00; --no: #a62639; --mixed: #5b6b7b;
-  --max: 68rem;
+  --lagoon: #0F6E6B; --lagoon-deep: #0B5553; --mango: #F2B33D; --ink: #14213D; --paper: #FFFFFF; --mist: #EEF3F2; --mist-2: #DCE8E6; --ember: #A62639;
+  --text: #1B2433; --muted: #5A6A78;
+  --in: #1C7A3E; --soon: #9A6400; --no: #A62639;
+  --measure: 66ch; --wide: 72rem;
+  --r: 14px;
 }
 * { box-sizing: border-box; }
-html { font-size: 17px; }
-body { margin: 0; color: var(--ink); background: var(--bg); font-family: "Noto Sans", "Noto Sans Sinhala", "Iskoola Pota", system-ui, -apple-system, "Segoe UI", sans-serif; line-height: 1.6; }
-html[lang="si-LK"] body { font-family: "Noto Sans Sinhala", "Iskoola Pota", "Noto Sans", system-ui, sans-serif; line-height: 1.8; }
-.skip { position: absolute; left: -999px; } .skip:focus { left: 1rem; top: 1rem; background: var(--accent); color: var(--accent-ink); padding: .5rem 1rem; z-index: 10; }
-.site-header { display: flex; flex-wrap: wrap; gap: .75rem 1.5rem; align-items: center; padding: .9rem 1rem; border-bottom: 1px solid var(--line); background: var(--panel); }
-.brand { font-weight: 700; text-decoration: none; color: var(--ink); font-size: 1.1rem; }
-.brand .tag { display: block; font-weight: 400; font-size: .75rem; color: var(--muted); }
-nav { display: flex; flex-wrap: wrap; gap: .25rem .9rem; }
-nav a { text-decoration: none; color: var(--ink); padding: .25rem 0; border-bottom: 2px solid transparent; }
-nav a:hover, nav a:focus { border-color: var(--accent); }
-nav a.lang { margin-left: auto; font-weight: 600; color: var(--accent); }
-main { max-width: var(--max); margin: 0 auto; padding: 1.25rem 1rem 3rem; }
-.site-footer { border-top: 1px solid var(--line); padding: 1.5rem 1rem 2.5rem; font-size: .85rem; color: var(--muted); max-width: var(--max); margin: 0 auto; }
-h1 { font-size: 1.9rem; line-height: 1.25; margin: .5rem 0 1rem; } h2 { font-size: 1.35rem; margin-top: 2rem; } h3 { font-size: 1.1rem; }
-a { color: var(--accent); }
-.badge { display: inline-block; font-size: .8rem; font-weight: 600; padding: .15rem .6rem; border-radius: 999px; border: 1px solid; white-space: nowrap; }
-.badge-in { color: var(--in); border-color: var(--in); background: #eaf6ee; }
-.badge-soon { color: var(--soon); border-color: var(--soon); background: #fff4e3; }
-.badge-no { color: var(--no); border-color: var(--no); background: #fdeced; }
-.badge-mixed { color: var(--mixed); border-color: var(--mixed); background: #eef1f4; }
-.badge-sm { font-size: .7rem; padding: .05rem .45rem; }
-.hero { background: var(--accent); color: var(--accent-ink); padding: 2.5rem 1.5rem; border-radius: 14px; margin-bottom: 1.5rem; }
-.hero h1 { color: inherit; font-size: 2.2rem; margin: 0 0 .5rem; } .hero p { font-size: 1.1rem; max-width: 50rem; }
-.hero a { color: inherit; }
-.notice { border-left: 5px solid var(--soon); background: #fff8ea; padding: .9rem 1.1rem; border-radius: 8px; margin: 1rem 0; }
-.notice.no { border-color: var(--no); background: #fdf1f2; }
-.grid { display: grid; gap: 1rem; grid-template-columns: repeat(auto-fill, minmax(16rem, 1fr)); }
-.card { background: var(--panel); border: 1px solid var(--line); border-radius: 12px; padding: 1rem 1.1rem; }
-.card h3 { margin: .2rem 0 .4rem; } .card a { text-decoration: none; } .card p { margin: .3rem 0; color: var(--muted); font-size: .95rem; }
-table { border-collapse: collapse; width: 100%; font-size: .95rem; margin: 1rem 0; display: block; overflow-x: auto; }
-th, td { border: 1px solid var(--line); padding: .5rem .6rem; vertical-align: top; text-align: left; }
-th { background: #f1efe9; }
-blockquote { border-left: 4px solid var(--line); margin: 1rem 0; padding: .3rem 1rem; color: #33414f; background: var(--panel); }
+html { font-size: 17px; scroll-behavior: smooth; }
+@media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } * { animation: none !important; transition: none !important; } }
+body { margin: 0; color: var(--text); background: var(--paper); font-family: "Noto Sans", "Noto Sans Sinhala", "Iskoola Pota", system-ui, -apple-system, "Segoe UI", sans-serif; line-height: 1.65; }
+html[lang="si-LK"] body { font-family: "Noto Sans Sinhala", "Iskoola Pota", "Noto Sans", system-ui, sans-serif; line-height: 1.9; }
+h1, h2, h3 { color: var(--ink); line-height: 1.2; letter-spacing: -0.01em; }
+h1 { font-size: clamp(1.9rem, 4vw, 2.6rem); margin: .2rem 0 1rem; }
+h2 { font-size: clamp(1.3rem, 2.4vw, 1.6rem); margin: 2.2rem 0 .7rem; }
+h3 { font-size: 1.1rem; margin: 1.2rem 0 .4rem; }
+p, li { max-width: var(--measure); }
+a { color: var(--lagoon-deep); text-underline-offset: 3px; }
+a:focus-visible, button:focus-visible { outline: 3px solid var(--mango); outline-offset: 2px; }
+.skip { position: absolute; left: -999px; } .skip:focus { left: 1rem; top: 1rem; background: var(--ink); color: #fff; padding: .5rem 1rem; z-index: 50; }
+
+/* header */
+.site-header { position: sticky; top: 0; z-index: 20; background: var(--paper); border-bottom: 3px solid var(--lagoon); }
+.site-header .inner { max-width: var(--wide); margin: 0 auto; padding: .6rem 1rem; display: flex; flex-wrap: wrap; align-items: center; gap: .5rem 1.25rem; }
+.brand { display: flex; align-items: baseline; gap: .5rem; text-decoration: none; color: var(--ink); }
+.brand .si { font-family: "Noto Sans Sinhala", "Iskoola Pota", sans-serif; font-size: 1.35rem; font-weight: 700; color: var(--lagoon); }
+.brand .en { font-weight: 700; font-size: 1.05rem; }
+.brand small { display: block; font-weight: 400; font-size: .72rem; color: var(--muted); }
+nav.primary { display: flex; flex-wrap: wrap; gap: .1rem .95rem; margin-left: auto; }
+nav.primary a { text-decoration: none; color: var(--ink); padding: .3rem 0; border-bottom: 2px solid transparent; }
+nav.primary a[aria-current="page"], nav.primary a:hover { border-color: var(--mango); }
+nav.primary a.lang { background: var(--mist); padding: .3rem .8rem; border-radius: 999px; border: 0; font-weight: 600; }
+main { max-width: var(--wide); margin: 0 auto; padding: 1rem 1rem 3rem; }
+.site-footer { background: var(--ink); color: #D7DEE8; margin-top: 3rem; }
+.site-footer .inner { max-width: var(--wide); margin: 0 auto; padding: 2rem 1rem 2.5rem; font-size: .88rem; display: grid; gap: 1rem; grid-template-columns: 2fr 1fr; }
+.site-footer a { color: #fff; } .site-footer strong { color: #fff; }
+@media (max-width: 720px) { .site-footer .inner { grid-template-columns: 1fr; } }
+
+/* hero */
+.hero { position: relative; border-radius: var(--r); overflow: hidden; background: var(--lagoon); color: #fff; margin: .5rem 0 1.5rem; }
+.hero .copy { padding: 2.2rem 1.6rem 1.2rem; max-width: 46rem; }
+.hero h1 { color: #fff; margin: 0 0 .6rem; font-size: clamp(2rem, 5vw, 3.1rem); }
+.hero h1 .si { display: block; font-family: "Noto Sans Sinhala", "Iskoola Pota", sans-serif; color: var(--mango); font-size: .55em; margin-top: .4rem; font-weight: 600; }
+.hero p { color: #E7F2F1; font-size: 1.08rem; max-width: 42rem; }
+.hero img { display: block; width: 100%; height: auto; }
+.hero .cta { display: inline-block; background: var(--mango); color: var(--ink); font-weight: 700; padding: .7rem 1.2rem; border-radius: 999px; text-decoration: none; margin: .4rem .5rem .8rem 0; }
+.hero .cta.alt { background: transparent; color: #fff; border: 2px solid #fff; }
+
+/* status strip */
+.status-strip { display: grid; gap: .75rem; grid-template-columns: repeat(auto-fit, minmax(14rem, 1fr)); margin: 1.2rem 0 1.5rem; }
+.status-strip div { border-left: 6px solid var(--in); background: var(--mist); padding: .8rem 1rem; border-radius: 8px; }
+.status-strip div.soon { border-color: var(--mango); } .status-strip div.no { border-color: var(--ember); }
+.status-strip b { display: block; color: var(--ink); } .status-strip span { font-size: .95rem; color: var(--muted); }
+
+/* badges */
+.badge { display: inline-block; font-size: .78rem; font-weight: 700; padding: .12rem .6rem; border-radius: 6px; white-space: nowrap; vertical-align: middle; }
+.badge-in { color: #fff; background: var(--in); } .badge-soon { color: var(--ink); background: var(--mango); } .badge-no { color: #fff; background: var(--ember); } .badge-mixed { color: var(--ink); background: var(--mist-2); }
+.badge-sm { font-size: .68rem; padding: .05rem .45rem; }
+
+/* notices */
+.notice { border-left: 6px solid var(--mango); background: #FFF7E3; padding: .9rem 1.1rem; border-radius: 8px; margin: 1rem 0; }
+.notice.no { border-color: var(--ember); background: #FDF1F2; }
+.notice p { margin: .3rem 0; }
+
+/* who-are-you tiles */
+.tiles { display: grid; gap: .9rem; grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr)); margin: 1rem 0 1.5rem; }
+.tile { display: block; text-decoration: none; color: var(--ink); background: var(--mist); border-radius: var(--r); padding: 1.1rem 1.2rem 1rem; border-bottom: 5px solid transparent; }
+.tile:hover, .tile:focus-visible { border-bottom-color: var(--mango); background: var(--mist-2); }
+.tile strong { display: block; font-size: 1.15rem; margin-bottom: .25rem; }
+.tile span { color: var(--muted); font-size: .95rem; }
+.tile .si { display: block; font-family: "Noto Sans Sinhala", "Iskoola Pota", sans-serif; color: var(--lagoon); font-size: .95rem; margin-top: .3rem; }
+
+/* scenario list */
+.scenarios { display: grid; gap: .6rem; grid-template-columns: repeat(auto-fit, minmax(17rem, 1fr)); }
+.scenarios a { display: flex; gap: .7rem; align-items: center; text-decoration: none; color: var(--ink); padding: .7rem .9rem; border: 1px solid var(--mist-2); border-radius: 10px; }
+.scenarios a:hover { border-color: var(--lagoon); }
+.scenarios .n { font-weight: 700; color: var(--lagoon); min-width: 1.6rem; }
+
+/* figures */
+figure { margin: 1.5rem 0; } figure img { width: 100%; height: auto; border: 1px solid var(--mist-2); border-radius: var(--r); background: #fff; }
+figcaption { font-size: .85rem; color: var(--muted); margin-top: .4rem; }
+
+/* prose */
+.prose table { border-collapse: collapse; width: 100%; font-size: .95rem; margin: 1rem 0; display: block; overflow-x: auto; }
+.prose th, .prose td { border: 1px solid var(--mist-2); padding: .5rem .6rem; vertical-align: top; text-align: left; }
+.prose th { background: var(--mist); }
+.prose blockquote { border-left: 5px solid var(--lagoon); margin: 1rem 0; padding: .4rem 1rem; background: var(--mist); color: var(--ink); border-radius: 0 8px 8px 0; }
+.prose h1 { font-size: 1.9rem; } .prose hr { border: 0; border-top: 1px solid var(--mist-2); margin: 2rem 0; }
 .meta { font-size: .85rem; color: var(--muted); display: flex; flex-wrap: wrap; gap: .4rem 1rem; align-items: center; margin-bottom: 1rem; }
-.prose img { max-width: 100%; }
-.search-box input { width: 100%; font-size: 1.1rem; padding: .7rem 1rem; border: 1px solid var(--line); border-radius: 10px; }
-.chips { display: flex; flex-wrap: wrap; gap: .5rem; margin: 1rem 0; }
-.chips a { border: 1px solid var(--line); background: var(--panel); border-radius: 999px; padding: .35rem .9rem; text-decoration: none; color: var(--ink); }
-.chips a:hover { border-color: var(--accent); }
-@media (max-width: 640px) { html { font-size: 16px; } .hero { padding: 1.5rem 1rem; } .hero h1 { font-size: 1.6rem; } nav a.lang { margin-left: 0; } }
+.search-box input { width: 100%; font-size: 1.1rem; padding: .7rem 1rem; border: 2px solid var(--mist-2); border-radius: 10px; }
+
+/* welcome dialog */
+dialog.welcome { border: 0; border-radius: var(--r); padding: 0; max-width: 34rem; width: calc(100% - 2rem); box-shadow: 0 20px 60px rgba(20,33,61,.35); }
+dialog.welcome::backdrop { background: rgba(20,33,61,.55); }
+.welcome .top { background: var(--lagoon); color: #fff; padding: 1.3rem 1.4rem; }
+.welcome .top h2 { color: #fff; margin: 0; font-size: 1.4rem; } .welcome .top p { color: #E7F2F1; margin: .4rem 0 0; }
+.welcome .body { padding: 1.2rem 1.4rem 1.4rem; }
+.welcome .langs { display: flex; gap: .6rem; margin-bottom: 1rem; }
+.welcome .langs button { flex: 1; font-size: 1.05rem; padding: .7rem; border-radius: 10px; border: 2px solid var(--mist-2); background: #fff; cursor: pointer; }
+.welcome .langs button[aria-pressed="true"] { border-color: var(--lagoon); background: var(--mist); font-weight: 700; }
+.welcome .who { display: grid; gap: .5rem; grid-template-columns: 1fr 1fr; }
+.welcome .who a { text-decoration: none; color: var(--ink); background: var(--mist); padding: .75rem .9rem; border-radius: 10px; font-weight: 600; }
+.welcome .who a:hover { background: var(--mist-2); }
+.welcome .skipw { margin-top: .9rem; background: none; border: 0; color: var(--muted); text-decoration: underline; cursor: pointer; font-size: .9rem; }
+@media (max-width: 640px) { html { font-size: 16px; } .hero .copy { padding: 1.5rem 1.1rem 1rem; } .welcome .who { grid-template-columns: 1fr; } nav.primary { margin-left: 0; } }

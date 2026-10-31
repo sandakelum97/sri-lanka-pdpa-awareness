@@ -3,12 +3,13 @@ import Base from '../../layouts/Base.astro';
 import StatusBadge from '../../components/StatusBadge.astro';
 import { asOf, provisions, parts, instruments } from '../../lib/status';
 ---
-<Base title="Legal status tracker" lang="en" description="Which provisions of Sri Lanka's PDPA are in force, from when, and under which Gazette.">
-  <h1>Legal status — provision by provision</h1>
-  <p class="meta">Checked against official sources on {asOf}. Source file: <code>06-Legal-Research/data/status.json</code>.</p>
-  <div class="notice">The Act is <em>partly</em> in force. "In the Act" is not the same as "in force". The 18 March 2025 date reported in many places was repealed before it took effect (Gazette 2427/34).</div>
-  <table>
-    <thead><tr><th>Provision</th><th>Subject</th><th>Status</th><th>Date</th><th>Source</th></tr></thead>
+<Base title="What is in force today" lang="en" description="Which provisions of Sri Lanka's PDPA are in force, from when, and under which Gazette.">
+  <h1>What is in force today</h1>
+  <p>A law can be passed and still not apply. Sri Lanka's data protection Act is being switched on in parts, by Gazette. This page is the switchboard. It is rebuilt from one data file every time the site is published, and that file was last checked against the Gazettes on {asOf}.</p>
+  <figure><img src="/img/status-timeline.svg" alt="Timeline of commencement" width="1000" height="360" /></figure>
+  <div class="notice"><p><strong>About that 18 March 2025 date.</strong> Many websites — and some older pages on the regulator's own site — say the Act became fully enforceable on 18 March 2025. It did not. The date was cancelled four days before it arrived (Gazette 2427/34).</p></div>
+  <table class="prose">
+    <thead><tr><th>Provision</th><th>What it covers</th><th>Status</th><th>From</th><th>How we know</th></tr></thead>
     <tbody>
       {provisions.map((p) => {
         const part = parts.find((x) => `Part ${x.part}` === p.ref);
@@ -16,11 +17,9 @@ import { asOf, provisions, parts, instruments } from '../../lib/status';
       })}
     </tbody>
   </table>
-  <h2>Commencement Orders</h2>
-  <table>
-    <thead><tr><th>ID</th><th>Gazette</th><th>Published</th><th>Effect</th></tr></thead>
-    <tbody>{Object.entries(instruments).map(([id, g]) => <tr><td>{id}</td><td>{g.title}</td><td>{g.published}</td><td>{g.effect}</td></tr>)}</tbody>
-  </table>
-  <h2>Rules, regulations, directives and guidelines</h2>
-  <p>None finalised as at {asOf}. Seven drafts were published for public consultation in September–October 2024; they are not law and several rest on provisions repealed by the 2025 amendment. The only current official guidance is DPA Circular No. 01/2026 (public sector).</p>
+  <h2>The Gazettes</h2>
+  <table class="prose"><thead><tr><th>ID</th><th>Gazette</th><th>Published</th><th>What it did</th></tr></thead>
+    <tbody>{Object.entries(instruments).map(([id, g]) => <tr><td>{id}</td><td>{g.title}</td><td>{g.published}</td><td>{g.effect}</td></tr>)}</tbody></table>
+  <h2>Rules, regulations, directives, guidelines</h2>
+  <p>None have been finalised. The regulator published seven drafts for comment in late 2024; they are proposals, and some of them refer to wording the 2025 amendment has since removed. The only current official guidance is Circular 01/2026, addressed to the public sector.</p>
 </Base>

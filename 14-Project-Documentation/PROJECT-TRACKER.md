@@ -73,7 +73,17 @@ Glossary v0.1 · 30 section explainers · 12 scenarios · 4 audience pathways + 
 | 3.2 | Prototype rendering all English content with status badges from status.json | Done — 63 pages build | 11-Website-Development/site/ |
 | 3.3 | Sinhala interface shell (/si/) | Done — placeholders + bilingual status page + glossary | |
 | 3.4 | Deployment workflow | Done — .github/workflows/deploy-pages.yml (enable Pages → Source: GitHub Actions in repo settings) | |
-| 3.5 | Self-hosted fonts, sitemap, accessibility audit, design polish | Pending | |
+| 3.5 | Design pass v2: identity (Mage Datta), palette, hero illustration, welcome dialog, six SVG infographics | Done 31 Oct 2026 | site/public/img, src/styles |
+| 3.6 | Copy rewrite in plainer voice (home, start-here, FAQ, citizen pathway) | Done for those pages; sections/scenarios still v0.1 voice | |
+| 3.7 | Sinhala drafts on site (home, FAQ, citizen + small-business pathways) | Done — labelled unverified | 08-Sinhala-Content |
+| 3.8 | Self-hosted fonts, sitemap, accessibility audit | Pending | |
+
+## Phase 4 — started 31 Oct 2026
+
+| # | Task | Status | Output |
+|---|---|---|---|
+| 4.1 | Production pack for Gemini/NotebookLM: 12 video scripts (EN; SI drafts for 4), 5 podcast briefs, 8 infographic briefs, guardrails | Done | 09-Videos-and-Audio/ |
+| 4.2 | Generate and review assets | Owner, with tools | |
 
 ## Next steps (proposed)
 

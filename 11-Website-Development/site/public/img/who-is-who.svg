@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 420" role="img" aria-labelledby="t"><title id="t">Data subject, controller and processor, with a pharmacy example</title>
+<defs><style>.k{fill:#14213D}.g{fill:#0F6E6B}.y{fill:#F2B33D}.t{font-family:Noto Sans,sans-serif}.b{fill:#fff;stroke:#0F6E6B;stroke-width:3}</style></defs>
+<rect width="1000" height="420" fill="#fff"/>
+<g class="t">
+<rect x="40" y="60" width="270" height="200" rx="16" class="b"/><circle cx="175" cy="120" r="30" class="y"/><rect x="150" y="150" width="50" height="50" rx="10" class="k"/>
+<text x="175" y="225" text-anchor="middle" font-size="18" font-weight="700" class="k">Data subject</text><text x="175" y="248" text-anchor="middle" font-size="15" fill="#0F6E6B" font-family="Noto Sans Sinhala,Noto Sans,sans-serif">දත්ත ආයකයා</text>
+<text x="175" y="300" text-anchor="middle" font-size="14" fill="#5b6b7b">The person the data is about.</text><text x="175" y="320" text-anchor="middle" font-size="14" fill="#5b6b7b">Kamala, buying medicine.</text>
+<rect x="365" y="60" width="270" height="200" rx="16" class="b"/><rect x="430" y="100" width="140" height="90" rx="8" class="g"/><text x="500" y="152" text-anchor="middle" font-size="16" fill="#fff" font-weight="700">PHARMACY</text>
+<text x="500" y="225" text-anchor="middle" font-size="18" font-weight="700" class="k">Controller</text><text x="500" y="248" text-anchor="middle" font-size="15" fill="#0F6E6B" font-family="Noto Sans Sinhala,Noto Sans,sans-serif">පාලකවරයා</text>
+<text x="500" y="300" text-anchor="middle" font-size="14" fill="#5b6b7b">Decides why and how data is used.</text><text x="500" y="320" text-anchor="middle" font-size="14" fill="#5b6b7b">The pharmacy keeping her record.</text>
+<rect x="690" y="60" width="270" height="200" rx="16" class="b"/><path d="M760 170 q65 -70 140 0 q-70 30 -140 0z" class="k"/><circle cx="830" cy="120" r="24" fill="#CFE3E1"/>
+<text x="825" y="225" text-anchor="middle" font-size="18" font-weight="700" class="k">Processor</text><text x="825" y="248" text-anchor="middle" font-size="15" fill="#0F6E6B" font-family="Noto Sans Sinhala,Noto Sans,sans-serif">දත්ත සකසන්නා</text>
+<text x="825" y="300" text-anchor="middle" font-size="14" fill="#5b6b7b">Handles data on the controller's</text><text x="825" y="320" text-anchor="middle" font-size="14" fill="#5b6b7b">instructions. The cloud app, the courier.</text>
+<path d="M310 160 L365 160" stroke="#14213D" stroke-width="3" marker-end="url(#a)"/><path d="M635 160 L690 160" stroke="#14213D" stroke-width="3" marker-end="url(#a)"/>
+<defs><marker id="a" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto"><path d="M0 0 L10 5 L0 10z" fill="#14213D"/></marker></defs>
+<text x="500" y="385" text-anchor="middle" font-size="13" fill="#5b6b7b">Section 56 of the Act. The Act's own illustration uses a hospital, its cloud provider and its employee.</text>
+</g></svg>

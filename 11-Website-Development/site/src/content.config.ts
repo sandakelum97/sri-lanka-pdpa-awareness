@@ -2,6 +2,7 @@ import { defineCollection, z } from 'astro:content';
 import { glob } from 'astro/loaders';
 
 const base = '../../07-English-Content';
+const baseSi = '../../08-Sinhala-Content';
 const meta = z.object({
   title: z.string(),
   slug: z.string().optional(),
@@ -26,5 +27,7 @@ export const collections = {
   scenarios: defineCollection({ loader: glob({ pattern: ['[0-9]*.md'], base: `${base}/scenarios` }), schema: meta }),
   pathways: defineCollection({ loader: glob({ pattern: ['*.md', '!README.md'], base: `${base}/pathways` }), schema: meta }),
   faq: defineCollection({ loader: glob({ pattern: ['faq.md'], base: `${base}/faq` }), schema: meta }),
+  faqSi: defineCollection({ loader: glob({ pattern: ['faq.md'], base: `${baseSi}/faq` }), schema: meta }),
+  pathwaysSi: defineCollection({ loader: glob({ pattern: ['*.md', '!README.md'], base: `${baseSi}/pathways` }), schema: meta }),
   glossary: defineCollection({ loader: glob({ pattern: ['*.md'], base: `${base}/glossary` }), schema: z.object({}).passthrough() }),
 };

@@ -1,0 +1,38 @@
+---
+// First-visit welcome: choose language and who you are. Remembered in localStorage only (no cookies, nothing sent anywhere).
+interface Props { lang: 'en' | 'si' }
+const { lang } = Astro.props;
+---
+<dialog class="welcome" id="welcome" aria-labelledby="wt">
+  <div class="top"><h2 id="wt">{lang === 'en' ? 'Welcome. Two quick choices.' : 'ආයුබෝවන්. කෙටි තේරීම් දෙකක්.'}</h2>
+    <p>{lang === 'en' ? 'Pick a language and tell us who you are. We remember this on your device only.' : 'භාෂාව තෝරා ඔබ කවුදැයි කියන්න. මෙය ඔබේ උපකරණයේ පමණක් මතක තබා ගනිමු.'}</p></div>
+  <div class="body">
+    <div class="langs">
+      <button type="button" data-lang="si" aria-pressed={lang === 'si'}>සිංහල</button>
+      <button type="button" data-lang="en" aria-pressed={lang === 'en'}>English</button>
+    </div>
+    <div class="who" id="who"></div>
+    <button type="button" class="skipw" id="skipw">{lang === 'en' ? 'Just let me look around' : 'මට බලන්න ඉඩ දෙන්න'}</button>
+  </div>
+</dialog>
+<script is:inline>
+(() => {
+  const dlg = document.getElementById('welcome'); if (!dlg || typeof dlg.showModal !== 'function') return;
+  const KEY = 'magedatta.welcome';
+  let saved = null; try { saved = JSON.parse(localStorage.getItem(KEY) || 'null'); } catch (e) {}
+  const page = location.pathname.startsWith('/si') ? 'si' : 'en';
+  const who = {
+    en: [['I am an ordinary person', '/en/pathways/citizen-pathway/'], ['I run a small business', '/en/pathways/small-business-guide/'], ['I work in an organisation', '/en/pathways/organisation-pathway/'], ['I work in IT or security', '/en/pathways/technical-pathway/']],
+    si: [['මම සාමාන්‍ය පුරවැසියෙක්', '/si/pathways/'], ['මම කුඩා ව්‍යාපාරයක් කරනවා', '/si/pathways/'], ['මම ආයතනයක වැඩ කරනවා', '/si/pathways/'], ['මම තාක්ෂණ/ආරක්ෂණ ක්ෂේත්‍රයේ', '/si/pathways/']],
+  };
+  let lang = page;
+  const render = () => {
+    dlg.querySelectorAll('[data-lang]').forEach(b => b.setAttribute('aria-pressed', String(b.dataset.lang === lang)));
+    document.getElementById('who').innerHTML = who[lang].map(([t, h]) => `<a href="${h}" data-who="${t}">${t}</a>`).join('');
+    document.getElementById('who').querySelectorAll('a').forEach(a => a.addEventListener('click', () => { try { localStorage.setItem(KEY, JSON.stringify({ lang, who: a.dataset.who, t: Date.now() })); } catch (e) {} }));
+  };
+  dlg.querySelectorAll('[data-lang]').forEach(b => b.addEventListener('click', () => { lang = b.dataset.lang; render(); }));
+  document.getElementById('skipw').addEventListener('click', () => { try { localStorage.setItem(KEY, JSON.stringify({ lang, who: null, t: Date.now() })); } catch (e) {} dlg.close(); if (lang !== page) location.href = `/${lang}/`; });
+  if (!saved && (location.pathname === '/en/' || location.pathname === '/si/')) { render(); dlg.showModal(); }
+})();
+</script>

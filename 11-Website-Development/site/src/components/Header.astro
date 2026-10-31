@@ -1,23 +1,26 @@
 ---
+import { site } from '../lib/site';
 interface Props { lang: 'en' | 'si'; path: string }
 const { lang, path } = Astro.props;
 const other = lang === 'en' ? 'si' : 'en';
 const otherPath = path.replace(/^\/(en|si)/, `/${other}`);
 const t = lang === 'en'
-  ? { home: 'Home', sections: 'The Act', scenarios: 'Scenarios', pathways: 'For you', faq: 'FAQ', glossary: 'Glossary', status: 'Legal status', search: 'Search', switch: 'සිංහල' }
-  : { home: 'මුල් පිටුව', sections: 'පනත', scenarios: 'අවස්ථා', pathways: 'ඔබ සඳහා', faq: 'නිතර අසන පැන', glossary: 'පාරිභාෂික ශබ්ද', status: 'නීතිමය තත්ත්වය', search: 'සොයන්න', switch: 'English' };
+  ? { sections: 'The Act', scenarios: 'Real situations', pathways: 'Start here', faq: 'Questions', glossary: 'Glossary', status: 'What is in force', search: 'Search', switch: 'සිංහල' }
+  : { sections: 'පනත', scenarios: 'සැබෑ අවස්ථා', pathways: 'මෙතැනින් පටන් ගන්න', faq: 'ප්‍රශ්න', glossary: 'වචන මාලාව', status: 'ක්‍රියාත්මක මොනවාද', search: 'සොයන්න', switch: 'English' };
+const cur = (p: string) => (path.startsWith(`/${lang}/${p}`) ? 'page' : undefined);
 ---
-<header class="site-header">
-  <a class="brand" href={`/${lang}/`}>PDPA Sri Lanka <span class="tag">{lang === 'en' ? 'independent education project' : 'ස්වාධීන අධ්‍යාපනික ව්‍යාපෘතියක්'}</span></a>
-  <nav>
-    <a href={`/${lang}/`}>{t.home}</a>
-    <a href={`/${lang}/sections/`}>{t.sections}</a>
-    <a href={`/${lang}/scenarios/`}>{t.scenarios}</a>
-    <a href={`/${lang}/pathways/`}>{t.pathways}</a>
-    <a href={`/${lang}/faq/`}>{t.faq}</a>
-    <a href={`/${lang}/glossary/`}>{t.glossary}</a>
-    <a href={`/${lang}/status/`}>{t.status}</a>
-    <a href={`/${lang}/search/`}>{t.search}</a>
+<header class="site-header"><div class="inner">
+  <a class="brand" href={`/${lang}/`}>
+    <span class="si">{site.name.si}</span><span class="en">{site.name.en}<small>{site.kind[lang]}</small></span>
+  </a>
+  <nav class="primary" aria-label={lang === 'en' ? 'Main' : 'ප්‍රධාන'}>
+    <a href={`/${lang}/pathways/`} aria-current={cur('pathways')}>{t.pathways}</a>
+    <a href={`/${lang}/scenarios/`} aria-current={cur('scenarios')}>{t.scenarios}</a>
+    <a href={`/${lang}/sections/`} aria-current={cur('sections')}>{t.sections}</a>
+    <a href={`/${lang}/status/`} aria-current={cur('status')}>{t.status}</a>
+    <a href={`/${lang}/faq/`} aria-current={cur('faq')}>{t.faq}</a>
+    <a href={`/${lang}/glossary/`} aria-current={cur('glossary')}>{t.glossary}</a>
+    <a href={`/${lang}/search/`} aria-current={cur('search')}>{t.search}</a>
     <a class="lang" href={otherPath} lang={other} hreflang={other}>{t.switch}</a>
   </nav>
-</header>
+</div></header>

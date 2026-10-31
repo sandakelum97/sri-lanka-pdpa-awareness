@@ -1,5 +1,5 @@
 ---
-title: "Your Personal Data. Your Rights. Your Responsibility. — a pathway for citizens"
+title: "For ordinary people: what this law does for you, and when"
 slug: citizen-pathway
 language: en
 type: pathway
@@ -7,48 +7,57 @@ audience: [citizen, student, employee, parent, online-shopper]
 sections_cited: "s.2; s.56; ss.5–11; ss.13–19; s.27; s.35; s.38"
 commencement_status: "mixed"
 sources: [ACT-01, ACT-02, GAZ-03, GAZ-04, WEB-10]
-content_version: 0.1
+content_version: 0.2
 last_reviewed: 2026-10-31
 reviewed_by: none
 review_status: draft
 ---
 
-# Your Personal Data. Your Rights. Your Responsibility.
+# For ordinary people
 
-*A learning pathway for ordinary citizens, students, employees, parents and online shoppers. About 20 minutes.*
+*Students, employees, parents, people who buy things online. Twenty minutes.*
 
-> Honest summary first: Sri Lanka has a data protection law, but the part that gives **you** enforceable rights is not in force yet and has no start date. The part that puts duties on businesses and government starts on 1 January 2027. This pathway tells you what will apply, what applies now, and what you can do today.
+Let's start with the part nobody likes to say. The section of this law that gives **you** rights — to see your file, to get mistakes fixed, to make a company delete what it holds — is not in force, and nobody has set a date. What *is* coming, on 1 January 2027, is a set of duties on the businesses, schools, hospitals and government offices that hold your information. So this pathway is mostly about what they will have to do, with a short list of things you can do today.
 
-## Step 1 — What counts as "personal data"? (5 min)
-Anything that identifies you: name, NIC number, phone, address, photo, location, online identifiers, bank or card details (s.56). Some information is "special" and gets stronger protection — health, religion, ethnicity, political views, sexual life, criminal records, biometrics, and anything about a child under 16.
-→ Read: glossary entries 1, 2, 13, 14 · scenario 01
+## 1. What counts as "your data"
 
-## Step 2 — Who has to follow the law? (3 min)
-Every business, school, hospital, employer, website and government body that uses your information in Sri Lanka, and foreign companies that sell to or track people here. Not your friends and family using information privately (s.2).
-→ Read: s02-application-scope
+Your name and NIC number, obviously. Also your phone number, your address, your face on a CCTV recording, your location, the identifiers your phone sends to a website, your bank account and card details. If someone could work out it's you, it's personal data (section 56).
 
-## Step 3 — What must they do from 1 January 2027? (5 min)
-Have a lawful reason to use your data (s.5); tell you why they collect it and how long they keep it (s.11); collect only what they need (s.7); keep it accurate (s.8); keep it secure (s.10); delete it when no longer needed (s.9); and have internal controls to prove all this (s.12). Larger organisations must also have contracts with the companies that handle data for them, report breaches to the regulator, assess risky projects first, and follow rules on sending data abroad (Part III).
-→ Read: s05, s07, s09, s10, s11
+Some of it the law calls *special categories* and guards more tightly: your health, religion, ethnicity, political views, sex life, criminal record, fingerprints and face scans, genetic information — and anything at all about a child under 16.
 
-## Step 4 — What rights will you have? (5 min)
-Once Part II commences: to see what an organisation holds about you (s.13); to withdraw consent or object (s.14); to have errors corrected (s.15); to have data deleted in three situations (s.16); to a reply within one month, free of charge (s.17); to a human review of a purely automated decision with lasting effect (s.18); and to appeal refusals to the Data Protection Authority (s.19). **None of these is in force yet.**
-→ Read: s13, s16, s17, s19
+![Data subject, controller, processor](/img/who-is-who.svg)
 
-## Step 5 — What can you do today? (2 min)
-- Ask anyway. Many organisations will answer a polite written request even though they are not yet obliged to. Keep a copy.
-- Complain. The Authority can already investigate and issue binding directives (s.35), though it has said it will act once the relevant duties are in force.
-- Spot misuse: unexpected marketing from a number you only gave for a delivery; NIC copies demanded without reason; your photo or CCTV footage posted online; health details shared with an employer.
-- Protect yourself: don't hand over NIC copies casually; use separate passwords; check who you share with on messaging apps.
-→ Read: faq (individuals section), s28-35-who-is-the-dpa
+## 2. Who has to follow the law
 
-## Step 6 — For parents and students (2 min)
-Your child's data is special-category data; schools and tuition classes need a parent's consent where they rely on consent, and must handle it with care. You can exercise your child's rights on their behalf once Part II is in force (s.17(5)(a)).
-→ Read: scenarios 04 and 05
+Every business, school, hospital, employer, website and government office that uses your information in Sri Lanka. Also foreign companies that sell to people here or track them here (section 2). Not your friends and family using your number privately — the Act leaves personal and household use alone.
 
-## Step 7 — For employees (2 min)
-Your employer needs a lawful basis for everything it does with your records, must tell you what it does, and should not rely on "consent" buried in your contract. Automated hiring or performance tools will be reviewable under s.18.
-→ Read: scenario 07, s18
+## 3. What they must do from 1 January 2027
 
-## Check what you've learned
-*(Quiz to be added in Phase 4 — five questions drawn from Steps 1–5.)*
+Have a lawful reason for using your data — a contract, a legal duty, a fair business reason, an emergency, a public task, or your clear consent (section 5). Tell you, in writing, why they collect it and how long they keep it (section 11). Collect only what they need (7). Keep it accurate (8). Keep it safe (10). Delete it when the reason has gone (9). Keep records that prove all of this (12). Bigger organisations also need contracts with the companies that handle data for them, must report leaks to the regulator, must assess risky projects before starting them, and must follow rules when they send data abroad.
+
+![Lawful reasons](/img/lawful-reasons.svg)
+
+## 4. The rights you will have — one day
+
+Once the Minister sets a date for Part II: to see what an organisation holds about you (13); to withdraw consent or object (14); to have errors corrected (15); to have data deleted in three situations (16); to an answer within a month, free (17); to have a person review a decision a computer made alone (18); and to appeal a refusal to the Data Protection Authority (19).
+
+![Your rights](/img/your-rights.svg)
+
+## 5. What you can do today
+
+- **Ask anyway.** Write to the organisation and ask what it holds about you. It does not yet have to answer, but many will. Keep a copy and the date.
+- **Complain.** The Authority can already investigate and order an organisation to put things right (section 35). It has said it will act once the relevant duty is in force — so from 2027 for most things.
+- **Notice misuse.** Offers from a number you only gave for a delivery. A shop insisting on an NIC photocopy for a small purchase. Your face from their CCTV on their Facebook page. Your medical certificate discussed with people who had no reason to see it.
+- **Protect yourself.** Don't hand over NIC copies casually. Ask "what do you need it for?" — from 2027 they have to have an answer.
+
+## 6. If you are a parent
+
+Your child's data is special-category data. A school or tuition class that relies on consent needs *your* consent, not your child's, and must take more care with the records. When Part II starts you can exercise your child's rights for them (section 17(5)). See the [tuition class](/en/scenarios/04-tuition-records/) and [school](/en/scenarios/05-school-student-data/) situations.
+
+## 7. If you are an employee
+
+Your employer needs a lawful reason for everything it does with your file, has to tell you what it does, and should not hide behind "you consented" in your contract — consent you cannot refuse is not consent under this Act. If a computer screens your job application or scores your performance with no human involved, section 18 will give you a right to a human review. See [employee records](/en/scenarios/07-employee-nic-hr/).
+
+## Keep going
+
+[The twelve real situations](/en/scenarios/) · [Questions people ask](/en/faq/) · [What is in force today](/en/status/)

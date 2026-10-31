@@ -1,13 +1,32 @@
 ---
 import Base from '../../layouts/Base.astro';
-import StatusBadge from '../../components/StatusBadge.astro';
 import { asOf } from '../../lib/status';
 ---
-<Base title="ඔබේ පෞද්ගලික දත්ත. ඔබේ අයිතිවාසිකම්. ඔබේ වගකීම." lang="si">
+<Base title="ශ්‍රී ලංකාවේ දත්ත ආරක්ෂණ නීතිය තේරුම් ගනිමු" lang="si" welcome={true}>
   <section class="hero">
-    <h1>ඔබේ පෞද්ගලික දත්ත. ඔබේ අයිතිවාසිකම්. ඔබේ වගකීම.</h1>
-    <p>2022 අංක 9 දරන පෞද්ගලික දත්ත ආරක්ෂණ පනත සරල බසින්.</p>
+    <div class="copy">
+      <h1>ඔබේ පෞද්ගලික දත්ත. ඔබේ අයිතිවාසිකම්. ඔබේ වගකීම.<span class="si">Your personal data. Your rights. Your responsibility.</span></h1>
+      <p>ෆාමසිය ඔබේ හැඳුනුම්පත් අංකය ලියා ගනියි. පන්තිය ඔබේ දරුවාගේ ලකුණු දුරකථනයක තබා ගනියි. කඩයක් ඔබ නොඉල්ලූ දීමනා එවයි. මේ සියල්ල ගැන ශ්‍රී ලංකාවට දැන් නීතියක් තිබේ. එය කියන දේ — සහ වඩා වැදගත් වන්නේ, එයින් කුමන කොටස් ඇත්තටම ක්‍රියාත්මක ද යන්න — මෙන්න.</p>
+      <a class="cta" href="/si/pathways/">මෙතැනින් පටන් ගන්න</a>
+      <a class="cta alt" href="/si/status/">අද ක්‍රියාත්මක මොනවා ද</a>
+    </div>
+    <img src="/img/hero-street.svg" alt="ෆාමසියක්, පන්තියක්, දුරකථනයක් අතැති පුද්ගලයෙක්, CCTV කැමරාවක් සහ බෙදාහරින්නෙක්" width="1200" height="300" />
   </section>
-  <div class="notice"><strong>සිංහල අන්තර්ගතය සකස් වෙමින් පවතී.</strong> සිංහල පැහැදිලි කිරීම් ද්විභාෂා නීති විමර්ශකයෙකුගේ අනුමැතියෙන් පසු ප්‍රකාශයට පත් කෙරේ. මේ අතරතුර <a href="/en/">ඉංග්‍රීසි අන්තර්ගතය</a> සහ <a href="/si/status/">නීතිමය තත්ත්ව වගුව</a> බලන්න.</div>
-  <p>නීතිමය තත්ත්වය ({asOf} දිනට): අධිකාරිය ක්‍රියාත්මකයි <StatusBadge status="IN" lang="si" small /> · ප්‍රධාන වගකීම් 2027 ජනවාරි 1 සිට <StatusBadge status="2027" lang="si" small /> · දත්ත ආයකයන්ගේ අයිතිවාසිකම්, අලෙවිකරණ පණිවිඩ සහ දඩ — දිනයක් නියම කර නැත <StatusBadge status="NO" lang="si" small /></p>
+  <div class="notice"><p><strong>සිංහල අන්තර්ගතය කෙටුම්පත් මට්ටමේ ය.</strong> ද්විභාෂා නීති විමර්ශකයෙකුගේ අනුමැතියෙන් පසු අවසන් වෙයි. මේ අතර ඉංග්‍රීසි පිටු සම්පූර්ණ ය.</p></div>
+  <div class="status-strip">
+    <div><b>නියාමකයා පවතී</b><span>දත්ත ආරක්ෂණ අධිකාරිය 2023 සිට ඇති අතර දැනටමත් පැමිණිලි විමර්ශනය කළ හැකියි.</span></div>
+    <div class="soon"><b>ව්‍යාපාර වලට වගකීම් 2027 ජනවාරි 1 සිට</b><span>නීත්‍යානුකූල හේතු, අවංක දැන්වීම්, දත්ත ආරක්ෂිතව තබා ගැනීම, කාන්දු වාර්තා කිරීම.</span></div>
+    <div class="no"><b>ඔබේ අයිතිවාසිකම්, අලෙවිකරණ නීති සහ දඩ: දිනයක් නැත</b><span>පනතේ ලියා ඇතත් අමාත්‍යවරයා දිනයක් නියම කරන තුරු භාවිත කළ නොහැක.</span></div>
+  </div>
+  <h2>ඔබ කවුද?</h2>
+  <div class="tiles">
+    <a class="tile" href="/si/pathways/citizen-pathway/"><strong>සාමාන්‍ය පුරවැසියෙක්</strong><span>සිසුවෙක්, සේවකයෙක්, දෙමාපියෙක්, අන්තර්ජාලයෙන් මිලදී ගන්නෙක්.</span></a>
+    <a class="tile" href="/si/pathways/small-business-guide/"><strong>කුඩා ව්‍යාපාරිකයෙක්</strong><span>කඩය, සැලෝන්, අවන්හල, පන්තිය, සායනය, online විකුණුම්.</span></a>
+    <a class="tile" href="/en/pathways/organisation-pathway/"><strong>විශාල ආයතනයක සේවකයෙක්</strong><span>බැංකුව, රෝහල, පාසල, BPO, රජය. (දැනට ඉංග්‍රීසියෙන්)</span></a>
+    <a class="tile" href="/en/pathways/technical-pathway/"><strong>තාක්ෂණ / ආරක්ෂණ වෘත්තිකයෙක්</strong><span>(දැනට ඉංග්‍රීසියෙන්)</span></a>
+  </div>
+  <h2>මුළු නීතිය එක පේළියකින්</h2>
+  <figure><img src="/img/status-timeline.svg" alt="පනත ක්‍රියාත්මක වන කාලරේඛාව" width="1000" height="360" /><figcaption>{asOf} දිනට නිල ගැසට් සමඟ පරීක්ෂා කරන ලදී. (රූපසටහන් වල පෙළ දැනට ඉංග්‍රීසියෙන්.)</figcaption></figure>
+  <h2>මිනිසුන් අසන ප්‍රශ්න</h2>
+  <p><a href="/si/faq/">සියලු ප්‍රශ්න සහ පිළිතුරු</a> · <a href="/si/glossary/">වචන මාලාව</a></p>
 </Base>

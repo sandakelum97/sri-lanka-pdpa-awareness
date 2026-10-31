@@ -1,0 +1,11 @@
+---
+import Base from '../../../layouts/Base.astro';
+import { getCollection, render } from 'astro:content';
+export async function getStaticPaths() {
+  const entries = await getCollection('pathwaysSi');
+  return entries.map((e) => ({ params: { id: e.id }, props: { e } }));
+}
+const { e } = Astro.props;
+const { Content } = await render(e);
+---
+<Base title={e.data.title} lang="si"><div class="meta"><span>කෙටුම්පත · {String(e.data.last_reviewed)} · විමර්ශනය කර නැත</span></div><article class="prose"><Content /></article><p><a href="/si/pathways/">← ආපසු</a></p></Base>

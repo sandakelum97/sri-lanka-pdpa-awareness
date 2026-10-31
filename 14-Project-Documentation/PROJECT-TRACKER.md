@@ -13,7 +13,7 @@ Target: close all P1-related open questions and have every official document sto
 | 1.3 | Identify circulars, drafts, official pages | Done | Register §C–E |
 | 1.4 | Establish commencement position at research date | Done | COMMENCEMENT-STATUS.md |
 | 1.5 | Section-by-section reference matrix | Done (v1.0) | SECTION-REFERENCE-MATRIX.md |
-| 1.6 | Download and preserve all official PDFs (EN/SI/TA) with SHA-256 | Pending — run `14-Project-Documentation/download-official-sources.sh` / `.ps1` from a machine with internet access | folders 01–05 + 14-Project-Documentation/CHECKSUMS.txt |
+| 1.6 | Download and preserve all official PDFs (EN/SI/TA) with SHA-256 | Done 31 Oct 2026 — 30 PDFs fetched and content-checked; the two documents.gov.lk duplicate copies failed (host not allow-listed at the time) — re-run the script after allow-listing | folders 01–05 + 14-Project-Documentation/CHECKSUMS.txt |
 | 1.7 | Read GAZ-01, CIR-01, all seven drafts in full; record summaries | Done for GAZ-01 and DRF-01–07 (31 Oct 2026); CIR-01 archive-only, not read | 06-Legal-Research/draft-instrument-summaries.md |
 | 1.8 | Sinhala-text verification of all P1 sections | Pending (needs bilingual legal reviewer) | text-discrepancies.md |
 | 1.9 | Close open questions OQ-01 to OQ-15 | Pending | OPEN-QUESTIONS.md |
@@ -37,7 +37,8 @@ Target: close all P1-related open questions and have every official document sto
 | R-01 | Parts II, IV, VII have no date; a further Order could issue at any time. | Content may go stale overnight. | Monitoring process (14-Project-Documentation/monitoring); commencement badges rendered from a single data file. |
 | R-02 | Draft rules may be re-issued with different numbers/content. | Compliance guide may mislead. | Never state draft numbers (e.g. 72 h) as requirements. |
 | R-03 | Sinhala text prevails; English-only research. | Legal inaccuracy in Sinhala content. | OQ-03; bilingual reviewer before Phase 2 sign-off. |
-| R-04 | Workspace cannot download from dpa.gov.lk. | Documents not yet preserved. | Run download script locally (desktop app connected folder). |
+| R-04 | Workspace cannot download from dpa.gov.lk. | Resolved 31 Oct 2026 — script run natively on Windows. | documents.gov.lk still to be allow-listed for the two duplicate copies. |
+| R-05 | Sinhala/Tamil 2022 Act PDFs are legacy-font, not Unicode (OQ-18). | Sinhala glossary and EN/SI verification cannot be done by text extraction. | Legacy→Unicode conversion or OCR, reviewer spot-check. |
 
 ## Next steps (proposed, awaiting approval)
 

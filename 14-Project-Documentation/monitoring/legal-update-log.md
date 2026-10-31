@@ -18,3 +18,4 @@ Format: date checked · source · change found · impact assessment · content a
 | Date | Source | Change | Impact | Content affected | Action |
 |---|---|---|---|---|---|
 | 2026-10-31 | All of the above | Baseline established: Parts V, VI, VIII, IX, X in force; ss.2–3, Parts I, III commence 1 Jan 2027 (GE 2498/16); Parts II, IV, VII no date; no final rules/regulations; Circular 01/2026 current. | — | — | Baseline recorded in COMMENCEMENT-STATUS.md v1.0 |
+| 2026-10-31 | Downloaded PDFs | Official documents preserved locally (30 files, SHA-256 in CHECKSUMS.txt); content of Acts, four Gazettes and Circular 01/2026 confirmed against the register. Circular date 7 Aug 2026. | None to content | — | Register, tracker updated; OQ-14 closed; OQ-18 opened (legacy-font SI/TA Act PDFs). |

@@ -30,8 +30,11 @@ Status: draft, unreviewed. Both Parts come into operation on 1 January 2027 (Gaz
 - ss.2–3 (scope; relationship with other laws) — status 2027.
 - Part II (ss.13–19), Part IV (s.27), Part VII (ss.38–40) — status NO, with "not in force" banners.
 
+## Part V
+- s28-35-who-is-the-dpa.md — "Who is the Data Protection Authority" (status IN).
+
 ## Not yet drafted
-- Part V (ss.28–35) — status IN; "Who is the Data Protection Authority" page.
+- Parts VI, VIII, IX, X (administrative; reference only) and the Schedules as standalone pages.
 
 ## Review notes for the legal reviewer
 - Every statement of law cites the section; every "good practice" statement is labelled as such.

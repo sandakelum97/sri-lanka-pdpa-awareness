@@ -1,0 +1,104 @@
+{
+ "name": "V02-is-the-law-in-force-EN",
+ "cards_dir": "v02/en",
+ "out": "v02",
+ "captions": [
+  {
+   "id": "c1",
+   "text": "Sri Lanka passed a data protection law in 2022. So is it in force?"
+  },
+  {
+   "id": "c2",
+   "text": "Partly — and the “partly” matters."
+  },
+  {
+   "id": "c3",
+   "text": "The regulator, the Data Protection Authority, has existed since 2023."
+  },
+  {
+   "id": "c4",
+   "text": "The duties on businesses start on the first of January 2027."
+  },
+  {
+   "id": "c5",
+   "text": "Have a lawful reason. Tell people what you collect. Keep it safe. Report leaks."
+  },
+  {
+   "id": "c6",
+   "text": "Your rights to see, correct or delete your file? Written into the Act. But no start date."
+  },
+  {
+   "id": "c7",
+   "text": "Same for the marketing-message rules, and the fines."
+  },
+  {
+   "id": "c8",
+   "text": "You may have read it all started on 18 March 2025. That date was cancelled four days before it arrived."
+  },
+  {
+   "id": "c9",
+   "text": "We track every section at datasavi.lk."
+  }
+ ],
+ "scenes": [
+  {
+   "type": "card",
+   "card": "open",
+   "dur": 4
+  },
+  {
+   "type": "card",
+   "card": "open",
+   "dur": 5,
+   "cap": "c1"
+  },
+  {
+   "type": "card",
+   "card": "2023",
+   "dur": 5,
+   "cap": "c2"
+  },
+  {
+   "type": "card",
+   "card": "2023",
+   "dur": 5,
+   "cap": "c3"
+  },
+  {
+   "type": "card",
+   "card": "2027",
+   "dur": 6,
+   "cap": "c4"
+  },
+  {
+   "type": "card",
+   "card": "2027",
+   "dur": 6,
+   "cap": "c5"
+  },
+  {
+   "type": "card",
+   "card": "no",
+   "dur": 7,
+   "cap": "c6"
+  },
+  {
+   "type": "card",
+   "card": "no",
+   "dur": 5,
+   "cap": "c7"
+  },
+  {
+   "type": "card",
+   "card": "cancel",
+   "dur": 7,
+   "cap": "c8"
+  },
+  {
+   "type": "card",
+   "card": "end",
+   "dur": 6,
+   "cap": "c9"
+  }
+ ]
+}

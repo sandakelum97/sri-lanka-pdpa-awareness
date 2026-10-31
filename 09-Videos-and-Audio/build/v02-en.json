@@ -1,0 +1,18 @@
+{"cards":[
+ {"id":"open","bg":"lagoon","kicker":"PDPA in 60 seconds","title":"Is the law in force?","title_si":"නීතිය ක්‍රියාත්මක ද?","badge":"mixed"},
+ {"id":"2023","bg":"paper","kicker":"Since 17 July 2023","title":"The regulator exists","body":["The Data Protection Authority can already investigate complaints and issue orders."],"badge":"IN"},
+ {"id":"2027","bg":"paper","kicker":"From 1 January 2027","title":"Duties on businesses begin","body":["Lawful reason · tell people what you collect · keep it safe · report leaks"],"badge":"2027"},
+ {"id":"no","bg":"paper","kicker":"Written into the Act, but","title":"Your rights, marketing rules, fines","body":["No start date has been set for Parts II, IV and VII."],"badge":"NO"},
+ {"id":"cancel","bg":"ink","kicker":"You may have read","title":"It all started on 18 March 2025","strike":"18 March 2025","body":["Cancelled four days before it arrived. Gazette 2427/34."]},
+ {"id":"end","bg":"lagoon","title":"We track every section.","title_si":"සෑම වගන්තියක්ම අපි නිරීක්ෂණය කරමු.","body":["datasavi.lk","Independent public-education initiative · Not the Data Protection Authority"],"footer":"Checked against Gazettes 2341/59, 2366/08, 2427/34, 2498/16 on 31 October 2026"}
+],"captions":[
+ {"id":"c1","text":"Sri Lanka passed a data protection law in 2022. So is it in force?"},
+ {"id":"c2","text":"Partly — and the “partly” matters."},
+ {"id":"c3","text":"The regulator, the Data Protection Authority, has existed since 2023."},
+ {"id":"c4","text":"The duties on businesses start on the first of January 2027."},
+ {"id":"c5","text":"Have a lawful reason. Tell people what you collect. Keep it safe. Report leaks."},
+ {"id":"c6","text":"Your rights to see, correct or delete your file? Written into the Act. But no start date."},
+ {"id":"c7","text":"Same for the marketing-message rules, and the fines."},
+ {"id":"c8","text":"You may have read it all started on 18 March 2025. That date was cancelled four days before it arrived."},
+ {"id":"c9","text":"We track every section at datasavi.lk."}
+]}

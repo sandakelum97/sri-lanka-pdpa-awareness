@@ -21,6 +21,7 @@ Sri-Lanka-PDPA-Awareness-Project/
 │   ├── SECTION-REFERENCE-MATRIX.md   Every section: title, amendment, status, priority, audience, research tasks
 │   ├── draft-instrument-summaries.md What each 2024 draft says and how the 2025 amendment affects it
 │   ├── OPEN-QUESTIONS.md             Verification backlog (OQ-xx)
+│   ├── data/status.json              Machine-readable commencement status (source of every status badge)
 │   ├── secondary-sources/            Law-firm notes, news — for locating, never for citing
 │   └── related-laws/                 RTI Act, Online Safety Act, CBSL regulations etc. (to collect)
 ├── 07-English-Content/               glossary/ scenarios/ faq/ pathways/ health-check/

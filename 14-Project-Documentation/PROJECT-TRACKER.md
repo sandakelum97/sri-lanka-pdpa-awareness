@@ -56,8 +56,9 @@ Target: close all P1-related open questions and have every official document sto
 | 2.2b | ss.2–3 and the not-in-force Parts II, IV, VII | v0.1 drafted 31 Oct 2026 — 13 section files, unreviewed | 07-English-Content/sections/ |
 | 2.3a | Twelve everyday scenarios | v0.1 drafted 31 Oct 2026, unreviewed | 07-English-Content/scenarios/ |
 | 2.3b | 'Who is the DPA' page (Part V) | v0.1 drafted 31 Oct 2026 | 07-English-Content/sections/s28-35-who-is-the-dpa.md |
-| 2.3c | Small-business pathway and guide | Not started | 07-English-Content/pathways/ |
-| 2.4 | FAQ | Not started | 07-English-Content/faq/ |
+| 2.3c | Small-business guide and checklist | v0.1 drafted 31 Oct 2026, unreviewed | 07-English-Content/pathways/ |
+| 2.4 | FAQ | v0.1 drafted 31 Oct 2026 (28 Q&As), unreviewed | 07-English-Content/faq/faq.md |
+| 2.6 | status.json — single source of commencement status for all badges | v1.0 created 31 Oct 2026 | 06-Legal-Research/data/status.json |
 | 2.5 | Sinhala explanations | Blocked on reviewer + OQ-18 | 08-Sinhala-Content/ |
 
 ## Next steps (proposed)

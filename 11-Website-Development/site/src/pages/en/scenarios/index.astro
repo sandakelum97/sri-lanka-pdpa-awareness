@@ -1,0 +1,9 @@
+---
+import Base from '../../../layouts/Base.astro';
+import { getCollection } from 'astro:content';
+const entries = (await getCollection('scenarios')).sort((a, b) => a.id.localeCompare(b.id));
+---
+<Base title="Everyday scenarios" lang="en" description="How the PDPA applies to shops, schools, hospitals, employers, CCTV, SMS marketing and cloud services.">
+  <h1>How does this affect ordinary people?</h1>
+  <div class="grid">{entries.map((s) => <div class="card"><h3><a href={`/en/scenarios/${s.id}/`}>{s.data.title}</a></h3><p>Pathways: {(s.data.pathways ?? []).join(', ')}</p></div>)}</div>
+</Base>

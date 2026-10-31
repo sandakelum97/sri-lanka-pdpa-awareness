@@ -1,0 +1,21 @@
+---
+import Base from '../../../layouts/Base.astro';
+import StatusBadge from '../../../components/StatusBadge.astro';
+import { getCollection, render } from 'astro:content';
+export async function getStaticPaths() {
+  const entries = await getCollection('sections');
+  return entries.map((e) => ({ params: { id: e.id }, props: { e } }));
+}
+const { e } = Astro.props;
+const { Content } = await render(e);
+---
+<Base title={e.data.title} lang="en" description={`${e.data.title} — plain-language explanation with legal status.`}>
+  <div class="meta">
+    <StatusBadge status={e.data.commencement_status} />
+    {e.data.sections_cited && <span>Cites: {e.data.sections_cited}</span>}
+    <span>Version {e.data.content_version} · reviewed {String(e.data.last_reviewed)} · {e.data.review_status}</span>
+  </div>
+  {e.data.commencement_status === 'NO' && <div class="notice no"><strong>Not in force.</strong> This provision has no commencement date. It creates no present rights or duties.</div>}
+  <article class="prose"><Content /></article>
+  <p><a href="/en/sections/">← All sections</a></p>
+</Base>

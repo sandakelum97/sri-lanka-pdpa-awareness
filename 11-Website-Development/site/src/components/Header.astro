@@ -1,0 +1,23 @@
+---
+interface Props { lang: 'en' | 'si'; path: string }
+const { lang, path } = Astro.props;
+const other = lang === 'en' ? 'si' : 'en';
+const otherPath = path.replace(/^\/(en|si)/, `/${other}`);
+const t = lang === 'en'
+  ? { home: 'Home', sections: 'The Act', scenarios: 'Scenarios', pathways: 'For you', faq: 'FAQ', glossary: 'Glossary', status: 'Legal status', search: 'Search', switch: 'සිංහල' }
+  : { home: 'මුල් පිටුව', sections: 'පනත', scenarios: 'අවස්ථා', pathways: 'ඔබ සඳහා', faq: 'නිතර අසන පැන', glossary: 'පාරිභාෂික ශබ්ද', status: 'නීතිමය තත්ත්වය', search: 'සොයන්න', switch: 'English' };
+---
+<header class="site-header">
+  <a class="brand" href={`/${lang}/`}>PDPA Sri Lanka <span class="tag">{lang === 'en' ? 'independent education project' : 'ස්වාධීන අධ්‍යාපනික ව්‍යාපෘතියක්'}</span></a>
+  <nav>
+    <a href={`/${lang}/`}>{t.home}</a>
+    <a href={`/${lang}/sections/`}>{t.sections}</a>
+    <a href={`/${lang}/scenarios/`}>{t.scenarios}</a>
+    <a href={`/${lang}/pathways/`}>{t.pathways}</a>
+    <a href={`/${lang}/faq/`}>{t.faq}</a>
+    <a href={`/${lang}/glossary/`}>{t.glossary}</a>
+    <a href={`/${lang}/status/`}>{t.status}</a>
+    <a href={`/${lang}/search/`}>{t.search}</a>
+    <a class="lang" href={otherPath} lang={other} hreflang={other}>{t.switch}</a>
+  </nav>
+</header>

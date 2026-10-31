@@ -1,0 +1,13 @@
+---
+import Base from '../../layouts/Base.astro';
+import StatusBadge from '../../components/StatusBadge.astro';
+import { asOf } from '../../lib/status';
+---
+<Base title="ඔබේ පෞද්ගලික දත්ත. ඔබේ අයිතිවාසිකම්. ඔබේ වගකීම." lang="si">
+  <section class="hero">
+    <h1>ඔබේ පෞද්ගලික දත්ත. ඔබේ අයිතිවාසිකම්. ඔබේ වගකීම.</h1>
+    <p>2022 අංක 9 දරන පෞද්ගලික දත්ත ආරක්ෂණ පනත සරල බසින්.</p>
+  </section>
+  <div class="notice"><strong>සිංහල අන්තර්ගතය සකස් වෙමින් පවතී.</strong> සිංහල පැහැදිලි කිරීම් ද්විභාෂා නීති විමර්ශකයෙකුගේ අනුමැතියෙන් පසු ප්‍රකාශයට පත් කෙරේ. මේ අතරතුර <a href="/en/">ඉංග්‍රීසි අන්තර්ගතය</a> සහ <a href="/si/status/">නීතිමය තත්ත්ව වගුව</a> බලන්න.</div>
+  <p>නීතිමය තත්ත්වය ({asOf} දිනට): අධිකාරිය ක්‍රියාත්මකයි <StatusBadge status="IN" lang="si" small /> · ප්‍රධාන වගකීම් 2027 ජනවාරි 1 සිට <StatusBadge status="2027" lang="si" small /> · දත්ත ආයකයන්ගේ අයිතිවාසිකම්, අලෙවිකරණ පණිවිඩ සහ දඩ — දිනයක් නියම කර නැත <StatusBadge status="NO" lang="si" small /></p>
+</Base>

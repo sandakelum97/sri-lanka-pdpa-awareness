@@ -1,0 +1,34 @@
+---
+import Header from '../components/Header.astro';
+import { asOf } from '../lib/status';
+import '../styles/global.css';
+interface Props { title: string; lang?: 'en' | 'si'; description?: string }
+const { title, lang = 'en', description = '' } = Astro.props;
+const path = Astro.url.pathname;
+---
+<!doctype html>
+<html lang={lang === 'si' ? 'si-LK' : 'en-LK'}>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>{title} · PDPA Sri Lanka</title>
+    <meta name="description" content={description} />
+    <meta name="referrer" content="no-referrer" />
+  </head>
+  <body>
+    <a class="skip" href="#main">{lang === 'en' ? 'Skip to content' : 'අන්තර්ගතයට යන්න'}</a>
+    <Header lang={lang} path={path} />
+    <main id="main" data-pagefind-body>
+      <slot />
+    </main>
+    <footer class="site-footer">
+      <p><strong>{lang === 'en' ? 'Disclaimer.' : 'වගකීමෙන් නිදහස් වීම.'}</strong>
+        {lang === 'en'
+          ? 'This is an independent public-education initiative. It is not the Data Protection Authority of Sri Lanka and is not affiliated with the Government of Sri Lanka. Nothing here is legal advice. Every explanation links to the official legislation so you can verify it yourself.'
+          : 'මෙය ස්වාධීන මහජන අධ්‍යාපන ව්‍යාපෘතියකි. මෙය ශ්‍රී ලංකා දත්ත ආරක්ෂණ අධිකාරිය නොවන අතර ශ්‍රී ලංකා රජය සමඟ සම්බන්ධ නොවේ. මෙහි ඇති කිසිවක් නීති උපදෙස් නොවේ.'}</p>
+      <p>{lang === 'en' ? 'Legal status checked against official sources on' : 'නිල මූලාශ්‍ර සමඟ නීතිමය තත්ත්වය පරීක්ෂා කළ දිනය'} {asOf}.
+        {lang === 'en' ? 'Official documents:' : 'නිල ලේඛන:'} <a href="https://www.dpa.gov.lk/guidelines.php" rel="noopener">dpa.gov.lk</a>.
+        {lang === 'en' ? 'This site sets no cookies and uses no third-party trackers.' : 'මෙම වෙබ් අඩවිය කුකීස් භාවිත නොකරයි.'}</p>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,26 @@
+---
+import Base from '../../layouts/Base.astro';
+import StatusBadge from '../../components/StatusBadge.astro';
+import { asOf, provisions, parts, instruments } from '../../lib/status';
+---
+<Base title="Legal status tracker" lang="en" description="Which provisions of Sri Lanka's PDPA are in force, from when, and under which Gazette.">
+  <h1>Legal status — provision by provision</h1>
+  <p class="meta">Checked against official sources on {asOf}. Source file: <code>06-Legal-Research/data/status.json</code>.</p>
+  <div class="notice">The Act is <em>partly</em> in force. "In the Act" is not the same as "in force". The 18 March 2025 date reported in many places was repealed before it took effect (Gazette 2427/34).</div>
+  <table>
+    <thead><tr><th>Provision</th><th>Subject</th><th>Status</th><th>Date</th><th>Source</th></tr></thead>
+    <tbody>
+      {provisions.map((p) => {
+        const part = parts.find((x) => `Part ${x.part}` === p.ref);
+        return (<tr><td>{p.ref}</td><td>{part ? `${part.title} (ss.${part.sections[0]}–${part.sections[part.sections.length-1]})` : ''}</td><td><StatusBadge status={p.status} /></td><td>{p.date ?? '—'}</td><td>{p.source}</td></tr>);
+      })}
+    </tbody>
+  </table>
+  <h2>Commencement Orders</h2>
+  <table>
+    <thead><tr><th>ID</th><th>Gazette</th><th>Published</th><th>Effect</th></tr></thead>
+    <tbody>{Object.entries(instruments).map(([id, g]) => <tr><td>{id}</td><td>{g.title}</td><td>{g.published}</td><td>{g.effect}</td></tr>)}</tbody>
+  </table>
+  <h2>Rules, regulations, directives and guidelines</h2>
+  <p>None finalised as at {asOf}. Seven drafts were published for public consultation in September–October 2024; they are not law and several rest on provisions repealed by the 2025 amendment. The only current official guidance is DPA Circular No. 01/2026 (public sector).</p>
+</Base>

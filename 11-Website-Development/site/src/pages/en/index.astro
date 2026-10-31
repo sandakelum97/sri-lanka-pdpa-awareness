@@ -1,0 +1,39 @@
+---
+import Base from '../../layouts/Base.astro';
+import StatusBadge from '../../components/StatusBadge.astro';
+import { getCollection } from 'astro:content';
+import { asOf } from '../../lib/status';
+const scenarios = (await getCollection('scenarios')).sort((a, b) => a.id.localeCompare(b.id));
+const pathways = await getCollection('pathways');
+const pick = (slug: string) => pathways.find((p) => p.id === slug);
+---
+<Base title="Your Personal Data. Your Rights. Your Responsibility." lang="en" description="Plain-language guide to Sri Lanka's Personal Data Protection Act for citizens, small businesses, organisations and professionals.">
+  <section class="hero">
+    <h1>Your Personal Data. Your Rights. Your Responsibility.</h1>
+    <p>Sri Lanka's Personal Data Protection Act, No. 9 of 2022, explained in plain language — with the current legal status of every provision, checked against the official texts on {asOf}.</p>
+    <p><a href="/en/pathways/">Start with "What does this mean for me?" →</a></p>
+  </section>
+
+  <div class="notice">
+    <strong>Where the law stands.</strong> The regulator exists <StatusBadge status="IN" small />. The core duties on anyone handling personal data start on 1 January 2027 <StatusBadge status="2027" small />. Individuals' rights, the marketing-message rules and the fines have no start date yet <StatusBadge status="NO" small />. <a href="/en/status/">See the provision-by-provision tracker.</a>
+  </div>
+
+  <h2>What does this mean for me?</h2>
+  <div class="grid">
+    <div class="card"><h3><a href="/en/pathways/citizen-pathway/">I'm an ordinary citizen</a></h3><p>Students, employees, parents, online shoppers. What will apply, what applies now, what you can do today.</p></div>
+    <div class="card"><h3><a href="/en/pathways/small-business-guide/">I run a small business</a></h3><p>Shops, restaurants, salons, tuition classes, clinics, online sellers. The guide and the checklist.</p></div>
+    <div class="card"><h3><a href="/en/pathways/organisation-pathway/">I work in an organisation</a></h3><p>Banks, hospitals, schools, IT, telecoms, government. Requirement by requirement, law separated from good practice.</p></div>
+    <div class="card"><h3><a href="/en/pathways/technical-pathway/">I'm an IT or security professional</a></h3><p>What the Act requires of systems, and what it leaves to engineering judgement.</p></div>
+  </div>
+
+  <h2>Everyday scenarios</h2>
+  <div class="chips">
+    {scenarios.map((s) => <a href={`/en/scenarios/${s.id}/`}>{s.data.title.replace(/^A[n]? /, '')}</a>)}
+  </div>
+
+  <h2>Ask a question</h2>
+  <p>Try: <a href="/en/search/?q=NIC">Can a business collect my NIC number?</a> · <a href="/en/search/?q=employer">Can my employer share my personal information?</a> · <a href="/en/search/?q=leaked">What should I do if my personal data is leaked?</a> · <a href="/en/search/?q=small+shop">I own a small shop — what should I know?</a></p>
+
+  <h2>Official resources</h2>
+  <p>Everything on this site links back to the official texts: the <a href="https://www.dpa.gov.lk/acts/Data%20Protection%20Act%20SL%20-%20English%20%282%29.pdf" rel="noopener">Act No. 9 of 2022</a>, the <a href="https://www.parliament.lk/uploads/acts/gbills/english/6384.pdf" rel="noopener">Amendment Act No. 22 of 2025</a>, the commencement <a href="https://www.dpa.gov.lk/guidelines.php" rel="noopener">Gazettes and DPA publications</a>.</p>
+</Base>

@@ -1,0 +1,9 @@
+---
+import { label } from '../lib/status';
+interface Props { status?: string; lang?: 'en' | 'si'; small?: boolean }
+const { status = '', lang = 'en', small = false } = Astro.props;
+const cls = status === 'IN' ? 'in' : status === '2027' ? 'soon' : status === 'NO' ? 'no' : 'mixed';
+---
+<span class={`badge badge-${cls}${small ? ' badge-sm' : ''}`} title={label(status, lang)}>
+  {status === 'IN' && '●'}{status === '2027' && '◐'}{status === 'NO' && '○'}{(status === 'mixed' || !status) && '◔'} {label(status, lang)}
+</span>

@@ -1,0 +1,7 @@
+---
+import Base from '../../layouts/Base.astro';
+import { getCollection, render } from 'astro:content';
+const [g] = await getCollection('glossary');
+const { Content } = await render(g);
+---
+<Base title="ද්විභාෂා නීති පාරිභාෂික ශබ්දකෝෂය" lang="si"><div class="notice">කෙටුම්පත — විමර්ශකයාගේ අනුමැතිය අපේක්ෂිතයි.</div><article class="prose"><Content /></article></Base>

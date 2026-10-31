@@ -1,6 +1,6 @@
 # Project Tracker — Sri Lanka PDPA Awareness & Education Platform
 
-Last updated: 31 Oct 2026 (v1.2) · Current phase: Phase 1 (Legal Research and Foundation)
+Last updated: 31 Oct 2026 · Current phase: Phase 3 (Website prototype) — Phase 1 complete pending legal review; Phase 2 English content skeleton complete
 
 ## Milestone 1 — Verified Legal Research Repository
 
@@ -64,6 +64,16 @@ Target: close all P1-related open questions and have every official document sto
 
 ## Phase 2 English content — status summary (31 Oct 2026)
 Glossary v0.1 · 30 section explainers · 12 scenarios · 4 audience pathways + checklist · FAQ (28) · status.json. All draft/unreviewed. Remaining for Phase 2: Sinhala side (blocked); legal review; Parts VI/VIII–X reference pages (low priority).
+
+## Phase 3 — started 31 Oct 2026
+
+| # | Task | Status | Output |
+|---|---|---|---|
+| 3.1 | Stack decision | Done — Astro static site + Pagefind + Git review workflow + GitHub Pages (see 11-Website-Development/site/README.md) | |
+| 3.2 | Prototype rendering all English content with status badges from status.json | Done — 63 pages build | 11-Website-Development/site/ |
+| 3.3 | Sinhala interface shell (/si/) | Done — placeholders + bilingual status page + glossary | |
+| 3.4 | Deployment workflow | Done — .github/workflows/deploy-pages.yml (enable Pages → Source: GitHub Actions in repo settings) | |
+| 3.5 | Self-hosted fonts, sitemap, accessibility audit, design polish | Pending | |
 
 ## Next steps (proposed)
 

@@ -1,0 +1,48 @@
+/* Fonts: self-host Noto Sans Sinhala + Noto Sans in production (do not load from Google Fonts — avoids third-party requests). */
+:root {
+  --ink: #1d2733; --muted: #5b6b7b; --bg: #fbfaf7; --panel: #ffffff; --line: #e3e0d8;
+  --accent: #0d6b5f; --accent-ink: #ffffff;
+  --in: #1d7a3e; --soon: #b86e00; --no: #a62639; --mixed: #5b6b7b;
+  --max: 68rem;
+}
+* { box-sizing: border-box; }
+html { font-size: 17px; }
+body { margin: 0; color: var(--ink); background: var(--bg); font-family: "Noto Sans", "Noto Sans Sinhala", "Iskoola Pota", system-ui, -apple-system, "Segoe UI", sans-serif; line-height: 1.6; }
+html[lang="si-LK"] body { font-family: "Noto Sans Sinhala", "Iskoola Pota", "Noto Sans", system-ui, sans-serif; line-height: 1.8; }
+.skip { position: absolute; left: -999px; } .skip:focus { left: 1rem; top: 1rem; background: var(--accent); color: var(--accent-ink); padding: .5rem 1rem; z-index: 10; }
+.site-header { display: flex; flex-wrap: wrap; gap: .75rem 1.5rem; align-items: center; padding: .9rem 1rem; border-bottom: 1px solid var(--line); background: var(--panel); }
+.brand { font-weight: 700; text-decoration: none; color: var(--ink); font-size: 1.1rem; }
+.brand .tag { display: block; font-weight: 400; font-size: .75rem; color: var(--muted); }
+nav { display: flex; flex-wrap: wrap; gap: .25rem .9rem; }
+nav a { text-decoration: none; color: var(--ink); padding: .25rem 0; border-bottom: 2px solid transparent; }
+nav a:hover, nav a:focus { border-color: var(--accent); }
+nav a.lang { margin-left: auto; font-weight: 600; color: var(--accent); }
+main { max-width: var(--max); margin: 0 auto; padding: 1.25rem 1rem 3rem; }
+.site-footer { border-top: 1px solid var(--line); padding: 1.5rem 1rem 2.5rem; font-size: .85rem; color: var(--muted); max-width: var(--max); margin: 0 auto; }
+h1 { font-size: 1.9rem; line-height: 1.25; margin: .5rem 0 1rem; } h2 { font-size: 1.35rem; margin-top: 2rem; } h3 { font-size: 1.1rem; }
+a { color: var(--accent); }
+.badge { display: inline-block; font-size: .8rem; font-weight: 600; padding: .15rem .6rem; border-radius: 999px; border: 1px solid; white-space: nowrap; }
+.badge-in { color: var(--in); border-color: var(--in); background: #eaf6ee; }
+.badge-soon { color: var(--soon); border-color: var(--soon); background: #fff4e3; }
+.badge-no { color: var(--no); border-color: var(--no); background: #fdeced; }
+.badge-mixed { color: var(--mixed); border-color: var(--mixed); background: #eef1f4; }
+.badge-sm { font-size: .7rem; padding: .05rem .45rem; }
+.hero { background: var(--accent); color: var(--accent-ink); padding: 2.5rem 1.5rem; border-radius: 14px; margin-bottom: 1.5rem; }
+.hero h1 { color: inherit; font-size: 2.2rem; margin: 0 0 .5rem; } .hero p { font-size: 1.1rem; max-width: 50rem; }
+.hero a { color: inherit; }
+.notice { border-left: 5px solid var(--soon); background: #fff8ea; padding: .9rem 1.1rem; border-radius: 8px; margin: 1rem 0; }
+.notice.no { border-color: var(--no); background: #fdf1f2; }
+.grid { display: grid; gap: 1rem; grid-template-columns: repeat(auto-fill, minmax(16rem, 1fr)); }
+.card { background: var(--panel); border: 1px solid var(--line); border-radius: 12px; padding: 1rem 1.1rem; }
+.card h3 { margin: .2rem 0 .4rem; } .card a { text-decoration: none; } .card p { margin: .3rem 0; color: var(--muted); font-size: .95rem; }
+table { border-collapse: collapse; width: 100%; font-size: .95rem; margin: 1rem 0; display: block; overflow-x: auto; }
+th, td { border: 1px solid var(--line); padding: .5rem .6rem; vertical-align: top; text-align: left; }
+th { background: #f1efe9; }
+blockquote { border-left: 4px solid var(--line); margin: 1rem 0; padding: .3rem 1rem; color: #33414f; background: var(--panel); }
+.meta { font-size: .85rem; color: var(--muted); display: flex; flex-wrap: wrap; gap: .4rem 1rem; align-items: center; margin-bottom: 1rem; }
+.prose img { max-width: 100%; }
+.search-box input { width: 100%; font-size: 1.1rem; padding: .7rem 1rem; border: 1px solid var(--line); border-radius: 10px; }
+.chips { display: flex; flex-wrap: wrap; gap: .5rem; margin: 1rem 0; }
+.chips a { border: 1px solid var(--line); background: var(--panel); border-radius: 999px; padding: .35rem .9rem; text-decoration: none; color: var(--ink); }
+.chips a:hover { border-color: var(--accent); }
+@media (max-width: 640px) { html { font-size: 16px; } .hero { padding: 1.5rem 1rem; } .hero h1 { font-size: 1.6rem; } nav a.lang { margin-left: 0; } }

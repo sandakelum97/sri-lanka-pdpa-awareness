@@ -1,0 +1,11 @@
+---
+import Base from '../../layouts/Base.astro';
+import StatusBadge from '../../components/StatusBadge.astro';
+import { asOf, provisions, parts } from '../../lib/status';
+---
+<Base title="නීතිමය තත්ත්වය" lang="si">
+  <h1>නීතිමය තත්ත්වය — විධිවිධානය අනුව</h1>
+  <p class="meta">{asOf} දිනට නිල මූලාශ්‍ර සමඟ පරීක්ෂා කරන ලදී. (සිංහල ලේබල් විමර්ශකයාගේ අනුමැතිය අපේක්ෂිතයි.)</p>
+  <table><thead><tr><th>විධිවිධානය</th><th>තත්ත්වය</th><th>දිනය</th><th>මූලාශ්‍රය</th></tr></thead>
+  <tbody>{provisions.map((p) => <tr><td>{p.ref}</td><td><StatusBadge status={p.status} lang="si" /></td><td>{p.date ?? '—'}</td><td>{p.source}</td></tr>)}</tbody></table>
+</Base>

@@ -1,0 +1,24 @@
+---
+import Base from '../../../layouts/Base.astro';
+import StatusBadge from '../../../components/StatusBadge.astro';
+import { getCollection } from 'astro:content';
+import { parts, statusForPart } from '../../../lib/status';
+const entries = await getCollection('sections');
+const bySection = (n: string | number) => entries.find((e) => String(e.data.section) === String(n));
+const dpa = entries.find((e) => e.id.startsWith('s28-35'));
+---
+<Base title="The Act, section by section" lang="en" description="Every section of Sri Lanka's PDPA explained, with its commencement status.">
+  <h1>The Act, section by section</h1>
+  <p>Each page gives the statutory extract, a plain-English explanation, who is affected, an everyday example, actions, consequences and the current legal status.</p>
+  {parts.map((p) => (
+    <section>
+      <h2>{p.part === '-' ? 'Preliminary' : `Part ${p.part}`} — {p.title} {p.part !== '-' && <StatusBadge status={statusForPart(p.part)} small />}</h2>
+      {p.part === 'V' && dpa && <p><a href={`/en/sections/${dpa.id}/`}>{dpa.data.title}</a></p>}
+      <ul>
+        {p.sections.map((n) => { const e = bySection(n); return e
+          ? <li><a href={`/en/sections/${e.id}/`}>s.{n} — {e.data.title.replace(/^Section \S+ — /, '')}</a> <StatusBadge status={e.data.commencement_status} small /></li>
+          : <li>s.{n} <span class="meta">(reference only — not yet drafted)</span></li>; })}
+      </ul>
+    </section>
+  ))}
+</Base>

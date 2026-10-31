@@ -1,0 +1,18 @@
+---
+import Base from '../../layouts/Base.astro';
+---
+<Base title="Search" lang="en">
+  <h1>Search</h1>
+  <p>Ask in your own words — for example "Can a business collect my NIC number?"</p>
+  <link href="/pagefind/pagefind-ui.css" rel="stylesheet" />
+  <script is:inline src="/pagefind/pagefind-ui.js"></script>
+  <div id="search"></div>
+  <script is:inline>
+    window.addEventListener('DOMContentLoaded', () => {
+      const q = new URLSearchParams(location.search).get('q') || '';
+      new PagefindUI({ element: '#search', showSubResults: true, pageSize: 10 });
+      if (q) { const i = document.querySelector('#search input'); if (i) { i.value = q; i.dispatchEvent(new Event('input', { bubbles: true })); } }
+    });
+  </script>
+  <p class="meta">Search runs entirely in your browser. No query is sent to any server.</p>
+</Base>

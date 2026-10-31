@@ -1,0 +1,7 @@
+---
+import Base from '../../layouts/Base.astro';
+import { getCollection, render } from 'astro:content';
+const [g] = await getCollection('glossary');
+const { Content } = await render(g);
+---
+<Base title="Bilingual legal glossary" lang="en" description="English and Sinhala terms used in Sri Lanka's PDPA."><article class="prose"><Content /></article></Base>

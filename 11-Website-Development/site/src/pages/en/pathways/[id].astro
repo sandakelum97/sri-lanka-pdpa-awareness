@@ -1,0 +1,15 @@
+---
+import Base from '../../../layouts/Base.astro';
+import { getCollection, render } from 'astro:content';
+export async function getStaticPaths() {
+  const entries = await getCollection('pathways');
+  return entries.map((e) => ({ params: { id: e.id }, props: { e } }));
+}
+const { e } = Astro.props;
+const { Content } = await render(e);
+---
+<Base title={e.data.title} lang="en">
+  <div class="meta"><span>Version {e.data.content_version} · reviewed {String(e.data.last_reviewed)} · {e.data.review_status}</span></div>
+  <article class="prose"><Content /></article>
+  <p><a href="/en/pathways/">← All pathways</a></p>
+</Base>

@@ -9,6 +9,7 @@ One tree for everything that is not website code or legal research. Flow: **brie
 ├── FOLDER-GUIDE.md           This file
 ├── 00-brand/                 Logo set (mark, light, dark), name decision
 ├── 01-scripts-and-briefs/    Everything a human or tool needs BEFORE generating
+│   ├── PROMPTS/              ★ Copy-paste prompt packs by tool (ElevenLabs, Gemini/Veo, NotebookLM, ChatGPT/Claude, Canva, decks, CapCut) — start here
 │   ├── video-60s/            V01–V12: VO (EN + SI draft), on-screen text, shot list, Sinhala cover block
 │   ├── podcast/              Episode briefs for NotebookLM / human recording
 │   ├── infographics/         Briefs I07–I14

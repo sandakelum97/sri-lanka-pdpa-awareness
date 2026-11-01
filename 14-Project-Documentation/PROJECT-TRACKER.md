@@ -95,7 +95,8 @@ Glossary v0.1 · 30 section explainers · 12 scenarios · 4 audience pathways + 
 | 4.5 | Brand final: DataSavi, tagline, logo set | Done 31 Oct 2026 | site/public/brand |
 | 4.6 | Video player with side-panel transcript on the site | Pending | |
 | 4.7 | Production tree consolidated into 09-Production (brief → draft → review → final); briefs added for presentations, PDF guides, posters, photos/drawings, tables/charts | Done 31 Oct 2026 | 09-Production/FOLDER-GUIDE.md |
-| 4.8 | Two NotebookLM files (video 'Disentangling the PDPA', PDF 'Demystified') lost during restructure — owner to re-download | Open | 05-review/media-qa.md |
+| 4.9 | Copy-paste prompt packs per tool with full EN/SI scripts embedded (58 files) | Done 1 Nov 2026 | 09-Production/01-scripts-and-briefs/PROMPTS/ |
+| 4.8 | Two NotebookLM files lost during restructure | Closed 1 Nov 2026 — owner re-downloaded; plus new SI audio, second PDF and video added to drafts, QA pending | 05-review/media-qa.md |
 
 ## Next steps (proposed)
 
